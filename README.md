@@ -1,3 +1,9 @@
+This repository was cloned from [here.](https://github.com/udacity/frontend-nanodegree-mobile-portfolio.git)
+
+The first section below shows the original cloned course README text.
+
+My **Student Notes** then follow..
+
 ## Website Performance Optimization portfolio project
 
 Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
@@ -71,3 +77,17 @@ Feeling uninspired by the portfolio? Here's a list of cool portfolios I found af
 * <a href="http://nicoledominguez.com/portfolio/">http://nicoledominguez.com/portfolio/</a>
 * <a href="http://www.roxannecook.com/">http://www.roxannecook.com/</a>
 * <a href="http://www.84colors.com/portfolio.html">http://www.84colors.com/portfolio.html</a>
+
+## My Student Notes
+The prime purpose of this project is to test performance of this moblie-portfolio and to make needed changes in code to improve performance.  There are two parts to this project: 
+- **Part One** - deals with basic changes to html, css, and js to improve performance in terms of the Critical Rendering Path (CRP).
+- **Part Two** - deals with more detailed changes to the javascript code.
+
+### Activity Log
+The prime purpose of this log is to que Udacity Reviewers in on my incremental observations and changes to make their job a bit easier.
+
+5:20 PM Tuesday April 19, 2016
+- [Cloned Mobile-Portfolio](https://github.com/udacity/frontend-nanodegree-mobile-portfolio.git)
+- Edited README to include **My Student Notes** section and other text to get started.
+
+### Udacity Reviews
