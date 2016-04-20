@@ -86,8 +86,18 @@ The prime purpose of this project is to test performance of this moblie-portfoli
 ### Activity Log
 The prime purpose of this log is to que Udacity Reviewers in on my incremental observations and changes to make their job a bit easier.
 
-5:20 PM Tuesday April 19, 2016
+__**Tuesday April 19, 2016**__
+
+5:20 PM 
 - [Cloned Mobile-Portfolio](https://github.com/udacity/frontend-nanodegree-mobile-portfolio.git)
 - Edited README to include **My Student Notes** section and other text to get started.
+
+6:52 PM
+- Tried out Google PageSpeed Website on some of my completed project URLS... very cool
+- Installed Google Canary (Development Browser) on Laptop
+- Installed Google Chrome on iPhone 5s and iPad2
+- Installed iOS WebKit Debug Proxy from Repository using Homebrew
+
+
 
 ### Udacity Reviews
