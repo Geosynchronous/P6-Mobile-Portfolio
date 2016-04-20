@@ -123,5 +123,12 @@ The prime purpose of this log is to que Udacity Reviewers in on my incremental o
 - Select User Agent (Safari-IOS 9.3-iPad) from Develop Menu
 - USB cable has faulty connection, need to hold it firmly in place
 
+2:26 PM
+- Wasted some more time trying to get iPhone/Canary remote connection
+- Definately giving up on this for now, don't really need it to complete projects
+- Will use Canary and simulated device for timeline behaviour
+- May also use Safari Dev tools for remote iPhone connection as well
+
+
 
 ### Udacity Reviews
