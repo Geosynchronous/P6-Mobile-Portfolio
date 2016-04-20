@@ -98,6 +98,13 @@ __**Tuesday April 19, 2016**__
 - Installed Google Chrome on iPhone 5s and iPad2
 - Installed [iOS WebKit Debug Proxy](https://github.com/google/ios-webkit-debug-proxy) from Repository using Homebrew
 
+8:28 PM
+- Got some results, but not getting Canary to see device yet.
+- All the feeds in the forums basically state that this is very buggy and a huge time sink.
+- This [site](https://www.smashingmagazine.com/2014/09/testing-mobile-emulators-simulators-remote-debugging/2/) tells how to use Safari Dev Tools with my IOS device.  Might try it later.
+- May end up just using simulation modes in Chrome to make this project work.
+- Sent bug report about this issue, should at least have a note saying what the forums are saying.
+
 
 
 ### Udacity Reviews
