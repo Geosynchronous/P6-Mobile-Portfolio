@@ -93,7 +93,7 @@ __**Tuesday April 19, 2016**__
 - Edited README to include **My Student Notes** section and other text to get started.
 
 6:52 PM
-- Tried out Google PageSpeed Website on some of my completed project URLS... very cool
+- Tried out Google [PageSpeed Website](https://developers.google.com/speed/pagespeed/insights/) on some of my completed project URLS... very cool
 - Installed Google Canary (Development Browser) on Laptop
 - Installed Google Chrome on iPhone 5s and iPad2
 - Installed [iOS WebKit Debug Proxy](https://github.com/google/ios-webkit-debug-proxy) from Repository using Homebrew
