@@ -86,7 +86,7 @@ The prime purpose of this project is to test performance of this moblie-portfoli
 ### Activity Log
 The prime purpose of this log is to que Udacity Reviewers in on my incremental observations and changes to make their job a bit easier.
 
-__**Tuesday April 19, 2016**__
+**Tuesday April 19, 2016**
 
 5:20 PM 
 - [Cloned Mobile-Portfolio](https://github.com/udacity/frontend-nanodegree-mobile-portfolio.git)
@@ -101,10 +101,19 @@ __**Tuesday April 19, 2016**__
 8:28 PM
 - Got some results, but not getting Canary to see device yet.
 - All the feeds in the forums basically state that this is very buggy and a huge time sink.
-- This [site](https://www.smashingmagazine.com/2014/09/testing-mobile-emulators-simulators-remote-debugging/2/) tells how to use Safari Dev Tools with my IOS device.  Might try it later.
+- This [site](https://www.smashingmagazine.com/2014/09/testing-mobile-emulators-simulators-remote-debugging/2/) tells how to use Safari Dev Tools with my IOS device.
 - May end up just using simulation modes in Chrome to make this project work.
 - Sent bug report about this issue, should at least have a note saying what the forums are saying.
 
+**Wednesday April 20, 2016**
 
+11:07 AM
+- Remote attachment works using Apple ecosystem with hints from this [site.](https://www.smashingmagazine.com/2014/09/testing-mobile-emulators-simulators-remote-debugging/2/)
+- Safari Browser on laptop enabled for Developer Mode
+- Safari Browser on iPhone enabled Web Inspector
+- Attached iPhone and Laptop via USB cable
+- Open browsers in each device (with more than one webpage open on iPhone)
+- Selected Web Page from Develop Menu on Safari to inspect on iPhone
+- Web Inspector window appears and seems to work fine
 
 ### Udacity Reviews
