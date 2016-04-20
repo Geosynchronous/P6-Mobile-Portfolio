@@ -113,7 +113,15 @@ The prime purpose of this log is to que Udacity Reviewers in on my incremental o
 - Safari Browser on iPhone enabled Web Inspector
 - Attached iPhone and Laptop via USB cable
 - Open browsers in each device (with more than one webpage open on iPhone)
+- Select User Agent (Safari-IOS 9.3-iPhone) from Develop Menu
 - Selected Web Page from Develop Menu on Safari to inspect on iPhone
 - Web Inspector window appears and seems to work fine
+
+11:39 AM
+- Remote attachment for iPad2 established
+- Instuctions basically as above
+- Select User Agent (Safari-IOS 9.3-iPad) from Develop Menu
+- USB cable has faulty connection, need to hold it firmly in place
+
 
 ### Udacity Reviews
