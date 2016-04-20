@@ -96,7 +96,7 @@ __**Tuesday April 19, 2016**__
 - Tried out Google PageSpeed Website on some of my completed project URLS... very cool
 - Installed Google Canary (Development Browser) on Laptop
 - Installed Google Chrome on iPhone 5s and iPad2
-- Installed iOS WebKit Debug Proxy from Repository using Homebrew
+- Installed [iOS WebKit Debug Proxy](https://github.com/google/ios-webkit-debug-proxy) from Repository using Homebrew
 
 
 
