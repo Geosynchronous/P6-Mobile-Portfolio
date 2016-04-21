@@ -129,6 +129,9 @@ The prime purpose of this log is to que Udacity Reviewers in on my incremental o
 - Will use Canary and simulated device for timeline behaviour
 - May also use Safari Dev tools for remote iPhone connection as well
 
+**Thursday April 21, 2016**
 
+12:10 PM
+- Good News, Durant Schoon of Udacity Support implemented suggested changes above.
 
 ### Udacity Reviews
