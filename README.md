@@ -134,4 +134,10 @@ The prime purpose of this log is to que Udacity Reviewers in on my incremental o
 12:10 PM
 - Good News, Durant Schoon of Udacity Support implemented suggested changes above.
 
+3:27 PM
+
+- Finihed reading this [link](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/?hl=en) by Ilya Grigorik
+- Recomend as resource for CRP
+
+
 ### Udacity Reviews
