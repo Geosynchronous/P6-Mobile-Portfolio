@@ -150,7 +150,7 @@ The prime purpose of this log is to que Udacity Reviewers in on my incremental o
 3:19 PM
 - Issues in lesson with outdated waterfall views
 - Sent Issue Report to Udacity Support
-- Updated [ thread](https://discussions.udacity.com/t/important-note-re-devtools-timeline-visual-discrepancy-esp-if-youre-confused/28598/12) forum that deals with this issue.- 
+- Updated [forum thread](https://discussions.udacity.com/t/important-note-re-devtools-timeline-visual-discrepancy-esp-if-youre-confused/28598/14?u=george_3439977859158) that deals with this issue.- 
 
 
 ### Udacity Reviews
