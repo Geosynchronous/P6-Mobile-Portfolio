@@ -136,8 +136,16 @@ The prime purpose of this log is to que Udacity Reviewers in on my incremental o
 
 3:27 PM
 
-- Finihed reading this [link](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/?hl=en) by Ilya Grigorik
+- Finihed reading this [web optimization link](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/?hl=en) by Ilya Grigorik
 - Recomend as resource for CRP
+
+**Friday April 22, 2016**
+
+2:23 PM
+
+- These two links are keepers for Waterfall like web page activity.
+- http://www.webpagetest.org/result/160422_FJ_84P/
+- http://scatter.cowchimp.com/
 
 
 ### Udacity Reviews
