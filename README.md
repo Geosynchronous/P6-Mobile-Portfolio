@@ -150,7 +150,14 @@ The prime purpose of this log is to que Udacity Reviewers in on my incremental o
 3:19 PM
 - Issues in lesson with outdated waterfall views
 - Sent Issue Report to Udacity Support
-- Updated [forum thread](https://discussions.udacity.com/t/important-note-re-devtools-timeline-visual-discrepancy-esp-if-youre-confused/28598/14?u=george_3439977859158) that deals with this issue.- 
+- Updated [forum thread](https://discussions.udacity.com/t/important-note-re-devtools-timeline-visual-discrepancy-esp-if-youre-confused/28598/14?u=george_3439977859158) that deals with this issue.
+
+3:47 PM
+- Useful up-to-date timeline references from Google
+- [Timeline Event Reference](https://developer.chrome.com/devtools/docs/timeline#timeline-event-reference)
+- [Chrome Dev Tools Timeline](https://developers.google.com/web/tools/chrome-devtools/profile/evaluate-performance/timeline-tool)
+
+
 
 
 ### Udacity Reviews
