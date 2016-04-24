@@ -164,5 +164,11 @@ The prime purpose of this log is to que Udacity Reviewers in on my incremental o
 - Following Instructors
 - +Ilya Grigorik, @igrigorik, @cwpittman
 
+**Sunday April 24, 2016**
+
+12:54 AM
+
+- [This Lesson Segment](https://classroom.udacity.com/nanodegrees/nd001/parts/00113454012/modules/273584856175460/lessons/1464158642/concepts/15290985670923) requested contibution to forum on Expensive Websites
+- [My Forum Contribution](https://discussions.udacity.com/t/expensive-layouts/16165?u=george_3439977859158)
 
 ### Udacity Reviews
