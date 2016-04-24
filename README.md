@@ -157,7 +157,11 @@ The prime purpose of this log is to que Udacity Reviewers in on my incremental o
 - [Timeline Event Reference](https://developer.chrome.com/devtools/docs/timeline#timeline-event-reference)
 - [Chrome Dev Tools Timeline](https://developers.google.com/web/tools/chrome-devtools/profile/evaluate-performance/timeline-tool)
 
+**Saturday April 23, 2016**
+9:54 PM
 
+- Following Instructors
+- +Ilya Grigorik, @igrigorik, @cwpittman
 
 
 ### Udacity Reviews
