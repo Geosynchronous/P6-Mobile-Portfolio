@@ -184,4 +184,9 @@ The prime purpose of this log is to que Udacity Reviewers in on my incremental o
 - The CSS reference links are out of date in the Instructor Notes at the bottom of the page for this [lesson section frame.] (https://classroom.udacity.com/nanodegrees/nd001/parts/00113454012/modules/273584856175460/lessons/1464158642/concepts/16127785370923)
 - PageSpeed Service was turned off on August 3rd, 2015. 
 
+5:25 PM
+
+- Finished Lesson 1 - The Critical Rendering Path
+- Starting Lesson 2 - Optiimizing the CRP
+
 ### Udacity Reviews
