@@ -194,6 +194,11 @@ The prime purpose of this log is to que Udacity Reviewers in on my incremental o
 - In the [lesson segment](https://classroom.udacity.com/nanodegrees/nd001/parts/00113454012/modules/273584856175460/lessons/1469569174/concepts/16119285370923) we are asked to make two CRP diagrams
 - [My Forum Contribution](https://discussions.udacity.com/t/quiz-crp-diagrams/16162/134?u=george_3439977859158)
 
-https://discussions.udacity.com/t/crp-diagrams-any-site/25810/44?u=george_3439977859158
+**Tuesday April 26, 2016**
+
+11:59 PM
+
+- This [lesson quiz](https://classroom.udacity.com/nanodegrees/nd001/parts/00113454012/modules/273584856175460/lessons/1469569174/concepts/16053485360923) requested a CRP for one of my projects
+- [My Forum Contribution](https://discussions.udacity.com/t/crp-diagrams-any-site/25810/44?u=george_3439977859158)
 
 ### Udacity Reviews
