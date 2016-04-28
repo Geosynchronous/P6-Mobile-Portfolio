@@ -221,6 +221,16 @@ The prime purpose of this log is to que Udacity Reviewers in on my incremental o
 - The goal is to get a Google Pagespeed Insights score of at least 90/100 before project submission
 - Right now mobile is at 28/100 and desktop is 30/100
 - Preliminary analysis with tools tells me that the first thing to take care of is the pizza image which is over 2 MB
-- We are also supposed to make this portfolio are own, so I will probably just start by using a different smaller image that is relevant to my own portfolio 
+- We are also supposed to make this portfolio are own, so I will probably just start by using a different smaller image that is relevant to my own portfolio
+ 
+10:23 PM
+
+- **Created gh-page**
+- To Webserve my latest repo version of Portfolio for analysis
+- Just created a gh-page from the cloned repository master, URL at http://geosynchronous.github.io/P6-Mobile-Portfolio/
+- Ran Pagespeed Insights and got the same result as for Cameron's original forked version
+- As needed, I will delete the previous gh-pages and create new ones from the updated master before testing with Pagespeed, etc
+-  **Mobile 28 and Desktop 30**
+
 
 ### Udacity Reviews
