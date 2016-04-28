@@ -213,6 +213,14 @@ The prime purpose of this log is to que Udacity Reviewers in on my incremental o
 - Added Timeline and Network Dev Tool Analysis Graphics to previous Forum entry
 - [My Forum Contribution](https://discussions.udacity.com/t/crp-diagrams-any-site/25810/48?u=george_3439977859158)
 
+9:39 PM
 
+- Finished Lesson 2, and now ready to start P6-Website Performance Optimization
+- I just [Forked Cameron's Repo](https://github.com/udacity/frontend-nanodegree-mobile-portfolio)
+- However, will use the clone that I previously made from his repo (which this README file that you are looking at is a part of)
+- The goal is to get a Google Pagespeed Insights score of at least 90/100 before project submission
+- Right now mobile is at 28/100 and desktop is 30/100
+- Preliminary analysis with tools tells me that the first thing to take care of is the pizza image which is over 2 MB
+- We are also supposed to make this portfolio are own, so I will probably just start by using a different smaller image that is relevant to my own portfolio 
 
 ### Udacity Reviews
