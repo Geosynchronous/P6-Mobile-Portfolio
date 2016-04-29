@@ -315,7 +315,7 @@ The prime purpose of this log is to que Udacity Reviewers in on my incremental o
 3:05 PM
 
 - **Inlined style.css**
-- **Mobile 95 (green) and Desktop 94 (green)** *(Dramatic Mobile Improvement!!!)*
+- **Mobile 95 (green) and Desktop 96 (green)** *(Dramatic Mobile Improvement!!!)*
 - This exceed the requirement of at least achieving a 90/100 on Page Speed
 - **DCL: 3ms, onload: 87ms** *(no real change)*
 - Time to move onto **BROWSER RENDERING OPERATIONS**, and then improve code some more
