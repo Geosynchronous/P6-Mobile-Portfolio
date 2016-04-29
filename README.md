@@ -323,8 +323,8 @@ The prime purpose of this log is to que Udacity Reviewers in on my incremental o
 
 4:08 PM
 
-- ** Submitted Current Status to Forum
-- https://discussions.udacity.com/t/optimized-portfolios/16161/90?u=george_3439977859158
+- **Submitted Current Status to Forum**
+- [My Forum Contibution](https://discussions.udacity.com/t/optimized-portfolios/16161/90?u=george_3439977859158)
 
 
 ### Udacity Reviews
