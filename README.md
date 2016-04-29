@@ -282,13 +282,20 @@ The prime purpose of this log is to que Udacity Reviewers in on my incremental o
 - Pageview Stats still the same
 - **CL: 58ms, onload: 180m** might be improving
 
-11:27 PM
+11:27 AM
 
 - **Comment Out Google Analytics**
 - Need to learn more about this before I use it
 - Was not in context of lessons viewed so far
 - Will comment it out for now and see what happens
 - Then work on other aspects of code
+
+12:23 PM
+
+- **Improved Pagespeed & Nav Times
+- **Mobile 77 (yellow) and Desktop 90 (green)** *(Slight Improve, 90 on Desktop!!!)*
+- **DCL: 4ms, onload: 136ms** *(DCL improved the most)*
+- Need to make profilepic smaller 80 x 80 to 40 x 40
 
 
 
