@@ -261,6 +261,12 @@ The prime purpose of this log is to que Udacity Reviewers in on my incremental o
 - Compressed pizza.jpg from 2 MB down to 9 KB
 - Stats are still the same as in previous entry
 
+1;36 AM
+
+- **Media & Meta Changes**
+- made print.css a media event
+- filled in <meta> categories
+- Page Speed & Nav Timing Results not changes
 
 
 ### Udacity Reviews
