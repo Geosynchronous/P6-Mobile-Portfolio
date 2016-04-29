@@ -309,8 +309,17 @@ The prime purpose of this log is to que Udacity Reviewers in on my incremental o
 - **Minified**
 - html, css, js
 - Page Speed & Nav Time stayed almost same
-- **Mobile 87 (yellow) and Desktop 94 (green)** *(same as before)*
+- **Mobile 87 (green) and Desktop 94 (green)** *(same as before)*
 - **DCL: 3ms, onload: 81ms** *(improved)*
  
+3:05 PM
+
+- **Inlined style.css**
+- **Mobile 95 (green) and Desktop 94 (green)** *(Dramatic Mobile Improvement!!!)*
+- This exceed the requirement of at least achieving a 90/100 on Page Speed
+- **DCL: 3ms, onload: 87ms** *(no real change)*
+- Time to move onto **BROWSER RENDERING OPERATIONS**, and then improve code some more
+- Also Google Analytics Condundrum needs to be worked on
+- 
 
 ### Udacity Reviews
