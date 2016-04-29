@@ -268,5 +268,11 @@ The prime purpose of this log is to que Udacity Reviewers in on my incremental o
 - filled in <meta> categories
 - Page Speed & Nav Timing Results not changes
 
+2:49 AM
+
+- **Google Analytics Installed**
+- Has not change Pagespeed or Nav TIme Stats
+- Created the analytics ID
+- not exactly sure what I am doing at this point
 
 ### Udacity Reviews
