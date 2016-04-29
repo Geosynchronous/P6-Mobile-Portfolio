@@ -320,6 +320,11 @@ The prime purpose of this log is to que Udacity Reviewers in on my incremental o
 - **DCL: 3ms, onload: 87ms** *(no real change)*
 - Time to move onto **BROWSER RENDERING OPERATIONS**, and then improve code some more
 - Also Google Analytics Condundrum needs to be worked on
-- 
+
+4:08 PM
+
+- ** Submitted Current Status to Forum
+- https://discussions.udacity.com/t/optimized-portfolios/16161/90?u=george_3439977859158
+
 
 ### Udacity Reviews
