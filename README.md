@@ -232,5 +232,18 @@ The prime purpose of this log is to que Udacity Reviewers in on my incremental o
 - As needed, I will delete the previous gh-pages and create new ones from the updated master before testing with Pagespeed, etc
 -  **Mobile 28 and Desktop 30**
 
+**Thursday April 28, 2016**
+
+11:16 PM
+
+- Navigation Timing already available in Cmaeron's code with permatters.js
+- dcl (time elapsed for document content loaded) and onload (time elasped for DOM to be created) times shown on bottom of page
+- **DCL: 68ms, onload: 128ms**
+- the above times vary some each time a reload is done
+- dcl varies a bit more than onload... netowrk latencies probable causes
+- 
+
+
+
 
 ### Udacity Reviews
