@@ -252,6 +252,14 @@ The prime purpose of this log is to que Udacity Reviewers in on my incremental o
 - **Mobile 76 (yellow) and Desktop 89 (green)** *(A HUGE IMPROVEMENT IN PAGESPEED MEASUREMENT!!!)*
 - **DCL: 90ms, onload: 171ms** *(This hasn't really changed, variance larger with multiple tries.)*
 
+**Friday April 29, 2016**
+
+1:04 AM
+
+- **Revert back to Pizza**
+- This theme is needed in Part 2, so I went back to it
+- Compressed pizza.jpg from 2 MB down to 9 KB
+- Stats are still the same as in previous entry
 
 
 
