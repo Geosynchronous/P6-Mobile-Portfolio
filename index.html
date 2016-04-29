@@ -23,30 +23,9 @@
     </script>
     <script src="http://www.google-analytics.com/analytics.js"></script>
     <script async src="js/perfmatters.js"></script>
-
-    **/
-    ** TEMP - Added CRP code for testing purposes
-    **      - Loading time parameters will show on webpage
-    **/
-
-    <script>
-      function measureCRP() {
-        var t = window.performance.timing,
-          interactive = t.domInteractive - t.domLoading,
-          dcl = t.domContentLoadedEventStart - t.domLoading,
-          complete = t.domComplete - t.domLoading;
-        var stats = document.createElement('p');
-        stats.textContent = 'interactive: ' + interactive + 'ms, ' +
-            'dcl: ' + dcl + 'ms, complete: ' + complete + 'ms';
-        document.body.appendChild(stats);
-      }
-    </script>
-
   </head>
 
-  **/ TEMP - Added Inline function for testing
-  <body onload="measureCRP()">
-
+  <body>
     <header>
       <a href="/"><img src="img/profilepic.jpg"></a>
       <p>Cameron Pittman<br><span>Course Developer</span></p>
