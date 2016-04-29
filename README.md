@@ -230,18 +230,27 @@ The prime purpose of this log is to que Udacity Reviewers in on my incremental o
 - Just created a gh-page from the cloned repository master, URL at http://geosynchronous.github.io/P6-Mobile-Portfolio/
 - Ran Pagespeed Insights and got the same result as for Cameron's original forked version
 - As needed, I will delete the previous gh-pages and create new ones from the updated master before testing with Pagespeed, etc
--  **Mobile 28 and Desktop 30**
+-  **Mobile 28 (red) and Desktop (yellow) 30**
 
 **Thursday April 28, 2016**
 
 11:16 PM
 
-- Navigation Timing already available in Cmaeron's code with permatters.js
+- **Navigation Timing** 
+- already available in Cmaeron's code with permatters.js
 - dcl (time elapsed for document content loaded) and onload (time elasped for DOM to be created) times shown on bottom of page
 - **DCL: 68ms, onload: 128ms**
 - the above times vary some each time a reload is done
 - dcl varies a bit more than onload... netowrk latencies probable causes
-- 
+
+11:58 PM
+
+- **Very Large Graphic Replaced**
+- Replaced pizza.pgn 2 MB with sashimi.jpg 5k
+- Renamed pizza.html to shogun.htiml
+- deleted old gh-pages and created a new one to test with results below
+- **Mobile 76 (yellow) and Desktop 89 (green)** *(A HUGE IMPROVEMENT IN PAGESPEED MEASUREMENT!!!)*
+- **DCL: 90ms, onload: 171ms** *(This hasn't really changed, variance larger with multiple tries.)*
 
 
 
