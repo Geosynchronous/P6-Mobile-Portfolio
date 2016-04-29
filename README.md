@@ -274,5 +274,11 @@ The prime purpose of this log is to que Udacity Reviewers in on my incremental o
 - Has not change Pagespeed or Nav TIme Stats
 - Created the analytics ID
 - not exactly sure what I am doing at this point
+- 
+3:08 AM
+
+- **Made Analytics,js async**
+- Pageview Stats still the same
+- **CL: 58ms, onload: 180m** might be improving
 
 ### Udacity Reviews
