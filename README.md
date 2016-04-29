@@ -271,14 +271,30 @@ The prime purpose of this log is to que Udacity Reviewers in on my incremental o
 2:49 AM
 
 - **Google Analytics Installed**
-- Has not change Pagespeed or Nav TIme Stats
+- Has not change Pagespeed or Nav Time Stats
 - Created the analytics ID
 - not exactly sure what I am doing at this point
-- 
+- https://moz.com/blog/absolute-beginners-guide-to-google-analytics
+
 3:08 AM
 
 - **Made Analytics,js async**
 - Pageview Stats still the same
 - **CL: 58ms, onload: 180m** might be improving
+
+11:27 PM
+
+- **Comment Out Google Analytics**
+- Need to learn more about this before I use it
+- Was not in context of lessons viewed so far
+- Will comment it out for now and see what happens
+- Then work on other aspects of code
+
+
+
+
+
+
+
 
 ### Udacity Reviews
