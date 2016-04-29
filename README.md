@@ -297,7 +297,12 @@ The prime purpose of this log is to que Udacity Reviewers in on my incremental o
 - **DCL: 4ms, onload: 136ms** *(DCL improved the most)*
 - Need to make profilepic smaller 80 x 80 to 40 x 40
 
+1:57 PM
 
+- **Test Commented Out Google Fonts"
+- Not used anyway
+- - **Mobile 87 (yellow) and Desktop 94 (green)** *(Huge Gains!!!)*
+-  **DCL: 4ms, onload: 171ms**
 
 
 
