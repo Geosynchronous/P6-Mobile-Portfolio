@@ -301,12 +301,16 @@ The prime purpose of this log is to que Udacity Reviewers in on my incremental o
 
 - **Test Commented Out Google Fonts"
 - Not used anyway
-- - **Mobile 87 (yellow) and Desktop 94 (green)** *(Huge Gains!!!)*
+- **Mobile 87 (yellow) and Desktop 94 (green)** *(Huge Gains!!!)*
 -  **DCL: 4ms, onload: 171ms**
 
+2:28 PM
 
-
-
-
+- **Minified**
+- html, css, js
+- Page Speed & Nav Time stayed almost same
+- **Mobile 87 (yellow) and Desktop 94 (green)** *(same as before)*
+- **DCL: 3ms, onload: 81ms** *(improved)*
+ 
 
 ### Udacity Reviews
