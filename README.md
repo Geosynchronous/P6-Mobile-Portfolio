@@ -355,5 +355,14 @@ The prime purpose of this log is to que Udacity Reviewers in on my incremental o
 - Has some interesting features, and presents info from different perspectives
 - Worth using as a tool
 
+**Saturday April 30, 2016**
+
+11:00 AM
+
+- **Webworker Quiz Coding**
+- On this [Forked REPO](https://github.com/Geosynchronous/web-workers-demo)
+
+
+
 
 ### Udacity Reviews
