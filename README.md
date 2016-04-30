@@ -340,4 +340,12 @@ The prime purpose of this log is to que Udacity Reviewers in on my incremental o
 - [Devtools Timeline Full Story](https://developers.google.com/web/updates/2015/03/devtools-timeline-now-providing-the-full-story?hl=en)
 - [How to Use Time Tools](https://developers.google.com/web/tools/chrome-devtools/profile/evaluate-performance/timeline-tool?hl=en)
 
+9:39 PM
+
+- **MOBILE DEVICE TESTING**
+- [Optimized Website](http://geosynchronous.github.io/P6-Mobile-Portfolio/) worked fine on my iPhone 5s and iPad2
+- Safari Browser was used
+- Navigation Timing results similar on these devices compared to my desktop results
+- 
+
 ### Udacity Reviews
