@@ -347,5 +347,13 @@ The prime purpose of this log is to que Udacity Reviewers in on my incremental o
 - Safari Browser was used
 - Navigation Timing results similar on these devices compared to my desktop results
 
+9:54 PM
+
+- **SAFARI WEB INSPECTOR**
+- [Optimized Website](http://geosynchronous.github.io/P6-Mobile-Portfolio/) worked fine on Safari Web Dev Tools
+- Not nearly as powerful as Chrome Dev Tools
+- Has some interesting features, and presents info from different perspectives
+- Worth using as a tool
+
 
 ### Udacity Reviews
