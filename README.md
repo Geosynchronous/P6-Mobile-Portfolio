@@ -326,5 +326,14 @@ The prime purpose of this log is to que Udacity Reviewers in on my incremental o
 - **Submitted Current Status to Forum**
 - [My Forum Contibution](https://discussions.udacity.com/t/optimized-portfolios/16161/90?u=george_3439977859158)
 
+8:01 PM
+
+- **OMG found a little GEM**
+- THE **"W" key** expands the timeline views!!!
+- Sent support a suggestion
+- Happens in this [video.](https://classroom.udacity.com/nanodegrees/nd001/parts/00113454012/modules/273584856175461/lessons/4146058564/concepts/41516686300923)  In the video, Paul mentions using the “W” key to zoom in on the graphics in the Chrome Dev Tool TImeline.  I don’t believe it was mentioned before, and it really makes using the newest version of the timeline a lot easier to use.  Likewise just clicking on the top graph takes it back to the default view.
+
+I believe this is one of those things that should have been mentioned much earlier in the previous lessons when talking about timelines.  Maybe just adding this info to applicable Instructor Notes would help students get more comfortable with using timeline, especially since you still use the older version of timeline with it’s very different layout.
+
 
 ### Udacity Reviews
