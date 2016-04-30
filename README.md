@@ -337,5 +337,6 @@ The prime purpose of this log is to que Udacity Reviewers in on my incremental o
 
 - **WASD KEYS RULE**
 - As above, made another support email, though I just figured the W, A, S, D keys allow timeline view manipulation.
+- [Devtools Timeline Full Story](https://developers.google.com/web/updates/2015/03/devtools-timeline-now-providing-the-full-story?hl=en)
 
 ### Udacity Reviews
