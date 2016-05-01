@@ -380,4 +380,9 @@ The prime purpose of this log is to que Udacity Reviewers in on my incremental o
 - Set-up of Web WOrkers and hand shanking routing between threads is basically understood at this point.
 - It would be better to just use some [simpler examples](http://www.html5rocks.com/en/tutorials/workers/basics/) available on the web.
 
+5:32 PM
+- **Resolved Problem**
+- Problem using fork from local disk, instead created working repo [gh-page](http://geosynchronous.github.io/web-workers-demo/)
+- Probably has to do file permissions and git-hub metadata???
+
 ### Udacity Reviews
