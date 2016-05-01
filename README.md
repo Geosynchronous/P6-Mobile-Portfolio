@@ -371,4 +371,13 @@ The prime purpose of this log is to que Udacity Reviewers in on my incremental o
 - Get this error: image-app.js:9 Uncaught SecurityError: Failed to construct 'Worker': Script at 'file:///Users/geo/version-control/web-workers-demo/scripts/worker.js' cannot be accessed from origin 'null'.
 - path seem to be correct... hmmm WHAT IS GOING ON?
 
+5:18 PM
+
+- **Moving On**
+- [Cameron's Latest Solution](https://github.com/udacity/web-workers-demo/tree/solution)
+- Spent enough time on this for now...
+- Web Workers are indeed very cool, and will need to learn how to implement them.
+- Set-up of Web WOrkers and hand shanking routing between threads is basically understood at this point.
+- It would be better to just use some [simpler examples](http://www.html5rocks.com/en/tutorials/workers/basics/) available on the web.
+
 ### Udacity Reviews
