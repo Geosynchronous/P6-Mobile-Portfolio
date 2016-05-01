@@ -362,7 +362,13 @@ The prime purpose of this log is to que Udacity Reviewers in on my incremental o
 - **Webworker Quiz Coding**
 - On this [Forked REPO](https://github.com/Geosynchronous/web-workers-demo)
 
+**Sunday May 1, 2016**
 
+4:58 PM
 
+- **Problems Solving Quiz**
+- Made changes to image-app.js to implement Web Worker Thread
+- Get this error: image-app.js:9 Uncaught SecurityError: Failed to construct 'Worker': Script at 'file:///Users/geo/version-control/web-workers-demo/scripts/worker.js' cannot be accessed from origin 'null'.
+- path seem to be correct... hmmm WHAT IS GOING ON?
 
 ### Udacity Reviews
