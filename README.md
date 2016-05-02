@@ -403,7 +403,7 @@ The prime purpose of this log is to que Udacity Reviewers in on my incremental o
 
 7:39 AM
 - **Garbage Collection Resources**
-- I am sure I will be needing this in the future... moving on... information overload... synapse are melting...
+- I am sure I will be needing [this](https://classroom.udacity.com/nanodegrees/nd001/parts/00113454012/modules/273584856175461/lessons/4138168623/concepts/41645386230923) in the future... moving on... information overload... synapse are melting...
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management
 - https://www.smashingmagazine.com/2012/11/writing-fast-memory-efficient-javascript/
 - http://buildnewgames.com/garbage-collector-friendly-code/
