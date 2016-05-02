@@ -387,11 +387,18 @@ The prime purpose of this log is to que Udacity Reviewers in on my incremental o
 
 **Sunday May 1, 2016**
 
+7:00 AM
+
 - **JANK Quiz Timeline**
 - Seperate traces for Web Worker shown on Timeline in sync with main trace
 - Closer Inspection of **"onmessage"** timeline item shows: **Warning - Not optimized: TryCatchStatement**, *(not worried about error at this point)*
 - Pretty Cool to see Web Worker actually verified by Dev Tools
 
+7:26 AM
 
+- **Observed Big Bug**
+- Creating a new object inside the image manipulation loop everytime creates a lot of overhead and slows things down
+- Observed Memory Timeline too see js Garbage Collect frequently
+- Did not implement improved changes in my code... moving on...
 
 ### Udacity Reviews
