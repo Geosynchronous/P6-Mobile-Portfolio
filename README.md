@@ -385,4 +385,13 @@ The prime purpose of this log is to que Udacity Reviewers in on my incremental o
 - Problem using fork from local disk, instead created working repo [gh-page](http://geosynchronous.github.io/web-workers-demo/)
 - Probably has to do file permissions and git-hub metadata???
 
+**Sunday May 1, 2016**
+
+- **JANK Quiz Timeline**
+- Seperate traces for Web Worker shown on Timeline in sync with main trace
+- Closer Inspection of "onmessage" timeline item shows: **Warning - Not optimized: TryCatchStatement**
+- Pretty Cool, not worried about error at this point
+
+
+
 ### Udacity Reviews
