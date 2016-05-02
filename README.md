@@ -378,7 +378,7 @@ The prime purpose of this log is to que Udacity Reviewers in on my incremental o
 - Spent enough time on this for now...
 - Web Workers are indeed very cool, and will need to learn how to implement them.
 - Set-up of Web WOrkers and hand shanking routing between threads is basically understood at this point.
-- It would be better to just use some [simpler examples](http://www.html5rocks.com/en/tutorials/workers/basics/) available on the web.
+
 
 5:32 PM
 - **Resolved Problem**
@@ -389,8 +389,8 @@ The prime purpose of this log is to que Udacity Reviewers in on my incremental o
 
 - **JANK Quiz Timeline**
 - Seperate traces for Web Worker shown on Timeline in sync with main trace
-- Closer Inspection of "onmessage" timeline item shows: **Warning - Not optimized: TryCatchStatement**
-- Pretty Cool, not worried about error at this point
+- Closer Inspection of **"onmessage"** timeline item shows: **Warning - Not optimized: TryCatchStatement**, *(not worried about error at this point)*
+- Pretty Cool to see Web Worker actually verified by Dev Tools
 
 
 
