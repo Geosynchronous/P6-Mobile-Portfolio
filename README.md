@@ -401,4 +401,13 @@ The prime purpose of this log is to que Udacity Reviewers in on my incremental o
 - Observed Memory Timeline too see js Garbage Collect frequently
 - Did not implement improved changes in my code... moving on...
 
+7:39 AM
+- **Garbage Collection Resources**
+- I am sure I will be needing this in the future... moving on... information overload... synapse are melting...
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management
+- https://www.smashingmagazine.com/2012/11/writing-fast-memory-efficient-javascript/
+- http://buildnewgames.com/garbage-collector-friendly-code/
+
+
+
 ### Udacity Reviews
