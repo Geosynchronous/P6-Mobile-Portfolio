@@ -417,5 +417,10 @@ The prime purpose of this log is to que Udacity Reviewers in on my incremental o
 - Forked and cloned [this repo.](https://github.com/udacity/qrcode)
 - Set up NPM and GULP CLI
 
+- **Original QR Code Running**
+- Finally!
+- Running gulp serve on local qrcode App dir creates a URL at localhost:3000, request allow to run
+- Will need to learn GULP for sure
+- Timeline for QRCODE is real ugly
 
 ### Udacity Reviews
