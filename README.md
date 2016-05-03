@@ -424,5 +424,6 @@ The prime purpose of this log is to que Udacity Reviewers in on my incremental o
 - Running gulp serve on local qrcode App dir creates a URL at localhost:3000, request allow to run
 - Will need to learn GULP for sure
 - Timeline for QRCODE is real ugly
+- Control-C terminates gulp serve
 
 ### Udacity Reviews
