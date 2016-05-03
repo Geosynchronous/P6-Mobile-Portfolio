@@ -385,7 +385,7 @@ The prime purpose of this log is to que Udacity Reviewers in on my incremental o
 - Problem using fork from local disk, instead created working repo [gh-page](http://geosynchronous.github.io/web-workers-demo/)
 - Probably has to do file permissions and git-hub metadata???
 
-**Sunday May 1, 2016**
+**Monday May 2, 2016**
 
 7:00 AM
 
@@ -402,12 +402,20 @@ The prime purpose of this log is to que Udacity Reviewers in on my incremental o
 - Did not implement improved changes in my code... moving on...
 
 7:39 AM
+
 - **Garbage Collection Resources**
 - I am sure I will be needing [this](https://classroom.udacity.com/nanodegrees/nd001/parts/00113454012/modules/273584856175461/lessons/4138168623/concepts/41645386230923) in the future... moving on... information overload... synapse are melting...
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management
 - https://www.smashingmagazine.com/2012/11/writing-fast-memory-efficient-javascript/
 - http://buildnewgames.com/garbage-collector-friendly-code/
 
+**Tuesday May 3, 2016**
+
+10:53 AM
+
+- **Quiz Problem Set-UP
+- Forked and cloned [this repo.](https://github.com/udacity/qrcode)
+- Set up NPM and GULP CLI
 
 
 ### Udacity Reviews
