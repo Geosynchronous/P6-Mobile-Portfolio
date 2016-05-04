@@ -426,4 +426,23 @@ The prime purpose of this log is to que Udacity Reviewers in on my incremental o
 - Timeline for QRCODE is real ugly
 - Control-C terminates gulp serve
 
+8:19 PM
+
+- **Request Animation Frame**
+- Made changes just like Cameron showed on VIEW ANSWER frames.
+- Compared timelines, before and after, they look exactly the same.
+- The complexity of the code is beyond the scope of the lesson intent, therefore I will not dig further...
+- **A bug report needs to be sent to support about this**
+- will move on to part 2 of the QR quiz
+- Neat to see that npm and gulp serve can run an web app on localhost
+- Lot of cool code used here to use my laptop camera
+- This error also appeared on the console: 
+- main.js:260 MediaStreamTrack.getSources is deprecated. See https://www.chromestatus.com/feature/4765305641369600 for more details.
+localhost/:98 Service Worker Registered
+:3000/scripts/main.min.js:1 GET http://localhost:3000/scripts/main.min.js 404 (Not Found)
+1886qrclient.js:14 Couldn't find enough finder patterns
+main.js:317 Uncaught TypeError: localStream.stop is not a function(anonymous function) @ main.js:317
+30144qrclient.js:14 Couldn't find enough finder patterns
+
+
 ### Udacity Reviews
