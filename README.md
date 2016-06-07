@@ -445,4 +445,16 @@ main.js:317 Uncaught TypeError: localStream.stop is not a function(anonymous fun
 30144qrclient.js:14 Couldn't find enough finder patterns
 
 
+**Tuesday June 7, 2016**
+
+4:28 PM
+
+- **Gone for a Month**
+- Family Roadtrips
+- Entodontal Work
+- Review progress and continue with lesson
+
+
+
+
 ### Udacity Reviews
