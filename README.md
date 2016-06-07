@@ -458,7 +458,7 @@ main.js:317 Uncaught TypeError: localStream.stop is not a function(anonymous fun
 
 - **Ran QR Code Again**
 - Screenshot follows
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+![Image of Screenshot](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/img/qr_example.png)
 
 
 
