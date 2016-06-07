@@ -454,6 +454,12 @@ main.js:317 Uncaught TypeError: localStream.stop is not a function(anonymous fun
 - Entodontal Work
 - Review progress and continue with lesson
 
+4:57 PM
+
+- **Ran QR Code Again**
+- Screenshot follows
+![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+
 
 
 
