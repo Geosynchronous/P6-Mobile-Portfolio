@@ -457,7 +457,7 @@ main.js:317 Uncaught TypeError: localStream.stop is not a function(anonymous fun
 4:57 PM
 
 - **Ran QR Code Again**
-- Screenshot follows
+
 ![Image of Screenshot](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/img/qr_example.png)
 
 
