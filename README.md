@@ -479,6 +479,13 @@ main.js:317 Uncaught TypeError: localStream.stop is not a function(anonymous fun
 - Keep Layout seperate from content style
 - Define layout classes to be re-usable, so less layout code is invoked
 
+10:25 PM
+
+- **FSL - Forced Synchronous Layout**
+- If layout needs to be re-calcuolated because of style change, this causes more time to be used than needed
+- Dev Tools in Chrome will give warning messages about this with little red triangles in the corner of the recalculate timeline blocks and yellow warning signs on associated elements
+-  refactoring code to read styles first before layout will solve the problem
+-  Use DEV TOOLS to find FSL in code and fix
 
 
 
