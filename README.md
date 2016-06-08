@@ -515,4 +515,11 @@ Omission of instructional detail, the Paint box also needs to be checked off for
 -  EXAMPLE: .box{will-change: transform;}
 -  can also use transform: transform Z(0) as well cquse not all browsers use the above, so use both for now... HACK,HACK,HACK
 
+12:02 PM
+
+- **Layers**
+- In D EV TOOLS with PAINT Toggled ON, then recording timeline of scrolling, clicking on any of of the time duration graphic boxes, will invoke LAYER info to appear in the details at the bottom
+- this is a good way to find out how many layers there are and what they are
+
+
 ### Udacity Reviews
