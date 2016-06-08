@@ -488,7 +488,19 @@ main.js:317 Uncaught TypeError: localStream.stop is not a function(anonymous fun
 -  Use DEV TOOLS to find FSL in code and fix
 -  https://csstriggers.com/
 
+**Wednesday June 8, 2016**
 
+- **Painting and Compositing**
+- **Quiz Paint Rectangles**
+- Sent Bug Report
+- issue URL: https://classroom.udacity.com/nanodegrees/nd001/parts/00113454012/modules/273584856175461/lessons/4129068601/concepts/41506686430923
 
+Omission of instructional detail, the Paint box also needs to be checked off for the following series of instructions to make sense. You might add this info and/or image below to the instructor notes at this point of instruction.
+
+[Image of Bug](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/img/paintfix.png)
+
+Cheers,
+
+Geo
 
 ### Udacity Reviews
