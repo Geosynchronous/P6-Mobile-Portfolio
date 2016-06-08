@@ -497,7 +497,7 @@ main.js:317 Uncaught TypeError: localStream.stop is not a function(anonymous fun
 
 Omission of instructional detail, the Paint box also needs to be checked off for the following series of instructions to make sense. You might add this info and/or image below to the instructor notes at this point of instruction.
 
-[Image of Bug](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/img/paintfix.png)
+![Image of Bug](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/img/paintfix.png)
 
 Cheers,
 
