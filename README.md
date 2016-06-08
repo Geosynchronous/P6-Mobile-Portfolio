@@ -507,6 +507,10 @@ Omission of instructional detail, the Paint box also needs to be checked off for
 - Above INFO actually does occur in frames that follow
 - Forwarded Update to support
 
+10:36 PM
 
+- **Coercing Composite Layer**
+-  This [link](https://classroom.udacity.com/nanodegrees/nd001/parts/00113454012/modules/273584856175461/lessons/4129068601/concepts/41395386460923) gives details about how to do this
+-  Browsers inherently take care of layering, however sometimes to optimize website updates, the CSS can be updated to cause a new layer to probably happen
 
 ### Udacity Reviews
