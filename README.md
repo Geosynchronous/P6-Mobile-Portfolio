@@ -469,6 +469,7 @@ main.js:317 Uncaught TypeError: localStream.stop is not a function(anonymous fun
 
 8:56 PM
 
+- **Styles & Layout**
 - **Selector Matching Section Started**
 - BEM: Block, Element, Modifier - a method of organizing CSS, like it, been wondering about how to do this with my code
 - SMACSS, OOCSS also look interesting
