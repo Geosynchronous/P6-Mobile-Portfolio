@@ -460,6 +460,13 @@ main.js:317 Uncaught TypeError: localStream.stop is not a function(anonymous fun
 
 ![Image of Screenshot](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/img/qr_example.png)
 
+6:51 PM
+
+- **Finished Javascripte Section**
+- Sent a few bug reports in to support
+- One UI problem
+- One messy code example problem, large differences in code between video example and student repository code, and not enough context, seems like a hube time sink, so I did not try an implement.
+
 
 
 
