@@ -490,6 +490,8 @@ main.js:317 Uncaught TypeError: localStream.stop is not a function(anonymous fun
 
 **Wednesday June 8, 2016**
 
+10:00 AM
+
 - **Painting and Compositing**
 - **Quiz Paint Rectangles**
 - Sent Bug Report
@@ -499,8 +501,12 @@ Omission of instructional detail, the Paint box also needs to be checked off for
 
 ![Image of Bug](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/img/paintfix.png)
 
-Cheers,
+10:10 PM
 
-Geo
+- **MY BAD**
+- Above INFO actually does occur in frames that follow
+- Forwarded Update to support
+
+
 
 ### Udacity Reviews
