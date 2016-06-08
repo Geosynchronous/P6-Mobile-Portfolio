@@ -475,6 +475,9 @@ main.js:317 Uncaught TypeError: localStream.stop is not a function(anonymous fun
 - SMACSS, OOCSS also look interesting
 - [THis link](https://www.sitepoint.com/bem-smacss-advice-from-developers/) put the above in a useful perspective. 
 - Also watched [this video](https://vimeo.com/44773888) and liked it. 
+- Use classes avoid IDs
+- Keep Layout seperate from content style
+- Define layout classes to be re-usable, so less layout code is invoked
 
 
 
