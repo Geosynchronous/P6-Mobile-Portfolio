@@ -467,6 +467,15 @@ main.js:317 Uncaught TypeError: localStream.stop is not a function(anonymous fun
 - One UI problem
 - One messy code example problem, large differences in code between video example and student repository code, and not enough context, seems like a hube time sink, so I did not try an implement.
 
+8:56 PM
+
+- **Selector Matching Section Started**
+- BEM: Block, Element, Modifier - a method of organizing CSS, like it, been wondering about how to do this with my code
+- SMACSS, OOCSS also look interesting
+- [THis link](https://www.sitepoint.com/bem-smacss-advice-from-developers/) put the above in a useful perspective. 
+- Also watched [this video](https://vimeo.com/44773888) and liked it. 
+
+
 
 
 
