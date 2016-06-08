@@ -512,5 +512,7 @@ Omission of instructional detail, the Paint box also needs to be checked off for
 - **Coercing Composite Layer**
 -  This [link](https://classroom.udacity.com/nanodegrees/nd001/parts/00113454012/modules/273584856175461/lessons/4129068601/concepts/41395386460923) gives details about how to do this
 -  Browsers inherently take care of layering, however sometimes to optimize website updates, the CSS can be updated to cause a new layer to probably happen
+-  EXAMPLE: .box{will-change: transform;}
+-  can also use transform: transform Z(0) as well cquse not all browsers use the above, so use both for now... HACK,HACK,HACK
 
 ### Udacity Reviews
