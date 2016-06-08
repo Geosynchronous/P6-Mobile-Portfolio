@@ -486,6 +486,7 @@ main.js:317 Uncaught TypeError: localStream.stop is not a function(anonymous fun
 - Dev Tools in Chrome will give warning messages about this with little red triangles in the corner of the recalculate timeline blocks and yellow warning signs on associated elements
 -  refactoring code to read styles first before layout will solve the problem
 -  Use DEV TOOLS to find FSL in code and fix
+-  https://csstriggers.com/
 
 
 
