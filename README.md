@@ -83,7 +83,7 @@ The prime purpose of this project is to test performance of this moblie-portfoli
 - **Part One** - deals with basic changes to html, css, and js to improve performance in terms of the Critical Rendering Path (CRP).
 - **Part Two** - deals with more detailed changes to the javascript code.
 
-### Coursework and Project 1 Activity Log
+### Coursework and Project Part 1 Activity Log
 
 **Tuesday April 19, 2016**
 
@@ -536,13 +536,15 @@ Omission of instructional detail, the Paint box also needs to be checked off for
 - **FINALLY!!! - READT TO START PROJECT 2**
 - Will record progress on Project in a next section..
 
-### Project 2 Activity Log
+### Project Part 2 Activity Log
 
 **Thursday June 9, 2016**
 
 9:16 PM
 
-- **Setup Project 2**
+- **Setup Project Part 2**
 - Follow [Project Details](https://classroom.udacity.com/nanodegrees/nd001/parts/00113454012/modules/273584856175461/lessons/2735848561239847/concepts/26641385370923) directions to complete this project.
+- Using same repo as Project Part 1 and continuing on with Project Part 2 requirements.
+
 
 ### Udacity Reviews
