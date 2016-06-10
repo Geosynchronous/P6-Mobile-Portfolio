@@ -572,6 +572,10 @@ Omission of instructional detail, the Paint box also needs to be checked off for
 - Already used DEV TOOLS TIMELINE on both effects to get an overview of the situation.
 - Forced Synchronous Layouts seem to be an issue with scrolling.  This [link](https://developers.google.com/web/tools/chrome-devtools/profile/rendering-tools/forced-synchronous-layouts?hl=en) has a useful methondology for fixing FSL.
 
+8:21 AM
 
+-**USER Scrolling Experience**
+- Hardware testing platform is Macbook Pro 13", Early 2011, 2.3 GHz i%, 16 GB RAM, SSD Drive, and 10.11.5 OSX
+- Scrolling seems to run smooth already, but from previous DT Timeline I know the animation frame rate is too long.
 
 ### Udacity Reviews
