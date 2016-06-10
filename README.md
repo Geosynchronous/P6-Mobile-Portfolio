@@ -595,6 +595,10 @@ Omission of instructional detail, the Paint box also needs to be checked off for
 - Then layout zoomed in on revealing jank error at main.js 507 ![Image of Scroll Initial Frame](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Scroll_Intial_Zoom2.png)
 - [Raw Timeline Data found here](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines)
 
+10:07 AM
 
+- **Scrolling JANK Error Located**
+- Clicking on error location in timeline opens main.js file ![Iamge of Jank Code Error Location](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Main_js_507.png)
+- Awesone!!! HMMMM.... Now what does this mean???
 
 ### Udacity Reviews
