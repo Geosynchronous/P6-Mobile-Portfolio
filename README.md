@@ -521,5 +521,16 @@ Omission of instructional detail, the Paint box also needs to be checked off for
 - In D EV TOOLS with PAINT Toggled ON, then recording timeline of scrolling, clicking on any of of the time duration graphic boxes, will invoke LAYER info to appear in the details at the bottom
 - this is a good way to find out how many layers there are and what they are
 
+**Thursday June 9, 2016**
+
+7:48 PM
+
+- **Final Project Quiz**
+- I made a bunch of the suggested changes via Camerons solutions
+- Noted how each change optimized performance
+- Fairly intimidating coding examples
+- Great way to learn how to use DEV TOOLS to increase performance
+- Quite instructive on how to make specific layout changes to optimize
+
 
 ### Udacity Reviews
