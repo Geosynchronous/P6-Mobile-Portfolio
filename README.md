@@ -83,8 +83,10 @@ The prime purpose of this project is to test performance of this moblie-portfoli
 - **Part One** - deals with basic changes to html, css, and js to improve performance in terms of the Critical Rendering Path (CRP).
 - **Part Two** - deals with more detailed changes to the javascript code.
 
-### Activity Log
-The prime purpose of this log is to que Udacity Reviewers in on my incremental observations and changes to make their job a bit easier.
+### Project Activity Log
+
+
+### Coursework Activity Log
 
 **Tuesday April 19, 2016**
 
@@ -531,6 +533,11 @@ Omission of instructional detail, the Paint box also needs to be checked off for
 - Fairly intimidating coding examples
 - Great way to learn how to use DEV TOOLS to increase performance
 - Quite instructive on how to make specific layout changes to optimize
+
+9:00 PM
+
+- **FINALLY!!! - READT TO START PROJECT**
+- Will record progress on Project in a section above called **PROJECT ACTIVITY LOG**.
 
 
 ### Udacity Reviews
