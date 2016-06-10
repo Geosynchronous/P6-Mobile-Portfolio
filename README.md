@@ -83,7 +83,7 @@ The prime purpose of this project is to test performance of this moblie-portfoli
 - **Part One** - deals with basic changes to html, css, and js to improve performance in terms of the Critical Rendering Path (CRP).
 - **Part Two** - deals with more detailed changes to the javascript code.
 
-### Coursework and Project Part 1 Activity Log
+### Coursework Activity Log
 
 **Tuesday April 19, 2016**
 
@@ -212,6 +212,10 @@ The prime purpose of this project is to test performance of this moblie-portfoli
 - Added Timeline and Network Dev Tool Analysis Graphics to previous Forum entry
 - [My Forum Contribution](https://discussions.udacity.com/t/crp-diagrams-any-site/25810/48?u=george_3439977859158)
 
+### Project Part 1 Activity Log
+
+**Wednesday April 27, 2016**
+
 9:39 PM
 
 - Finished Lesson 2, and now ready to start P6-Website Performance Optimization
@@ -324,6 +328,10 @@ The prime purpose of this project is to test performance of this moblie-portfoli
 
 - **Submitted Current Status to Forum**
 - [My Forum Contibution](https://discussions.udacity.com/t/optimized-portfolios/16161/90?u=george_3439977859158)
+
+### Coursework Activity Log (Continued)
+
+**Friday April 29, 2016**
 
 8:01 PM
 
@@ -554,7 +562,15 @@ Omission of instructional detail, the Paint box also needs to be checked off for
 - Use as a benchmark for now
 - Will follow up on suggestions later
  
+**Friday June 10, 2016**
 
+8:00 AM
+
+- **Refactor Code Focus**
+- [Assessment Review Rubric](https://review.udacity.com/?_ga=1.100937729.1099881078.1443828986#!/rubrics/16/view) asks to make pizza.html page more performant by optimizing the scrolling and sliding effects.
+- I will focus first on the scrolling
+- Already used DEV TOOLS TIMELINE on both effects to get an overview of the situation.
+- Forced Synchronous Layouts seem to be an issue with scrolling.  This [link](https://developers.google.com/web/tools/chrome-devtools/profile/rendering-tools/forced-synchronous-layouts?hl=en) has a useful methondology for fixing FSL.
 
 
 
