@@ -599,6 +599,7 @@ Omission of instructional detail, the Paint box also needs to be checked off for
 
 - **Scrolling JANK Error Located**
 - Clicking on error location in timeline opens main.js file ![Iamge of Jank Code Error Location](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Main_js_507.png)
-- Awesone!!! HMMMM.... Now what does this mean???
+- AWESOME!!
+- BUt WAIT... HMMMM.... Now what does this mean???
 
 ### Udacity Reviews
