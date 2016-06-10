@@ -576,6 +576,8 @@ Omission of instructional detail, the Paint box also needs to be checked off for
 
 - **USER Scrolling Experience**
 - Hardware testing platform is Macbook Pro 13", Early 2011, 2.3 GHz i%, 16 GB RAM, SSD Drive, and 10.11.5 OSX
+- Browser testing platform is up to date at Version 51.0.2704.84 (64-bit)
 - Scrolling seems to run smooth already, but from previous DT Timeline I know the animation frame rate is too long.
+- Amazing how well browsers work today.  If I were in production, I would look at other browser platforms too.
 
 ### Udacity Reviews
