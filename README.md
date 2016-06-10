@@ -587,4 +587,14 @@ Omission of instructional detail, the Paint box also needs to be checked off for
 - Scrolling seems to run smooth already, but from previous DT Timeline I know the animation frame rate is too long.
 - Amazing how well browsers work today.  If I were in production, I would look at other browser platforms too.
 
+9:12 PM
+
+- **Initial Scrolling Timeline Data**
+- js Profile enabled timeline record, scrolling down & up ![Image of Scroll Initial](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Scroll_Initial.png)
+- Then 111 ms 9 fps Animation Frame zoomed in on ![Image of Scroll Initial Zoom 1](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Scroll_Intial_Zoom1.png)
+- Then layout zoomed in on revealing jank error at main.js 507 ![Image of Scroll Initial Frame](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Scroll_Intial_Zoom2.png)
+- [Raw Timeline Data found here](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines)
+
+
+
 ### Udacity Reviews
