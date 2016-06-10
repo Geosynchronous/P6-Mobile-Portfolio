@@ -601,6 +601,6 @@ Omission of instructional detail, the Paint box also needs to be checked off for
 - Clicking on error location in timeline opens main.js file ![Iamge of Jank Code Error Location](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Main_js_507.png)
 - AWESOME!!
 - BUt WAIT... HMMMM.... Now what does this mean???
-- I know... my head has turned to mush... so it is time to take a break... before I make too many mistakes!
+- I know... **MUSH ALARM INVOKED**... my head has turned to mush... so it is time to take a break... before I make too many mistakes!
 
 ### Udacity Reviews
