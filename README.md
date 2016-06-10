@@ -572,11 +572,12 @@ Omission of instructional detail, the Paint box also needs to be checked off for
 - Already used DEV TOOLS TIMELINE on both effects to get an overview of the situation.
 - Earlier this year I was baffled by Chrome Dev Tools, now I thinking I am falling in love with this incredibly sexy tool...
 - Forced Synchronous Layouts seem to be an issue with scrolling.  This [link](https://developers.google.com/web/tools/chrome-devtools/profile/rendering-tools/forced-synchronous-layouts?hl=en) has a useful methondology for fixing FSL.
-- Basic Methodology:
-1. Get Data
-2. Identify Problem
-3. Apply Fix within Dev Tools
-4. Verify with another Timeline Recording
+
+**Basic Methodology:**
+- Get Data
+- Identify Problem
+- Apply Fix within Dev Tools
+- Verify with another Timeline Recording
 
 8:21 AM
 
