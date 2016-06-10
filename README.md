@@ -546,5 +546,16 @@ Omission of instructional detail, the Paint box also needs to be checked off for
 - Follow [Project Details](https://classroom.udacity.com/nanodegrees/nd001/parts/00113454012/modules/273584856175461/lessons/2735848561239847/concepts/26641385370923) directions to complete this project.
 - Using same repo as Project Part 1 and continuing on with Project Part 2 requirements.
 
+9:51 PM
+
+- **PageSpeed Insights**
+- Used my gh-page in repo to test pizza.html
+- Mobile User Exerience 72 (yellow) & Speed 82 (green) and Desktop Suggestions Summary 92 (green)
+- Use as a benchmark for now
+- Will follow up on suggestions later
+ 
+
+
+
 
 ### Udacity Reviews
