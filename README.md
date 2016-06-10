@@ -570,13 +570,14 @@ Omission of instructional detail, the Paint box also needs to be checked off for
 - [Assessment Review Rubric](https://review.udacity.com/?_ga=1.100937729.1099881078.1443828986#!/rubrics/16/view) asks to make pizza.html page more performant by optimizing the scrolling and sliding effects.
 - I will focus first on the scrolling
 - Already used DEV TOOLS TIMELINE on both effects to get an overview of the situation.
+- Earlier this year I was baffled by Chrome Dev Tools, now I thinking I am falling in love with this incredibly sexy tool...
 - Forced Synchronous Layouts seem to be an issue with scrolling.  This [link](https://developers.google.com/web/tools/chrome-devtools/profile/rendering-tools/forced-synchronous-layouts?hl=en) has a useful methondology for fixing FSL.
 
 8:21 AM
 
 - **USER Scrolling Experience**
-- Hardware testing platform is Macbook Pro 13", Early 2011, 2.3 GHz i%, 16 GB RAM, SSD Drive, and 10.11.5 OSX
-- Browser testing platform is up to date at Version 51.0.2704.84 (64-bit)
+- Hardware testing platform is **Macbook Pro 13", Early 2011, 2.3 GHz i%, 16 GB RAM, SSD Drive, and 10.11.5 OSX**
+- Browser testing platform is up to date at **Chrome Version 51.0.2704.84 (64-bit)**
 - Scrolling seems to run smooth already, but from previous DT Timeline I know the animation frame rate is too long.
 - Amazing how well browsers work today.  If I were in production, I would look at other browser platforms too.
 
