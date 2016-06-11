@@ -504,11 +504,13 @@ function updatePositions() {
 
   var items = document.querySelectorAll('.mover');
 
-  // OLD expensive Forced Synchronous Layout CODE:
+  // OLD CODE:
+  // (Expensive Forced Synchronous Layout)
   // for (var i = 0; i < items.length; i++) {
   //   var phase = Math.sin((document.body.scrollTop / 1250) + (i % 5));
 
-  // NEW more Performant CODE:
+  // Scrolling FIX 1:
+  // (See Repo README file for detailed explanation)
   var cachedScrollTop = document.body.scrollTop;
   for (var i = 0; i < items.length; i++) {
   var phase = Math.sin((cachedScrollTop / 1250) + (i % 5));
