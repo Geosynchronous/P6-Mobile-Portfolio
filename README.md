@@ -629,7 +629,7 @@ Omission of instructional detail, the Paint box also needs to be checked off for
 
 - **Scrolling FIX 1: Verified**
 - This definately made a noticable perfomance improvement, it roughly doubled the fps.  It went from 111 ms and 9 fps to about 50 ms and 20 fps or even better.
-- Running the timeline again results in: ![Image of FIX 1](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Scroll_Fix1.png)
+- Running the timeline again results in: ![Image of FIX1 Timeline](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Scroll_Fix1.png)
 - Compare with the first Initial timeline graphic above and note how much less red time animation segments there are (60 fps or better), before they were all red (lower fps).
 - Also note that scripting and rendering take up proportionality much less of the piechart space in relation to paining
 - Also note that the built-in code **USER TIMING API - Average times to generate last 10 frames** has improved greatly, it is now on the order of 1.5 ms or less, and before FIX 1 it was on the order of 50 ms. (This information is shown in the the CONSOLE on DEV TOOLS everytime, as part of the `window.performance` code that is in the `updatePositions` function.)
@@ -688,5 +688,19 @@ function updatePositions() {
 requestAnimationFrame(updatePositions);
 ```
 - It seemed to improve performance
+
+11:45 AM
+
+- **Scrolling FIX 2: Verified**
+- Timeline of fix results in: ![Image of Fix2 Timeline](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Scroll_Fix2.png)
+- Comparing this timeline to the most recent ones previous to this fix, it is apparent that the fix is probably a keeper.
+- There are fewer time frames that are too long (red ones), and the timing results shown in the console have also improved some for the 10 frame averages.
+- Zooming in on a green time frame, it appears that rendering pipeline has improved with shortened times as well when compared to the timelines before the fix.![Image of Fix2 Zoom1 Timeline](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Scroll_Fix2_Zoom1.png)
+- Zooming in on a red time frame, it appears that there still are jamk problems lurking about the code.![Image of Fix2 Zoom2 Timeline](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Scroll_Fix2_Zoom2.png)
+- I will look into this JANK problem to try and figure out what is going on.
+
+
+
+
 
 ### Udacity Reviews
