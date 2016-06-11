@@ -630,7 +630,7 @@ Omission of instructional detail, the Paint box also needs to be checked off for
 - **Scrolling FIX 1: Verified**
 - This definately made a noticable perfomance improvement, it roughly doubled the fps.  It went from 111 ms and 9 fps to about 50 ms and 20 fps or even better.
 - Running the timeline again results in: ![Image of FIX 1](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Scroll_Fix1.png)
-- Note how much less red time animation segments there are (60 fps or better), before they were all red (lower fps)
+- Compare with the first Initial timeline graphic above and note how much less red time animation segments there are (60 fps or better), before they were all red (lower fps).  Also note that scripting and rendering take up proportionality much less of the piechart space in relation to paining.
 - I am happy with this result.
 - Now I need to take a closer look at this current timeline data to figure out what else is gumming up the works.
 - I didn't see a requestAnimationFrame in this chunk of code, and I suspect that is what I will focus on next.
