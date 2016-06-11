@@ -701,9 +701,9 @@ requestAnimationFrame(updatePositions);
 
 1:20 PM
 
-- **Thinking**
+- **Thinking Out Loud**
 - in an Animation Frame the rendering pipeline seems to framgmented for a nice clean delivery.
-- This [slick Google Developement Site on Rendering Performance](https://developers.google.com/web/fundamentals/performance/rendering/) lookd like it eill help me review, and strengthen what I need to work on to fix the pipeline fragementation.  I will spend some time reviewing it soon.
+- This [slick Google Development Site on Rendering Performance](https://developers.google.com/web/fundamentals/performance/rendering/) lookd like it eill help me review, and strengthen what I need to work on to fix the pipeline fragementation.  I will spend some time reviewing it soon.
 - I suspect that the layers are a problem, and it may be that I need to coerce layout in the `updatePositions` function.
 - Need to implement `will-change` and `transform Z(0)`...  So I will try to implement this next...
 
