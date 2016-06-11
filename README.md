@@ -699,7 +699,12 @@ requestAnimationFrame(updatePositions);
 - Zooming in on a red time frame, it appears that there still are jamk problems lurking about the code.![Image of Fix2 Zoom2 Timeline](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Scroll_Fix2_Zoom2.png)
 - I will look into this JANK problem to try and figure out what is going on.
 
+1:20 PM
 
+- **Thinking**
+- in an Animation Frame the rendering pipeline seems to framgmented for a nice clean delivery.
+- This [link](https://developers.google.com/web/fundamentals/performance/rendering/) lookd like it eill help me review, and strengthen what I need to work on to fix the pipeline fragementation.  I will spend some time reviewing it soon.
+- I suspect that the layers are a problem, and it may be that I need to coerce layout in the `updatePositons` function.
 
 
 
