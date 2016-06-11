@@ -603,4 +603,28 @@ Omission of instructional detail, the Paint box also needs to be checked off for
 - BUt WAIT... HMMMM.... Now what does this mean???
 - I know... **MUSH ALARM INVOKED**... my head has turned to mush... so it is time to take a break... before I make too many mistakes!
 
+7:30 PM
+
+- **JANK Code Fix**
+```
+505  var items = document.querySelectorAll('.mover');
+506  for (var i = 0; i < items.length; i++) {
+507    var phase = Math.sin((document.body.scrollTop / 1250) + (i % 5));
+508    items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
+509  }
+```
+- In line 507,  `i` is the only parameter that changes in the for loop, whereas `document.body.scrollTop` never changes, so there is no need to compute this for every loop iteration.  The big problem with this is that `document` is having it's style (`body`) changed which causes a time consuming Forced Synchronous Layout to happen each time the loop is iteratated.
+- By refactoring the code to take `document.body.scrollTop` out of the for loop, the repetitive FSL will not occur, and thus make this web page more performant.  I will change the above code to cache `scrollTop` (now line 506) outside the for loop, and replace `document.body.scrollTop` with `cachedScrollTop` (now line 507) :
+```
+505  var items = document.querySelectorAll('.mover');
+506  var cachedScrollTop = document.body.scrollTop;
+507  for (var i = 0; i < items.length; i++) {
+507    var phase = Math.sin((cachedScrollTop / 1250) + (i % 5));
+508    items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
+509  }
+```
+- [Illya's link](https://www.igvita.com/slides/2012/devtools-tips-and-tricks/jank-demo.html) mention above in the original code help me see this more clearly.
+
+
+
 ### Udacity Reviews
