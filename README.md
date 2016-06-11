@@ -650,7 +650,7 @@ Omission of instructional detail, the Paint box also needs to be checked off for
 10:16 AM
 
 - **Scrolling Fix 2: requestAnimationFrame**
--  added rAF after `updateposition` function
+-  added rAF after `updateposition` function (see last lines of code below)
 ```
 // Moves the sliding background pizzas based on scroll position
 function updatePositions() {
@@ -688,6 +688,5 @@ function updatePositions() {
 requestAnimationFrame(updatePositions);
 ```
 - It seemed to improve performance
-- 
 
 ### Udacity Reviews
