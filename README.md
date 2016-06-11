@@ -630,10 +630,20 @@ Omission of instructional detail, the Paint box also needs to be checked off for
 - **Scrolling FIX 1: Verified**
 - This definately made a noticable perfomance improvement, it roughly doubled the fps.  It went from 111 ms and 9 fps to about 50 ms and 20 fps or even better.
 - Running the timeline again results in: ![Image of FIX 1](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Scroll_Fix1.png)
-- Compare with the first Initial timeline graphic above and note how much less red time animation segments there are (60 fps or better), before they were all red (lower fps).  Also note that scripting and rendering take up proportionality much less of the piechart space in relation to paining.
+- Compare with the first Initial timeline graphic above and note how much less red time animation segments there are (60 fps or better), before they were all red (lower fps).
+- Also note that scripting and rendering take up proportionality much less of the piechart space in relation to paining
+- Also note that the **Average times to generate last 10 frames** has improved greatly, it is now on the order of 1.5 ms or less, and before FIX 1 it was on the order of 50 ms. (This information is shown in the the CONSOLE on DEV TOOLS everytime, as part of the `window.performance` code that is in the `updatePositions` function.)
 - I am happy with this result.
 - Now I need to take a closer look at this current timeline data to figure out what else is gumming up the works.
 - I didn't see a requestAnimationFrame in this chunk of code, and I suspect that is what I will focus on next.
+
+9:49 PM
+
+- **Scrolling FIX 2 Problem: Initial Timeline Data**
+- I zoomed in on a time frame that was less performant than 60 fps (a red segment) and it looks like this: ![Image of FIX 2 Problem](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Scroll_Fix1_Zoom1.png)
+- updatePositions @ main.js:501 is the function of interest, which is where we made our previous changes for FIX 1 above.
+- THis function needs a requestAnimationFrame since animations are occuring here.
+- Now I need to figure out how to do that...
 
 
 
