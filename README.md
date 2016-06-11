@@ -645,6 +645,49 @@ Omission of instructional detail, the Paint box also needs to be checked off for
 - THis function needs a requestAnimationFrame since animations are occuring here.
 - Now I need to figure out how to do that...
 
+**Saturday June 11, 2016**
 
+10:16 AM
+
+- **Scrolling Fix 2: requestAnimationFrame**
+-  added rAF after `updateposition` function
+```
+// Moves the sliding background pizzas based on scroll position
+function updatePositions() {
+  frame++;
+  window.performance.mark("mark_start_frame");
+
+  var items = document.querySelectorAll('.mover');
+
+  // OLD CODE:
+  // (Expensive Forced Synchronous Layout)
+  // for (var i = 0; i < items.length; i++) {
+  //   var phase = Math.sin((document.body.scrollTop / 1250) + (i % 5));
+
+  // Scrolling FIX 1:
+  // (See Repo README file for detailed explanation)
+  var cachedScrollTop = document.body.scrollTop;
+  for (var i = 0; i < items.length; i++) {
+    var phase = Math.sin((cachedScrollTop / 1250) + (i % 5));
+
+    items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
+  }
+
+  // User Timing API to the rescue again. Seriously, it's worth learning.
+  // Super easy to create custom metrics.
+  window.performance.mark("mark_end_frame");
+  window.performance.measure("measure_frame_duration", "mark_start_frame", "mark_end_frame");
+  if (frame % 10 === 0) {
+    var timesToUpdatePosition = window.performance.getEntriesByName("measure_frame_duration");
+    logAverageFrame(timesToUpdatePosition);
+  }
+}
+
+//Scrolling FIX 2:
+// (See Repo README)
+requestAnimationFrame(updatePositions);
+```
+- It seemed to improve performance
+- 
 
 ### Udacity Reviews
