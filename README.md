@@ -605,7 +605,7 @@ Omission of instructional detail, the Paint box also needs to be checked off for
 
 7:30 PM
 
-- **JANK Code Fix**
+- **Scrolling Fix 1: JANK Code**
 ```
 505  var items = document.querySelectorAll('.mover');
 506  for (var i = 0; i < items.length; i++) {
@@ -623,7 +623,17 @@ Omission of instructional detail, the Paint box also needs to be checked off for
 508    items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
 509  }
 ```
-- [Illya's link](https://www.igvita.com/slides/2012/devtools-tips-and-tricks/jank-demo.html) mention above in the original code help me see this more clearly.
+- [Illya's link](https://www.igvita.com/slides/2012/devtools-tips-and-tricks/jank-demo.html) mention above in the original code help me see this solution more succintly.
+
+9:06 PM
+
+- **Scrolling FIX 1: Verified**
+- This definately made a noticable perfomance improvement, it roughly doubled the fps.  It went from 111 ms and 9 fps to about 50 ms and 20 fps or even better.
+- Running the timeline again results in: ![Image of FIX 1](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Scroll_Fix1.png)
+- Note how much less red time animation segments there are (60 fps or better), before they were all red (lower fps)
+- I am happy with this result.
+- Now I need to take a closer look at this current timeline data to figure out what else is gumming up the works.
+- I didn't see a requestAnimationFrame in this chunk of code, and I suspect that is what I will focus on next.
 
 
 
