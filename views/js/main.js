@@ -519,7 +519,7 @@ function updatePositions() {
     // OLD CODE for FIX 3:
     // items[i].style.left = tems[i].basicLeft; + 100 * phase + 'px';
 
-    // Fix 3
+    // Scrolling Fix 3
     // Layout Thrashing
     // Seperate READ Styles form WRITE Styles
     // READ Style
@@ -552,7 +552,10 @@ window.addEventListener('scroll', updatePositions);
 document.addEventListener('DOMContentLoaded', function() {
   var cols = 8;
   var s = 256;
-  for (var i = 0; i < 200; i++) {
+  // Scrolling FIX5
+  // Reduced loop from 300 inc to 33
+  // Plenty of moving pizzas to cover large screen lengths
+  for (var i = 0; i < 33; i++) {
     var elem = document.createElement('img');
     elem.className = 'mover';
     elem.src = "images/pizza.png";
