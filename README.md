@@ -786,7 +786,23 @@ requestAnimationFrame(updatePositions);
 12:08 AM
 
 - **WEB WORKERS**
-- As a next steo may try to put updateLocations function contents in a Web Worker, to try and improve response time in RECALCULATING STYLES.
+- As a next steo may try to put `updateLocations` function contents in a Web Worker, to try and improve response time in RECALCULATING STYLES.
 - On the otherhand, aside from a few hiccups, the timeline is hovering around the targeted 60 fps already.
+
+8:51 AM
+
+- **What's Next Besides Coffee**
+- BTW when I turn on paint flashing, and scroll up and down, the only thing that now hightlights is the scrollbar, at the beginning of this project everything was highlighted.
+- Seems to me that implementing **Web Workers** could shorten the js script and recalculating style times, and thus up the fps, if I split up the pizza's into multiple for loops for the location calculation and style change.  However, that will require some additional code for the WW's and putting the item array back together.  I will defer that for now, and look into speeding up the code by cleaning up the `item.basicleft` calculations.
+- Also note that the frame rate meter is now consistently showing 60 fps when the page is scrolled: ![Image of Fix4 Frame Meter](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Scroll_Fix4_FrameRateMeter.png)
+- Further, it seems like the **Timing API**, is really not that useful anymore, and does not exactly reflect the dynamic frame rate info as well as Chrome Dev Tools Timelines and the Frame Meter.  It is probably time to remove that code, which might speed things up a tad as well.
+- **WOW, what does this mean?**  With painting turned on there are about a couple hundred rendered pizza layers (when I scroll down), about 13 of them closest to the viewed rendered window are about 320 kb in size, all the rest are 0 kb: ![Image of Fi4 Layers](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Scroll_Fix4_Layers.png)
+- Perhaps all 200 `items[i]` are depicted here as wire frames, and only the ones closest to the viewed web page background are filled, will need to look at the code some more to see if something can be optimized here.
+- When I run Profiles for JS I get the following results: ![Iamge of Fix4 JS Profiles](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Scroll_Fix4_JSProfiles.png)
+- Not sure what all this means, but the yellow warning sign indicates **Not Optimized, Try Catch statement.  When I look at all the times, removing the Timing API might give me a 10% boost in perf in relation to `updateLocation` times???
+- Maybe I am beating a dead horse to death here.
+- 
+
+
 
 ### Udacity Reviews
