@@ -732,7 +732,7 @@ requestAnimationFrame(updatePositions);
 
 10:18 PM
 
-- **Scolling FIX 3 Layout Thrashing**
+- **Scolling FIX 3: Layout Thrashing**
 - The read and write styles need to be seperated as shown here to prevent the layout from being recalulated too often:
 ```
   var cachedScrollTop = document.body.scrollTop;
@@ -754,13 +754,13 @@ requestAnimationFrame(updatePositions);
 
 10:39 PM
 
-= **Scrolling FIX 3 Verified**
+= **Scrolling FIX 3: Verified**
 - The fix did indeed make tha app more performant, there are few red indicators now, and the timing stats are much improved to around 60 fps with some +/- variance.  The Timing API in the console window shows the improvemenet as well: ![Image of FIX3 Timeline](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Scroll_Fix3.png)
 - The pipline still is fragmented, and needs more looking into.  Perhaps the will-change coercion will work better now, need to check that, ![Image of FIX3 Timeline Zoom1](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Scroll_Fix3_Zoom1.png)
 
 11:02 PM
 
-- Scrolling FIX 4: Coerced Layout^^
+- **Scrolling FIX 4: Coerced Layout^^
 - Previously I tried this code, results were not great, now I am trying it again.
 ```
 .mover {
