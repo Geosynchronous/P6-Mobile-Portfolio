@@ -828,6 +828,40 @@ document.addEventListener('DOMContentLoaded', function() {
 - The top position starts at 0 px for the first 8 pizzas, and then increases in value (256 px) for every 8 pizzas until the last 8 moving pizzas and ends up at 6144 px: `<img class="mover" src="images/pizza.png" style="height: 100px; width: 73.333px; top: 6144px; left: 55.0011px;">`
 - Can we do with less moving pizzas?
 
+12:36 PM
+
+- **Scrolling Fix 5: Less Moving Pizzas**
+- Changed main.js code:
+```
+// Generates the sliding pizzas when the page loads.
+document.addEventListener('DOMContentLoaded', function() {
+  var cols = 8;
+  var s = 256;
+  // Scrolling FIX5
+  // Reduced loop from 300 inc to 33
+  // Plenty of moving pizzas to cover large screen lengths
+  for (var i = 0; i < 33; i++) {
+    var elem = document.createElement('img');
+    elem.className = 'mover';
+    elem.src = "images/pizza.png";
+    elem.style.height = "100px";
+    elem.style.width = "73.333px";
+    elem.basicLeft = (i % cols) * s;
+    elem.style.top = (Math.floor(i / cols) * s) + 'px';
+    document.querySelector("#movingPizzas1").appendChild(elem);
+  }
+  updatePositions();
+});
+``
+
+12:39 PM
+
+- **Scrolling Fix 5: Verified**
+- Even with a bunch of Dev Tools attributes turned on, the Timeline results seemed to improve: ![Iamge of Fix5 Timeline](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Scroll_Fix5_.jpg)
+- In the layout graphic, you can see there is just one row extra of moving pizzas to accomadate longer screens if needed.  The timing on the rendering pipeline has improved as well,
+- Zooming in we can see this better, and see the Timing API results in the console window have improved as well: 1[Image of FIX5 Zoom1]{https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Scroll_Fix5_Zoom1.png}
+- Turning off the unneeded sampling attributes in Dev Tools we see even a better picture, with much better pipeline times, though the main page seems to be painting twice (not sure why): ![Image of Fix5 Min Dev Tools]{https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Scroll_Fix5_MinDevTools.png}
+
 
 
 
