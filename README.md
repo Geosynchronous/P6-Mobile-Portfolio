@@ -777,7 +777,10 @@ requestAnimationFrame(updatePositions);
 ```
 11:15 PM
 - **Scrolling FIX 4: Verified**
+- With Painting Mode on in Dev Tools performance is greatly effected, and this is probably due to the fact that a large number of layouts are being made, which I was in the layout graphic window.  But with Painting modw off, much better results are realized:
 - This made the rendering pipeline much less fragmented, even though the Timing API stats don't look as good, the DEV TOOL Stats look better as a result, the 60 fps target for scrolling is beginning to look pretty good: ![Iamge of FIX$ Timelime](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/0aa584e3a5abd5c04f7afb4e993388d7664ce937/timelines/Scroll_Fix4.png)
+- ![Iamge of Fix4 Zoom 2](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Scroll_Fix4_Zoom2.png)
+
 
 
 ### Udacity Reviews
