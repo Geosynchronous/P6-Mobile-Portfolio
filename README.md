@@ -862,7 +862,12 @@ document.addEventListener('DOMContentLoaded', function() {
 - Zooming in we can see this better, and see the Timing API results in the console window have improved as well: ![Image of FIX5 Zoom1](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Scroll_Fix5_Zoom1.png)
 - Turning off the unneeded sampling attributes in Dev Tools we see even a better picture, with much better pipeline times, though the main page seems to be painting twice (not sure why): ![Image of Fix5 Min Dev Tools](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Scroll_Fix5_MinDevTools.png)
 
+1:00 PM
 
+- **MUSH ALERT!!!**
+- My head has turned to MUSH
+- Time for a break
+- 
 
 
 
