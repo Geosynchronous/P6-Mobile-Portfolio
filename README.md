@@ -859,7 +859,7 @@ document.addEventListener('DOMContentLoaded', function() {
 - **Scrolling Fix 5: Verified**
 - Even with a bunch of Dev Tools attributes turned on, the Timeline results seemed to improve: ![Iamge of Fix5 Timeline](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Scroll_Fix5_.jpg)
 - In the layout graphic, you can see there is just one row extra of moving pizzas to accomadate longer screens if needed.  The timing on the rendering pipeline has improved as well,
-- Zooming in we can see this better, and see the Timing API results in the console window have improved as well: ![Image of FIX5 Zoom1]{https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Scroll_Fix5_Zoom1.png}
+- Zooming in we can see this better, and see the Timing API results in the console window have improved as well: ![Image of FIX5 Zoom1](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Scroll_Fix5_Zoom1.png)
 - Turning off the unneeded sampling attributes in Dev Tools we see even a better picture, with much better pipeline times, though the main page seems to be painting twice (not sure why): ![Image of Fix5 Min Dev Tools](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Scroll_Fix5_MinDevTools.png)
 
 
