@@ -30,6 +30,13 @@ form {
 }
 
 .mover {
+  /*  FIX 4: */
+  /*  Coerced layout */
+  /*  Added this code */
+  /*  SEE Repo README */
+  will-change: transform;
+  transform: transform Z(0);
+
   position: fixed;
   width: 256px;
   z-index: -1;
