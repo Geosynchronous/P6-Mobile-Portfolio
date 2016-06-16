@@ -756,7 +756,7 @@ requestAnimationFrame(updatePositions);
 
 = **Scrolling FIX 3 Verified**
 - The fix did indeed make tha app more performant, there are few red indicators now, and the timing stats are much improved to around 60 fps with some +/- variance.  The Timing API in the console window shows the improvemenet as well: ![Image of FIX3 Timeline](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Scroll_Fix3.png)
-- The pipline still is fragmented, and needs more looking into.  Perhaps the will-change coercion will work better now, need to check that, (Image of FIX3 Timeline Zoom1](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Scroll_Fix3_Zoom1.png)
+- The pipline still is fragmented, and needs more looking into.  Perhaps the will-change coercion will work better now, need to check that, 1[Image of FIX3 Timeline Zoom1](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Scroll_Fix3_Zoom1.png)
 
 
 
