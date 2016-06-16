@@ -781,6 +781,12 @@ requestAnimationFrame(updatePositions);
 - This made the rendering pipeline much less fragmented, even though the Timing API stats don't look as good, the DEV TOOL Stats look better as a result, the 60 fps target for scrolling is beginning to look pretty good: ![Iamge of FIX$ Timelime](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/0aa584e3a5abd5c04f7afb4e993388d7664ce937/timelines/Scroll_Fix4.png)
 - ![Iamge of Fix4 Zoom 2](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Scroll_Fix4_Zoom2.png)
 
+**Thursday June 16, 2016**
 
+12:08 AM
+
+- **WEB WORKERS**
+- As a next steo may try to put updateLocations function contents in a Web Worker, to try and improve response time in RECALCULATING STYLES.
+- On the otherhand, aside from a few hiccups, the timeline is hovering around the targeted 60 fps already.
 
 ### Udacity Reviews
