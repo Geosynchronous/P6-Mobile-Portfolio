@@ -709,6 +709,25 @@ requestAnimationFrame(updatePositions);
 - Need to implement `will-change` and `transform Z(0)`...  So I will try to implement this next...
 
 
+**Wednesday June 15, 2016**
+
+8:30 PM
+
+- **Temporary Scrolling Change**
+```.mover {
+  /*  TODO - REMOVE TEMP CHANGE*/
+  /*  added this attribute */
+  will-change: transform;
+  transform: transform Z(0);
+
+  position: fixed;
+  width: 256px;
+  z-index: -1;
+}
+```
+- this was an attempt to coerce the layout and get a more performant less fragmented  render pipeline. ![Image of TempChange1](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Scroll_TempChange1.png)
+- It did indeed make the pipeline less fragmented, however it made a whole bunch of new layers, and as a result the COMPOSITE rendering time went way up, this in turn created too many long frames again at low fps.
+- For now I will remove this change and look elsewhere...
 
 
 ### Udacity Reviews
