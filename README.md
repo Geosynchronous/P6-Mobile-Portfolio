@@ -799,7 +799,7 @@ requestAnimationFrame(updatePositions);
 - **WOW, what does this mean?**  With painting turned on there are about a couple hundred rendered pizza layers (when I scroll down), about 13 of them closest to the viewed rendered window are about 320 kb in size, all the rest are 0 kb: ![Image of Fi4 Layers](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Scroll_Fix4_Layers.png)
 - Perhaps all 200 `items[i]` are depicted here as wire frames, and only the ones closest to the viewed web page background are filled, will need to look at the code some more to see if something can be optimized here.
 - When I run Profiles for JS I get the following results: ![Iamge of Fix4 JS Profiles](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Scroll_Fix4_JSProfiles.png)
-- Not sure what all this means, but the yellow warning sign indicates **Not Optimized, Try Catch statement.  When I look at all the times, removing the Timing API might give me a 10% boost in perf in relation to `updateLocation` times???
+- Not sure what all this means, but the yellow warning sign indicates **_wrapObjectVM43 - Not Optimized, TryCatchStatement**.  When I look at all the times, removing the Timing API might give me a 10% boost in perf in relation to `updateLocation` times???
 - Maybe I am beating a dead horse to death here.
 
 
