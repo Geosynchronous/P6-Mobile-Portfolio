@@ -504,7 +504,7 @@ function updatePositions() {
 
   var items = document.querySelectorAll('.mover');
 
-  // OLD CODE:
+  // OLD CODE for FIX 1:
   // (Expensive Forced Synchronous Layout)
   // (Layout Thrashing)
   // for (var i = 0; i < items.length; i++) {
@@ -516,8 +516,19 @@ function updatePositions() {
   for (var i = 0; i < items.length; i++) {
     var phase = Math.sin((cachedScrollTop / 1250) + (i % 5));
 
-    items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
+    // OLD CODE for FIX 3:
+    // items[i].style.left = tems[i].basicLeft; + 100 * phase + 'px';
+
+    // Fix 3
+    // Layout Thrashing
+    // Seperate READ Styles form WRITE Styles
+    // READ Style
+    var cachedBasicLeft = items[i].basicLeft;
+    // WRITE Style
+    items[i].style.left = cachedBasicLeft + 100 * phase + 'px';
   }
+
+
 
   // User Timing API to the rescue again. Seriously, it's worth learning.
   // Super easy to create custom metrics.
@@ -530,6 +541,7 @@ function updatePositions() {
 }
 
 //Scrolling FIX 2:
+// added rAF
 // (See Repo README)
 requestAnimationFrame(updatePositions);
 
