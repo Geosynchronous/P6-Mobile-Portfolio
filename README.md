@@ -730,5 +730,26 @@ requestAnimationFrame(updatePositions);
 - It did indeed make the pipeline less fragmented, however it made a whole bunch of new layers, and as a result the COMPOSITE rendering time went way up, this in turn created too many long frames again at low fps.
 - For now I will remove this change and look elsewhere.
 
+10:18 PM
+
+- **Scolling FIX 3 Layout Thrashing**
+- The read and write styles need to be seperated as shown here to prevent the layout from being recalulated too often:
+```
+  var cachedScrollTop = document.body.scrollTop;
+  for (var i = 0; i < items.length; i++) {
+    var phase = Math.sin((cachedScrollTop / 1250) + (i % 5));
+
+    // OLD CODE for FIX 3:
+    // items[i].style.left = tems[i].basicLeft; + 100 * phase + 'px';
+
+    // Fix 3
+    // Layout Thrashing
+    // Seperate READ Styles form WRITE Styles
+    // READ Style
+    var cachedBasicLeft = items[i].basicLeft;
+    // WRITE Style
+    items[i].style.left = cachedBasicLeft + 100 * phase + 'px';
+  }
+```
 
 ### Udacity Reviews
