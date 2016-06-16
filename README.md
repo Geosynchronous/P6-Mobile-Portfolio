@@ -825,7 +825,7 @@ document.addEventListener('DOMContentLoaded', function() {
 ```
 - Active html, showing a plethora of the moving pizzas, probably 200 of them: ![Image of Too Many Pizzas Code](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Scroll_Fix4_TooManyPizzas.png)
 - Is this really necessary???
-- The top position starts at 0 px for the first 8 pizzas, and then increases in value for every 8 pizzas until the last 8 moving pizzas and ends up at 6144 px: `<img class="mover" src="images/pizza.png" style="height: 100px; width: 73.333px; top: 6144px; left: 55.0011px;">`
+- The top position starts at 0 px for the first 8 pizzas, and then increases in value (256 px) for every 8 pizzas until the last 8 moving pizzas and ends up at 6144 px: `<img class="mover" src="images/pizza.png" style="height: 100px; width: 73.333px; top: 6144px; left: 55.0011px;">`
 - Can we do with less moving pizzas?
 
 
