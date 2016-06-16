@@ -623,6 +623,7 @@ Omission of instructional detail, the Paint box also needs to be checked off for
 508    items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
 509  }
 ```
+- this change should fix the **LAYOUT THRASHING**
 - [Illya's link](https://www.igvita.com/slides/2012/devtools-tips-and-tricks/jank-demo.html) mention above in the original code help me see this solution more succintly.
 
 9:06 PM
