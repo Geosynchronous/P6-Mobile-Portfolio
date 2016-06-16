@@ -506,6 +506,7 @@ function updatePositions() {
 
   // OLD CODE:
   // (Expensive Forced Synchronous Layout)
+  // (Layout Thrashing)
   // for (var i = 0; i < items.length; i++) {
   //   var phase = Math.sin((document.body.scrollTop / 1250) + (i % 5));
 
@@ -513,7 +514,7 @@ function updatePositions() {
   // (See Repo README file for detailed explanation)
   var cachedScrollTop = document.body.scrollTop;
   for (var i = 0; i < items.length; i++) {
-  var phase = Math.sin((cachedScrollTop / 1250) + (i % 5));
+    var phase = Math.sin((cachedScrollTop / 1250) + (i % 5));
 
     items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
   }
@@ -527,6 +528,10 @@ function updatePositions() {
     logAverageFrame(timesToUpdatePosition);
   }
 }
+
+//Scrolling FIX 2:
+// (See Repo README)
+requestAnimationFrame(updatePositions);
 
 // runs updatePositions on scroll
 window.addEventListener('scroll', updatePositions);
