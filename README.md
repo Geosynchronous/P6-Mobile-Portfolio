@@ -760,8 +760,8 @@ requestAnimationFrame(updatePositions);
 
 11:02 PM
 
-- **Scrolling FIX 4: Coerced Layout^^
-- Previously I tried this code, results were not great, now I am trying it again.
+- **Scrolling FIX 4: Coerced Layout**
+- Previouslytried this code, results were not great, (see attempt results above) now I am trying it again.
 ```
 .mover {
   /*  FIX 4: */
