@@ -870,7 +870,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 9:11 PM
 
-- ** Change Background Color**
+- **Change Background Color**
 - Red to Greeen
 - Better Contrast
 
