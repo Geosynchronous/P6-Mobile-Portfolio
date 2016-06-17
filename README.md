@@ -874,6 +874,19 @@ document.addEventListener('DOMContentLoaded', function() {
 - Red to Greeen
 - Better Contrast
 
+9:30 PM
+
+- **Smooth as Silk Scrolling**
+- 60 fps is 16.67 ms
+- It is interesting to note that when not running Dev Tools timeline the Timing API shows even faster times to move the Pizzas on scroll:![Image of Timing API Results](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Scroll_60FPS.png)
+- Moving the pizzas is on the order of about 0.5 ms
+- Chrome Dev Tools is showing 60 fps range consistently when scrolling, as can be seen from the recent timeline graphics depicted above.
+- **I think this meets the 60 fps Scrolling requirements in the rubric.**
+- Time to move on to **SLIDING** the window performance issues.
+
+
+
+
 
 
 
