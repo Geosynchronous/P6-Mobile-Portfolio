@@ -953,13 +953,14 @@ changePizzaSizes	@	main.js:456
 ```
  // Resize Pizzas Fix 7:
  // Iterates through pizza elements on the page and changes their widths
+ // READ and WRITE Styles seperate tasks to avoid FSL
   function changePizzaSizes(size) {
     // READS all widths first
     for (var i = 0; i < document.querySelectorAll(".randomPizzaContainer").length; i++) {
       var newDx = determineDx(document.querySelectorAll(".randomPizzaContainer")[i], size);
       var newWidth[i] = (document.querySelectorAll(".randomPizzaContainer")[i].offsetWidth + newDx) + 'px';
     }
-    //  WRITES changes to all widths
+    // WRITES changes to all widths
     for (var i = 0; i < document.querySelectorAll(".randomPizzaContainer").length; i++) {
       document.querySelectorAll(".randomPizzaContainer")[i].style.width = newWidth[i];
     }
