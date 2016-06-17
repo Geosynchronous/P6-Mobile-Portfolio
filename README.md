@@ -986,7 +986,18 @@ changePizzaSizes	@	main.js:456
 - **AHA!!!**
 - Turns out after tracking things down, and playing with code, I realized that all `newWidth[]` are the same for a given slider change and initial conditions.
 - So an array will not be needed, as one size fits all, just a single variable will do
-- So FIX 7 can be redone done... it will be called FIX 7(NEW)
+- So FIX 7 can be redone... it will be called FIX 7(NEW)
+
+4:24 PM
+
+- **Serious Mush Alert**
+- My brain in fried
+- I have made some progress
+- Am thrown off a bit by `elem.offsetLeft` triggering a forced layout, but it only does it once and may not be that bad
+- Realized that there are many width values that are the same between all the `randomPizzaContainer` items
+- so refactored the code to eliminate thrashing cause by iterating over the `elem.offsetLeft`
+- this improved the resize pizza time down to about 8 ms... not quite the 5 ms I need to complete project
+- the code is a bit messy and will get back to it, after a major break...
 
 
 ### Udacity Reviews
