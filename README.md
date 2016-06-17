@@ -882,7 +882,21 @@ document.addEventListener('DOMContentLoaded', function() {
 - Moving the pizzas is on the order of about 0.5 ms
 - Chrome Dev Tools is showing 60 fps range consistently when scrolling, as can be seen from the recent timeline graphics depicted above.
 - **I think this meets the 60 fps Scrolling requirements in the rubric.**
-- Time to move on to **SLIDING** the window performance issues.
+- Time to move on to **Re-Size Pizza with Slider** performance issues.
+
+11:02 PM
+
+- **Resize Pizza Issue**
+- When using the slider on the pizza.html web page, one can select small or medium or large pizza sizes to be displayed on the page for the pizzas that positioned on the menu.  Note that the sliding pizzas do no change size when the slider is moved.
+- The goal from the rubric states that the Pizzas must resize in **5 ms**.
+- The Timing API for resizing the pizzas will display the resize times in Browser Console Window anytime the slider changes pizza sizes: ![Image of Resize Pizza Stats1](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/ResizePizza_Stats1.png)
+- Right now results are around **150 ms** or so to resize the pizza as shown above.
+- That is about 30x longer than it needs to be.
+- The image file for the resized pizzas is pizza.png and it is about 50 Kb in memory size, and 232 x 300 px in graphics size.
+- The image has a bunch of blank space around the pizza, cropping that away might help reduce the file size alone, but then I will have to mess with the offsets in the code to get the pizzas to be located properly.
+- Pizza size is also effected by the document window width, and re-sizing the window, this makes things even more complicated.
+- WIll need to look at the code some more... but first I will compress the graphic file size
+
 
 
 
