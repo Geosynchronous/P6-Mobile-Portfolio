@@ -910,8 +910,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 12:38 AM
 
-- **Resize Pizza Fix 6: Verify
-- Not much of an improvement:
+- **Resize Pizza Fix 6: Verify**
+- Not too much of an improvement:
 
 ![Image of Resize Pizza Stats2](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/ResizePizza_Stats2.png)
 
@@ -936,7 +936,7 @@ changePizzaSizes	@	main.js:456
 
 9:29 AM
 
-- **Resize Pizzas Fix7: Edit Main.js**
+- **Resize Pizzas Fix7: Layout Thrashing**
 - Looking at the above code, at lines 451-457, it seems like a READ& & WRITE STYLE iteration on `randomPizzaContainer` that is causing the FSL:
 ```
   // Iterates through pizza elements on the page and changes their widths
@@ -969,6 +969,12 @@ changePizzaSizes	@	main.js:456
 ```
 - Also note nomenclature changes, `dx` is declared in two seperate functions, so I will change the later to `newDx` for clarity purposes.
 
+11:32 AM
+
+- **Resize Pizza Fix 7: Verify**
+- It speed up the resize about 10x as seen by the stats in the console window, it also remove a lot of layout thrashing, and improved the rendering pipeline phases considerably: ![Iamge of Resize Pizza Verfied1](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/ResizePizza_Stats3_Verified1.png)
+- Zooming we can see this in more detail: ![Iamge of Resize Pizza Verfied1](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/ResizePizza_Stats3_Verified2.png)
+- Note that we are still being flagged for Forced Layouts (red tab)
 
 
 
