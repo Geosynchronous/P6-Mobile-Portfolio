@@ -982,4 +982,10 @@ changePizzaSizes	@	main.js:456
 - From the zoomed in timeline above we can see that main.js 426 is forcing a layout ![Image of Resize Pizza Verifired1 Code](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/ResizePizza_Stats3_Verified1_Code.png)
 - Hmmmn...
 
+1:48 PM
+- **AHA!!!**
+- Turns out after tracking things down, and playing with code, I realized that all `newWidth[]` are the same for a given slider change and initial conditions.
+- So I the fix I made in FIX 7 can be redone done... it will be called FIX 7(NEW)
+
+
 ### Udacity Reviews
