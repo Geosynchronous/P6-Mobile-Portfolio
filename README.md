@@ -911,7 +911,7 @@ document.addEventListener('DOMContentLoaded', function() {
 12:38 AM
 
 - **Resize Pizza Fix 6: Verify
-- Not much of an improvement: ![Image of Resize Pizza Stats2](Resize Pizza Fix 6:)
+- Not much of an improvement: ![Image of Resize Pizza Stats2](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/ResizePizza_Stats2.png)
 
 
 
