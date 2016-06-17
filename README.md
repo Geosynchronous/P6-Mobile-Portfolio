@@ -1059,7 +1059,12 @@ changePizzaSizes	@	main.js:456
     }
   }
 ```
+5:29 PM
 
+- **Resize Pizzas Fix7 (NEW): Verfified**
+- The layout thrashing is now clearly gone, (compare to above timelines): ![Image of FIX7 Timeline](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/ResizePizza_Stats4_Fix7NEW.png)
+- The resize times have greatly improved: ![Image of NEW FIX 7 Stats](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/ResizePizza_Stats4_Fix7NEW_%20Stats.png)
+- This warning may not be an issue, as it only happens once, and using constant values in place of the elements did not improve the perf: ![Image of Fix7 TImeline Zoom](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/ResizePizza_Stats4_Fix7NEW_Zoom1.png)
 
 
 ### Udacity Reviews
