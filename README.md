@@ -959,7 +959,7 @@ changePizzaSizes	@	main.js:456
       var newDx = determineDx(document.querySelectorAll(".randomPizzaContainer")[i], size);
       var newWidth[i] = (document.querySelectorAll(".randomPizzaContainer")[i].offsetWidth + newDx) + 'px';
     }
-    //  WRITES changes to their widths
+    //  WRITES changes to all widths
     for (var i = 0; i < document.querySelectorAll(".randomPizzaContainer").length; i++) {
       document.querySelectorAll(".randomPizzaContainer")[i].style.width = newWidth[i];
     }
