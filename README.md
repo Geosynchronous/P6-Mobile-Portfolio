@@ -951,22 +951,21 @@ changePizzaSizes	@	main.js:456
 - **I think that if I change the code to do all the READS first, and then all the WRITES after, it will not cause as many repetitve FSL's to occur. To do this, I will need two for loops, and need to create an array to cache `newwidth` so it can be accessed in the WRITE for loop:**
 
 ```
-  // Iterates through pizza elements on the page and READS their widths
+ // Resize Pizzas Fix 7:
+ // Iterates through pizza elements on the page and changes their widths
   function changePizzaSizes(size) {
+    // READS all widths first
     for (var i = 0; i < document.querySelectorAll(".randomPizzaContainer").length; i++) {
       var dx = determineDx(document.querySelectorAll(".randomPizzaContainer")[i], size);
       var newWidth[i] = (document.querySelectorAll(".randomPizzaContainer")[i].offsetWidth + dx) + 'px';
     }
-```
-
-```
-  // Iterates through pizza elements on the page and WRITES changes to their widths
-  function changePizzaSizes(size) {
+    //  WRITES changes to their widths
     for (var i = 0; i < document.querySelectorAll(".randomPizzaContainer").length; i++) {
       document.querySelectorAll(".randomPizzaContainer")[i].style.width = newWidth[i];
     }
+  }
 ```
-- I will give it a try
+
 
 
 
