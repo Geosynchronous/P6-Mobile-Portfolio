@@ -897,8 +897,15 @@ document.addEventListener('DOMContentLoaded', function() {
 - Pizza size is also effected by the document window width, and re-sizing the window, this makes things even more complicated.
 - WIll need to look at the code some more... but first I will compress the graphic file size
 
+**Friday June 17, 2016**
 
+12:10 AM
 
+- ** Resize Pizza Fix 6: Compress Grapics Files**
+- [TinyPNG](https://tinypng.com/) is a compression website that I used to compress the two graphic files.
+- The file `pizza.jpg` and pizzaria.jpg were both compressed about 60% each.
+- Both new compressed files will be uploaded into the repo to use and replace the old larger ones.
+- It will probably help perf for where both of these files are used.
 
 
 
