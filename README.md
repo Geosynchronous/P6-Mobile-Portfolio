@@ -1002,6 +1002,63 @@ changePizzaSizes	@	main.js:456
 - this improved the resize pizza time down to about 4-6 ms... when the Dev Tools window is seperate from browser window
 - probbably good enough to pass the rubric requirement of 5 ms
 
+5:14 PM
+
+- **Resize Pizzas Fix7 (NEW): Impreoved Layout Thrashing FIx**
+```
+ // Resize Pizza Fix 7 (NEW):
+  // Note changes all the way down thhrough changePizzaSizes function
+  // Returns the size difference to change a pizza element from one size to another. Called by changePizzaSlices(size).
+  // Function name chamged from determineDx, as it now implements more functionality
+  // This reduces the complesity of the code below in changePizza Size function
+  function determineNewWidth (size) {
+
+    // Note only one offsetWidth value is needed, as they are sawme for all containers
+    // The elem.offsetWidth triggers a FSL warning, but it only happens once
+    // Iteration overn all container values will cause major thrashing
+    // FSL warning does not seen to be an issue
+    var oldWidth = document.querySelectorAll(".randomPizzaContainer")[0].offsetWidth;
+    var windowWidth = document.querySelector("#randomPizzas").offsetWidth;
+    var oldSize = oldWidth / windowWidth;
+
+    // Optional TODO: change to 3 sizes? no more xl?
+    // Changes the slider value to a percent width
+    function sizeSwitcher (size) {
+      switch(size) {
+        case "1":
+          return 0.25;
+        case "2":
+          return 0.3333;
+        case "3":
+          return 0.5;
+        default:
+          console.log("bug in sizeSwitcher");
+      }
+    }
+
+    var newSize = sizeSwitcher(size);
+    var dx = (newSize - oldSize) * windowWidth;
+    // updateWidth added to simplify code that follows
+    var updateWidth = oldWidth + dx + 'px';
+    // dt no longer returned, instead updateWidth is
+    return updateWidth;
+  }
+
+  // Iterates through pizza elements on the page and changes their widths
+  // READ and WRITE Styles seperate tasks to avoid FSL
+  function changePizzaSizes(size) {
+
+    // READ newWidth
+    // Itereations eliminated because of the refactoring
+    var newWidth = determineNewWidth(size);
+
+    // WRITES changes to all widths
+    // Simplified because fo refactoring
+    for (var i = 0; i < document.querySelectorAll(".randomPizzaContainer").length; i++) {
+      document.querySelectorAll(".randomPizzaContainer")[i].style.width = newWidth;
+    }
+  }
+```
 
 
 
