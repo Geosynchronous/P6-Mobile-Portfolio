@@ -934,12 +934,40 @@ changePizzaSizes	@	main.js:456
 - So this is the first chunk of code I need to ponder for FSL: ![Image of Resize Pizza Stats3 Code](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/ResizePizza_Stats3_Code.png)
 - Hmmmm... Now that I have found the source of the problem... What does it mean?
 
+9:29 AM
 
+- **Resize Pizzas Fix7: Edit Main.js**
+- Looking at the above code, at lines 451-457, it seems like a READ& & WRITE STYLE iteration on `randomPizzaContainer` that is causing the FSL:
+```
+  // Iterates through pizza elements on the page and changes their widths
+  function changePizzaSizes(size) {
+    for (var i = 0; i < document.querySelectorAll(".randomPizzaContainer").length; i++) {
+      var dx = determineDx(document.querySelectorAll(".randomPizzaContainer")[i], size);
+      var newwidth = (document.querySelectorAll(".randomPizzaContainer")[i].offsetWidth + dx) + 'px';
+      document.querySelectorAll(".randomPizzaContainer")[i].style.width = newwidth;
+    }
+```
 
+- **I think that if I change the code to do all the READS first, and then all the WRITES after, it will not cause as many repetitve FSL's to occur. To do this, I will need two for loops, and need to create an array to cache `newwidth` so it can be accessed in the WRITE for loop:**
 
+```
+  // Iterates through pizza elements on the page and READS their widths
+  function changePizzaSizes(size) {
+    for (var i = 0; i < document.querySelectorAll(".randomPizzaContainer").length; i++) {
+      var dx = determineDx(document.querySelectorAll(".randomPizzaContainer")[i], size);
+      var newWidth[i] = (document.querySelectorAll(".randomPizzaContainer")[i].offsetWidth + dx) + 'px';
+    }
+```
 
+```
+  // Iterates through pizza elements on the page and WRITES changes to their widths
+  function changePizzaSizes(size) {
+    for (var i = 0; i < document.querySelectorAll(".randomPizzaContainer").length; i++) {
+      document.querySelectorAll(".randomPizzaContainer")[i].style.width = newWidth[i];
+    }
+```
+- I will give it a try
 
-Preserve log
 
 
 
