@@ -948,17 +948,18 @@ changePizzaSizes	@	main.js:456
     }
 ```
 
-- **I think that if I change the code to do all the READS first, and then all the WRITES after, it will not cause as many repetitve FSL's to occur. To do this, I will need two for loops, and need to create an array to cache `newwidth` so it can be accessed in the WRITE for loop:**
+- **I think that if I change the code to do all the READS first, and then all the WRITES after, it will not cause as many repetitve FSL's to occur. To do this, I will need two for loops, and need to create an array 'newWidth' to cache `newwidth` so it can be accessed in the WRITE for loop:**
 
 ```
  // Resize Pizzas Fix 7:
  // Iterates through pizza elements on the page and changes their widths
  // READ and WRITE Styles seperate tasks to avoid FSL
   function changePizzaSizes(size) {
+    var newWidth =[];
     // READS all widths first
     for (var i = 0; i < document.querySelectorAll(".randomPizzaContainer").length; i++) {
       var newDx = determineDx(document.querySelectorAll(".randomPizzaContainer")[i], size);
-      var newWidth = [(document.querySelectorAll(".randomPizzaContainer")[i].offsetWidth + newDx) + 'px'];
+      newWidth.push((document.querySelectorAll(".randomPizzaContainer")[i].offsetWidth + newDx) + 'px');
     }
     // WRITES changes to all widths
     for (var i = 0; i < document.querySelectorAll(".randomPizzaContainer").length; i++) {
@@ -966,7 +967,7 @@ changePizzaSizes	@	main.js:456
     }
   }
 ```
-- Alson note nomenclature changes, `dx` is declared in two seperate functions, so I will change the later to `newDx` for clarity purposes, and newwidth to newWidth array.
+- Also note nomenclature changes, `dx` is declared in two seperate functions, so I will change the later to `newDx` for clarity purposes.
 
 
 
