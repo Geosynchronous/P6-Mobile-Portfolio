@@ -990,14 +990,19 @@ changePizzaSizes	@	main.js:456
 
 4:24 PM
 
-- **Serious Mush Alert**
+- **Serious Mush Alert and Good Progress**
 - My brain in fried
 - I have made some progress
 - Am thrown off a bit by `elem.offsetLeft` triggering a forced layout, but it only does it once and may not be that bad
+- It sure sucked up a bunch of my time trying to get rid of it
+- I put a few constant values in place to test and eliminate' forced layout, it got rid of the Tools Warning, but did not increase perf
+- So I left the `elem.offsetLeft` in the code, as it is really not an issue
 - Realized that there are many width values that are the same between all the `randomPizzaContainer` items
 - so refactored the code to eliminate thrashing cause by iterating over the `elem.offsetLeft`
-- this improved the resize pizza time down to about 8 ms... not quite the 5 ms I need to complete project
-- the code is a bit messy and will get back to it, after a major break...
+- this improved the resize pizza time down to about 4-6 ms... when the Dev Tools window is seperate from browser window
+- probbably good enough to pass the rubric requirement of 5 ms
+
+
 
 
 ### Udacity Reviews
