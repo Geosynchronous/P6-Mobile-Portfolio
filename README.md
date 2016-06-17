@@ -915,6 +915,31 @@ document.addEventListener('DOMContentLoaded', function() {
 
 ![Image of Resize Pizza Stats2](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/ResizePizza_Stats2.png)
 
+8:20 AM
+
+- **Resize Pizzas Timeline Analysis**
+- Resizing the Pizzas via the slider 3x yields this timeline: ![Iamge of Resize Pizza Stats3](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/ResizePizza_Stats3.png)
+- The behaviour seems to be consistent amongst all three trials
+- There is obviously a lot of repetitive JANKING going on here.
+- The function called is at pizza.html 101
+- `<input id="sizeSlider" type="range" min="1" max="3" value="2" step="1" onchange="resizePizzas(this.value)"></input>`
+- All the little red tabs are on RECALCULATE STYLE and LAYOUT.
+- The Summary Message in Tools indicated:
+```
+Layout Forced
+determineDx	@	main.js:426
+First Layout Invalidation
+changePizzaSizes	@	main.js:456
+```
+- So this is the first chunk of code I need to ponder for FSL: ![Image of Resize Pizza Stats3 Code](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/ResizePizza_Stats3_Code.png)
+- Hmmmm... Now that I have found the source of the problem... What does it mean?
+
+
+
+
+
+
+Preserve log
 
 
 
