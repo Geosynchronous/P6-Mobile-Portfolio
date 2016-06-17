@@ -986,7 +986,7 @@ changePizzaSizes	@	main.js:456
 - **AHA!!!**
 - Turns out after tracking things down, and playing with code, I realized that all `newWidth[]` are the same for a given slider change and initial conditions.
 - So an array will not be needed, as one size fits all, just a single variable will do
-- So I the fix I made in FIX 7 can be redone done... it will be called FIX 7(NEW)
+- So FIX 7 can be redone done... it will be called FIX 7(NEW)
 
 
 ### Udacity Reviews
