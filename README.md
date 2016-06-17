@@ -901,12 +901,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
 12:10 AM
 
-- ** Resize Pizza Fix 6: Compress Grapics Files**
+- **Resize Pizza Fix 6: Compress Grapics Files**
 - [TinyPNG](https://tinypng.com/) is a compression website that I used to compress the two graphic files.
 - The file `pizza.jpg` and pizzaria.jpg were both compressed about 60% each.
 - Both new compressed files will be uploaded into the repo to use and replace the old larger ones.
 - It will probably help perf for where both of these files are used.
 
+
+12:38 AM
+
+- **Resize Pizza Fix 6: Verify
+- Not much of an improvement: ![Image of Resize Pizza Stats2](Resize Pizza Fix 6:)
 
 
 
