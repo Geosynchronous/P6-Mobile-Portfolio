@@ -976,6 +976,10 @@ changePizzaSizes	@	main.js:456
 - Zooming we can see this in more detail: ![Iamge of Resize Pizza Verfied1](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/ResizePizza_Stats3_Verified2.png)
 - Note that we are still being flagged for Forced Layouts (red tab)
 
+11:48 AM
 
+- **Resize Pizza another Forced Layout Issue**
+- From the zoomed in timeline above we can see that main.js 426 is forcing a layout ![Image of Resize Pizza Verifired1 Code](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/ResizePizza_Stats3_Verified1_Code.png)
+- Hmmmn...
 
 ### Udacity Reviews
