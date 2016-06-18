@@ -1121,7 +1121,13 @@ function updatePositions() {
 - **Scrolling Fix 2 (NEW): rAF Verified**
 - The Tools image shows an improved timeline, better render pipeline times, and the console shows some better average times to generate pizzas: ![Image of Fix2 NEW](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Scroll_Fix2_NEW.png)
 
+4:12 PM
 
+- **Cosmetic Tweaks**
+- Bored with old appearance
+- Text and Backgroumd color
+- New Pizzeria graphic
+- Text Changes
 
 
 ### Udacity Reviews
