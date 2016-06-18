@@ -513,9 +513,19 @@ function logAverageFrame(times) {   // times is the array of User Timing measure
 
 // The following code for sliding background pizzas was pulled from Ilya's demo found at:
 // https://www.igvita.com/slides/2012/devtools-tips-and-tricks/jank-demo.html
-
 // Moves the sliding background pizzas based on scroll position
+
+// Scroll Fix 2 (NEW);
+// Supersedes origingal Fiz 2
+// Uses "reqyestID" to Start and Stop rAF
+// (See README notes in Repo)
+var requestID;
+
 function updatePositions() {
+
+  // Fix 2 (NEW continued):
+  requestID = requestAnimationFrame(updatePositions);
+
   frame++;
   window.performance.mark("mark_start_frame");
 
@@ -545,8 +555,6 @@ function updatePositions() {
     items[i].style.left = cachedBasicLeft + 100 * phase + 'px';
   }
 
-
-
   // User Timing API to the rescue again. Seriously, it's worth learning.
   // Super easy to create custom metrics.
   window.performance.mark("mark_end_frame");
@@ -555,12 +563,10 @@ function updatePositions() {
     var timesToUpdatePosition = window.performance.getEntriesByName("measure_frame_duration");
     logAverageFrame(timesToUpdatePosition);
   }
-}
+  // Fix2 (NEW continues):
+  cancelAnimationFrame(requestID);
 
-//Scrolling FIX 2:
-// added rAF
-// (See Repo README)
-requestAnimationFrame(updatePositions);
+};
 
 // runs updatePositions on scroll
 window.addEventListener('scroll', updatePositions);
