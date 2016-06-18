@@ -455,7 +455,7 @@ var resizePizzas = function(size) {
     var dx = (newSize - oldSize) * windowWidth;
     // updateWidth added to simplify code that follows
     var updateWidth = oldWidth + dx + 'px';
-    // dt no longer returned, instead updateWidth is
+    // dx no longer returned, instead updateWidth is
     return updateWidth;
   }
 
