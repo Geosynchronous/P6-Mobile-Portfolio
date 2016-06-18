@@ -530,25 +530,11 @@ function updatePositions() {
   window.performance.mark("mark_start_frame");
 
   var items = document.querySelectorAll('.mover');
-
-  // OLD CODE for FIX 1:
-  // (Expensive Forced Synchronous Layout)
-  // (Layout Thrashing)
-  // for (var i = 0; i < items.length; i++) {
-  //   var phase = Math.sin((document.body.scrollTop / 1250) + (i % 5));
-
-  // Scrolling FIX 1:
-  // (See Repo README file for detailed explanation)
   var cachedScrollTop = document.body.scrollTop;
+
   for (var i = 0; i < items.length; i++) {
     var phase = Math.sin((cachedScrollTop / 1250) + (i % 5));
 
-    // OLD CODE for FIX 3:
-    // items[i].style.left = tems[i].basicLeft; + 100 * phase + 'px';
-
-    // Scrolling Fix 3
-    // Layout Thrashing
-    // Seperate READ Styles form WRITE Styles
     // READ Style
     var cachedBasicLeft = items[i].basicLeft;
     // WRITE Style
