@@ -421,9 +421,18 @@ var resizePizzas = function(size) {
 
   changeSliderLabel(size);
 
-   // Returns the size difference to change a pizza element from one size to another. Called by changePizzaSlices(size).
-  function determineDx (elem, size) {
-    var oldWidth = elem.offsetWidth;
+  // Resize Pizza Fix 7 (NEW):
+  // Note changes all the way down thhrough changePizzaSizes function
+  // Returns the size difference to change a pizza element from one size to another. Called by changePizzaSlices(size).
+  // Function name chamged from determineDx, as it now implements more functionality
+  // This reduces the complesity of the code below in changePizza Size function
+  function determineNewWidth (size) {
+
+    // Note only one offsetWidth value is needed, as they are sawme for all containers
+    // The elem.offsetWidth triggers a FSL warning, but it only happens once
+    // Iteration overn all container values will cause major thrashing
+    // FSL warning does not seen to be an issue
+    var oldWidth = document.querySelectorAll(".randomPizzaContainer")[0].offsetWidth;
     var windowWidth = document.querySelector("#randomPizzas").offsetWidth;
     var oldSize = oldWidth / windowWidth;
 
@@ -444,16 +453,24 @@ var resizePizzas = function(size) {
 
     var newSize = sizeSwitcher(size);
     var dx = (newSize - oldSize) * windowWidth;
-
-    return dx;
+    // updateWidth added to simplify code that follows
+    var updateWidth = oldWidth + dx + 'px';
+    // dt no longer returned, instead updateWidth is
+    return updateWidth;
   }
 
   // Iterates through pizza elements on the page and changes their widths
+  // READ and WRITE Styles seperate tasks to avoid FSL
   function changePizzaSizes(size) {
+
+    // READ newWidth
+    // Itereations eliminated because of the refactoring
+    var newWidth = determineNewWidth(size);
+
+    // WRITES changes to all widths
+    // Simplified because fo refactoring
     for (var i = 0; i < document.querySelectorAll(".randomPizzaContainer").length; i++) {
-      var dx = determineDx(document.querySelectorAll(".randomPizzaContainer")[i], size);
-      var newwidth = (document.querySelectorAll(".randomPizzaContainer")[i].offsetWidth + dx) + 'px';
-      document.querySelectorAll(".randomPizzaContainer")[i].style.width = newwidth;
+      document.querySelectorAll(".randomPizzaContainer")[i].style.width = newWidth;
     }
   }
 
