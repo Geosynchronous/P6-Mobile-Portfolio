@@ -641,6 +641,8 @@ Omission of instructional detail, the Paint box also needs to be checked off for
 9:49 PM
 
 - **Scrolling FIX 2 Problem: Initial Timeline Data**
+- **IMPORTANT NOTE: THIS IS GARBAGE**
+- **SEE BELOW at Saturday June 18 for NEW FIX**
 - I zoomed in on a time frame that was less performant than 60 fps (a red segment) and it looks like this: ![Image of FIX 2 Problem](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Scroll_Fix1_Zoom1.png)
 - updatePositions @ main.js:501 is the function of interest, which is where we made our previous changes for FIX 1 above.
 - THis function needs a requestAnimationFrame since animations are occuring here.
@@ -1065,6 +1067,57 @@ changePizzaSizes	@	main.js:456
 - The layout thrashing is now clearly gone, (compare to above timelines): ![Image of FIX7 Timeline](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/ResizePizza_Stats4_Fix7NEW.png)
 - The resize times have greatly improved: ![Image of NEW FIX 7 Stats](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/ResizePizza_Stats4_Fix7NEW_%20Stats.png)
 - This warning may not be an issue, as it only happens once, and using constant values in place of the elements did not improve the perf: ![Image of Fix7 TImeline Zoom](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/ResizePizza_Stats4_Fix7NEW_Zoom1.png)
+
+**Saturday June 18, 2016**
+
+1:54 PM
+
+- **Scrolling Fix 2 (NEW): Code**
+- The previous Fix2 was garbage, and this supersedes it.
+- Basically created `var requestID;` to START and STOP animations in the `updatePositions` function.
+```
+// Scroll Fix 2 (NEW);
+// Supersedes origingal Fiz 2
+// Uses "reqyestID" to Start and Stop rAF
+// (See README notes in Repo)
+var requestID;
+
+function updatePositions() {
+
+  // Fix 2 (NEW continued):
+  requestID = requestAnimationFrame(updatePositions);
+
+  frame++;
+  window.performance.mark("mark_start_frame");
+
+  var items = document.querySelectorAll('.mover');
+  var cachedScrollTop = document.body.scrollTop;
+
+  for (var i = 0; i < items.length; i++) {
+    var phase = Math.sin((cachedScrollTop / 1250) + (i % 5));
+
+    // READ Style
+    var cachedBasicLeft = items[i].basicLeft;
+    // WRITE Style
+    items[i].style.left = cachedBasicLeft + 100 * phase + 'px';
+  }
+
+  // User Timing API to the rescue again. Seriously, it's worth learning.
+  // Super easy to create custom metrics.
+  window.performance.mark("mark_end_frame");
+  window.performance.measure("measure_frame_duration", "mark_start_frame", "mark_end_frame");
+  if (frame % 10 === 0) {
+    var timesToUpdatePosition = window.performance.getEntriesByName("measure_frame_duration");
+    logAverageFrame(timesToUpdatePosition);
+  }
+  // Fix2 (NEW continues):
+  cancelAnimationFrame(requestID);
+};
+```
+- NOTE: Time to tidy up... Removed some previous fix comments from previous code, all the refactors were getting to messy.  Refer to this README file for previous changes, and the git commits for more specific info on those changes.
+
+
+
 
 
 ### Udacity Reviews
