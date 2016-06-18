@@ -1116,6 +1116,10 @@ function updatePositions() {
 ```
 - NOTE: Time to tidy up... Removed some previous fix comments from previous code, all the refactors were getting to messy.  Refer to this README file for previous changes, and the git commits for more specific info on those changes.
 
+2:15 PM
+
+- **Scrolling Fix 2 (NEW): rAF Verified**
+- The Tools image shows an improved timeline, better render pipeline times, and the console shows some better average times to generate pizzas: ![Image of Fix2 NEW](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Scroll_Fix2_NEW.png)
 
 
 
