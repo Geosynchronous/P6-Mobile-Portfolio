@@ -421,19 +421,15 @@ var resizePizzas = function(size) {
 
   changeSliderLabel(size);
 
-  // Resize Pizza Fix 7 (NEW):
-  // Note changes all the way down thhrough changePizzaSizes function
-  // Returns the size difference to change a pizza element from one size to another. Called by changePizzaSlices(size).
-  // Function name chamged from determineDx, as it now implements more functionality
-  // This reduces the complesity of the code below in changePizza Size function
-  function determineNewWidth (size) {
 
-    // Note only one offsetWidth value is needed, as they are sawme for all containers
-    // The elem.offsetWidth triggers a FSL warning, but it only happens once
-    // Iteration overn all container values will cause major thrashing
-    // FSL warning does not seen to be an issue
-    var oldWidth = document.querySelectorAll(".randomPizzaContainer")[0].offsetWidth;
-    var windowWidth = document.querySelector("#randomPizzas").offsetWidth;
+  function determineNewWidth (size) {
+    //FIX 9
+    var elem   = document.getElementById("pizza1");
+    var oldWidth = getComputedStyle(elem).getPropertyValue("offsetWidth");
+
+    // Tricky!
+    // var windowWidth = document.querySelector("#randomPizzas").offsetWidth;
+    var windowWidth = window.innerWidth;
     var oldSize = oldWidth / windowWidth;
 
     // Optional TODO: change to 3 sizes? no more xl?
@@ -467,10 +463,13 @@ var resizePizzas = function(size) {
     // Itereations eliminated because of the refactoring
     var newWidth = determineNewWidth(size);
 
+    // Resize Pizza Fix 8:
+    var pizzaElements = document.querySelectorAll(".randomPizzaContainer");
+
     // WRITES changes to all widths
     // Simplified because fo refactoring
     for (var i = 0; i < document.querySelectorAll(".randomPizzaContainer").length; i++) {
-      document.querySelectorAll(".randomPizzaContainer")[i].style.width = newWidth;
+      pizzaElements[i].style.width = newWidth;
     }
   }
 
