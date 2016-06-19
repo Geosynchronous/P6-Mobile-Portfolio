@@ -1129,5 +1129,13 @@ function updatePositions() {
 - New Pizzeria graphic
 - Text Changes
 
+11;45 PM
+
+- **Resicxe Pixxas FIX 8 & 9: Preliminary Entry:
+- Some pretty **TRICKY STUFF**
+- Tryed a bunch of things till I figured out what was going on
+- Got great results
+- Will document changes here tommorrow and clean up code comments
+
 
 ### Udacity Reviews
