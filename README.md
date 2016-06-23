@@ -1223,7 +1223,7 @@ main.js:478 Time to resize pizzas: 5.475000000002183ms
 main.js:478 Time to resize pizzas: 5.295000000001892ms
 ```
 11:14 PM
-- **Possible .offset refactor**
+- **Possible .offsetWidth refactor**
 ```
 var element = document.getElementById('foo');
 var positionInfo = element.getBoundingClientRect();
@@ -1233,5 +1233,12 @@ var width = positionInfo.width;
 - The result should be truncated, as they give fractional answers
 - Try this tomorrow...
 
+11:24 PM
+- **Getting R E A L (or L I A R as Cammeron would say) L = LOAD**
+- Actually it takes about 50 ms for the code to run and do all the rendering once the the slider is clicked
+- This is less than the 100 ms when us humans begin to notice the reload
+- My user experience makes me think the response shows no jank
+- So  won't play with the forced layout workaround for `.offsetWidth` refactor as it really doesn't matter
+- will clean upcode and optimize files next...
 
 ### Udacity Reviews
