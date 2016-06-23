@@ -421,16 +421,13 @@ var resizePizzas = function(size) {
 
   changeSliderLabel(size);
 
-
-  function determineNewWidth (size) {
-    //FIX 9
-    var elem   = document.getElementById("pizza1");
-    var oldWidth = getComputedStyle(elem).getPropertyValue("offsetWidth");
-
-    // Tricky!
-    // var windowWidth = document.querySelector("#randomPizzas").offsetWidth;
-    var windowWidth = window.innerWidth;
-    var oldSize = oldWidth / windowWidth;
+  //FIX 9
+  // Refactored putting var elem back into the next two functions
+  // Moved 'px' to a more appropriate place
+  function determineNewWidth (elem, size) {
+    var oldWidth = elem[0].offsetWidth;  // All pizzas same width, so read first
+    var windowWidth = document.querySelector("#randomPizzas").offsetWidth
+    var oldSize = oldWidth / (windowWidth);
 
     // Optional TODO: change to 3 sizes? no more xl?
     // Changes the slider value to a percent width
@@ -450,7 +447,7 @@ var resizePizzas = function(size) {
     var newSize = sizeSwitcher(size);
     var dx = (newSize - oldSize) * windowWidth;
     // updateWidth added to simplify code that follows
-    var updateWidth = oldWidth + dx + 'px';
+    var updateWidth = oldWidth + dx;
     // dx no longer returned, instead updateWidth is
     return updateWidth;
   }
@@ -459,17 +456,16 @@ var resizePizzas = function(size) {
   // READ and WRITE Styles seperate tasks to avoid FSL
   function changePizzaSizes(size) {
 
+    var elem = document.querySelectorAll(".randomPizzaContainer");
+
     // READ newWidth
     // Itereations eliminated because of the refactoring
-    var newWidth = determineNewWidth(size);
-
-    // Resize Pizza Fix 8:
-    var pizzaElements = document.querySelectorAll(".randomPizzaContainer");
+    var newWidth = determineNewWidth(elem, size);
 
     // WRITES changes to all widths
     // Simplified because fo refactoring
     for (var i = 0; i < document.querySelectorAll(".randomPizzaContainer").length; i++) {
-      pizzaElements[i].style.width = newWidth;
+      elem[i].style.width = newWidth + 'px';
     }
   }
 
