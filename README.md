@@ -1222,6 +1222,16 @@ main.js:478 Time to resize pizzas: 5.330000000001746ms
 main.js:478 Time to resize pizzas: 5.475000000002183ms
 main.js:478 Time to resize pizzas: 5.295000000001892ms
 ```
+11:14 PM
+- **Possible .offset refactor**
+```
+var element = document.getElementById('foo');
+var positionInfo = element.getBoundingClientRect();
+var height = positionInfo.height;
+var width = positionInfo.width;
+```
+- The result should be truncated, as they give fractional answers
+- Try this tomorrow...
 
 
 ### Udacity Reviews
