@@ -1243,7 +1243,7 @@ var width = positionInfo.width;
  
 11:45 PM
 - **FIX 9 Timeline**
-- Zoomed in on one changePizza size event: !{Image of Fix9 Timeline}(https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Fix9_Results.png)
+- Zoomed in on one changePizza size event: ![Image of Fix9 Timeline](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Fix9_Results.png)
 - The fist cluster  (16 ms) of events is what happens when the user changes the slider position with a click
 - Then there is a (104 ms) Idle
 - Then there is the actual resize of Pizzas (47 ms)
