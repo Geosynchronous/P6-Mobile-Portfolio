@@ -1240,5 +1240,19 @@ var width = positionInfo.width;
 - My user experience makes me think the response shows no jank
 - So  won't play with the forced layout workaround for `.offsetWidth` refactor as it really doesn't matter
 - will clean upcode and optimize files next...
+ 
+11:45 PM
+- **FIX 9 Timeline**
+- Zoomed in on one changePizza size event: !{Image of Fix9 Timeline}(https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Fix9_Results.png)
+- The fist cluster  (16 ms) of events is what happens when the user changes the slider position with a click
+- Then there is a (104 ms) Idle
+- Then there is the actual resize of Pizzas (47 ms)
+- Note that the red flagged layout doesn't seem to trip things up and only takes about .53 ms
+- ** THINGS TO DO?**
+- Can the Idle time be reduced with intiating `will-change` somehow for the slider change and the pizza size change?
+- Can the render pipline for resizing the pizzas be reduced by using using `transform: Scale(x,y)?
+- Can refactoring `.offsetwidth` remove the forced layout?
+
+
 
 ### Udacity Reviews
