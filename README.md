@@ -1131,11 +1131,97 @@ function updatePositions() {
 
 11;45 PM
 
-- **Resicxe Pixxas FIX 8 & 9: Preliminary Entry:
+- **Resize Pizzasas FIX 8: Preliminary Entry**
 - Some pretty **TRICKY STUFF**
 - Tryed a bunch of things till I figured out what was going on
 - Got great results
 - Will document changes here tommorrow and clean up code comments
+- Dumped this change, Fix 9 instead...
+
+**Saturday June 18, 2016**
+
+10:46 PM
+
+- **Resize Pizzasas FIX 8: Code**
+- Made a mess of things and had to clean it up...
+- Refactored DetermineNewWidth and ChangePizzaSizes
+
+```
+//FIX 9
+  // Refactored putting var elem back into the next two functions
+  // Moved 'px' to a more appropriate place
+  function determineNewWidth (elem, size) {
+    var oldWidth = elem[0].offsetWidth;  // All pizzas same width, so read first
+    var windowWidth = document.querySelector("#randomPizzas").offsetWidth
+    var oldSize = oldWidth / (windowWidth);
+
+    // Optional TODO: change to 3 sizes? no more xl?
+    // Changes the slider value to a percent width
+    function sizeSwitcher (size) {
+      switch(size) {
+        case "1":
+          return 0.25;
+        case "2":
+          return 0.3333;
+        case "3":
+          return 0.5;
+        default:
+          console.log("bug in sizeSwitcher");
+      }
+    }
+
+    var newSize = sizeSwitcher(size);
+    var dx = (newSize - oldSize) * windowWidth;
+    // updateWidth added to simplify code that follows
+    var updateWidth = oldWidth + dx;
+    // dx no longer returned, instead updateWidth is
+    return updateWidth;
+  }
+
+  // Iterates through pizza elements on the page and changes their widths
+  // READ and WRITE Styles seperate tasks to avoid FSL
+  function changePizzaSizes(size) {
+
+    var elem = document.querySelectorAll(".randomPizzaContainer");
+
+    // READ newWidth
+    // Itereations eliminated because of the refactoring
+    var newWidth = determineNewWidth(elem, size);
+
+    // WRITES changes to all widths
+    // Simplified because fo refactoring
+    for (var i = 0; i < document.querySelectorAll(".randomPizzaContainer").length; i++) {
+      elem[i].style.width = newWidth + 'px';
+    }
+  }
+
+  changePizzaSizes(size);
+
+  // User Timing API is awesome
+  window.performance.mark("mark_end_resize");
+  window.performance.measure("measure_pizza_resize", "mark_start_resize", "mark_end_resize");
+  var timeToResize = window.performance.getEntriesByName("measure_pizza_resize");
+  console.log("Time to resize pizzas: " + timeToResize[timeToResize.length-1].duration + "ms");
+};
+```
+
+10:52 PM
+
+- **- **Resize Pizzasas FIX 8: Verify**
+- This improved things and now the times are around 5 ms or less.
+- These times meet the rubric requirement targeted time limit of 5 ms.
+- The `elem.offset` are still triggering a forced layout once, might be nice to fix that too.
+```
+Time to generate pizzas on load: 39.05ms
+main.js:478 Time to resize pizzas: 3.680000000000291ms
+main.js:478 Time to resize pizzas: 3.1400000000003274ms
+main.js:478 Time to resize pizzas: 5.229999999999563ms
+main.js:478 Time to resize pizzas: 5.565000000000509ms
+main.js:478 Time to resize pizzas: 4.975000000002183ms
+main.js:478 Time to resize pizzas: 5.330000000001746ms
+main.js:478 Time to resize pizzas: 5.475000000002183ms
+main.js:478 Time to resize pizzas: 5.295000000001892ms
+```
 
 
 ### Udacity Reviews
