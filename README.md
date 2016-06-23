@@ -1234,7 +1234,7 @@ var width = positionInfo.width;
 - Try this tomorrow...
 
 11:24 PM
-- **Getting R E A L (or L I A R as Cammeron would say) L = LOAD**
+- **Getting R A I L (or L I A R as Cammeron would say) L = LOAD**
 - Actually it takes about 50 ms for the code to run and do all the rendering once the the slider is clicked
 - This is less than the 100 ms when us humans begin to notice the reload
 - My user experience makes me think the response shows no jank
@@ -1252,7 +1252,7 @@ var width = positionInfo.width;
 - Can the Idle time be reduced with intiating `will-change` somehow for the slider change and the pizza size change?
 - Can the render pipline for resizing the pizzas be reduced by using using `transform: Scale(x,y)`?
 - Can refactoring `.offsetwidth` remove the forced layout?
-
+- Looking closer I see that the 100 ms idle is mostly due to the time between the mouse is pressed down and the mouseup, so no need to coerce layout with will-change.
 
 
 ### Udacity Reviews
