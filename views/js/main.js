@@ -426,7 +426,7 @@ var resizePizzas = function(size) {
   // Moved 'px' to a more appropriate place
   function determineNewWidth (elem, size) {
     var oldWidth = elem[0].offsetWidth;  // All pizzas same width, so read first
-    var windowWidth = document.querySelector("#randomPizzas").offsetWidth
+    var windowWidth = document.querySelector("#randomPizzas").offsetWidth;
     var oldSize = oldWidth / (windowWidth);
 
     // Optional TODO: change to 3 sizes? no more xl?
