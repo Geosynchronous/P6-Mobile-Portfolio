@@ -1248,7 +1248,7 @@ var width = positionInfo.width;
 - Then there is a (104 ms) Idle
 - Then there is the actual resize of Pizzas (47 ms)
 - Note that the red flagged layout doesn't seem to trip things up and only takes about .53 ms
-- ** THINGS TO DO?**
+- **THINGS TO DO?**
 - Can the Idle time be reduced with intiating `will-change` somehow for the slider change and the pizza size change?
 - Can the render pipline for resizing the pizzas be reduced by using using `transform: Scale(x,y)`?
 - Can refactoring `.offsetwidth` remove the forced layout?
