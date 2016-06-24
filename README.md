@@ -1259,7 +1259,7 @@ var width = positionInfo.width;
 12:44 PM
 
 - **Resize Pizzas Fix 10: Code**
-- `elem` to `element` where needed to avoid prior use of elem for background pizzas
+- `elem` to `element` where needed in `changePizzaSizes` and `determineNewWidth` functions to avoid prior use of elem for background pizzas
 
 
 
