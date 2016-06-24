@@ -14,7 +14,11 @@ http://www.html5rocks.com/en/tutorials/webperformance/usertiming/
 Creator:
 Cameron Pittman, Udacity Course Developer
 cameron *at* udacity *dot* com
+
+Changes by: George FIscher, Udacity FEND Student
 */
+
+
 
 // As you may have realized, this website randomly generates pizzas.
 // Here are arrays of all possible pizza ingredients.
@@ -424,8 +428,8 @@ var resizePizzas = function(size) {
   //FIX 9
   // Refactored putting var elem back into the next two functions
   // Moved 'px' to a more appropriate place
-  function determineNewWidth (elem, size) {
-    var oldWidth = elem[0].offsetWidth;  // All pizzas same width, so read first
+  function determineNewWidth (element, size) {
+    var oldWidth = element[0].offsetWidth;  // All pizzas same width, so read first
     var windowWidth = document.querySelector("#randomPizzas").offsetWidth;
     var oldSize = oldWidth / (windowWidth);
 
@@ -456,16 +460,16 @@ var resizePizzas = function(size) {
   // READ and WRITE Styles seperate tasks to avoid FSL
   function changePizzaSizes(size) {
 
-    var elem = document.querySelectorAll(".randomPizzaContainer");
+    var element = document.querySelectorAll(".randomPizzaContainer");
 
     // READ newWidth
     // Itereations eliminated because of the refactoring
-    var newWidth = determineNewWidth(elem, size);
+    var newWidth = determineNewWidth(element, size);
 
     // WRITES changes to all widths
     // Simplified because fo refactoring
     for (var i = 0; i < document.querySelectorAll(".randomPizzaContainer").length; i++) {
-      elem[i].style.width = newWidth + 'px';
+      element[i].style.width = newWidth + 'px';
     }
   }
 
@@ -547,7 +551,7 @@ function updatePositions() {
   // Fix2 (NEW continues):
   cancelAnimationFrame(requestID);
 
-};
+}
 
 // runs updatePositions on scroll
 window.addEventListener('scroll', updatePositions);
