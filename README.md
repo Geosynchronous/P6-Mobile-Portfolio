@@ -1068,7 +1068,7 @@ changePizzaSizes	@	main.js:456
 - The resize times have greatly improved: ![Image of NEW FIX 7 Stats](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/ResizePizza_Stats4_Fix7NEW_%20Stats.png)
 - This warning may not be an issue, as it only happens once, and using constant values in place of the elements did not improve the perf: ![Image of Fix7 TImeline Zoom](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/ResizePizza_Stats4_Fix7NEW_Zoom1.png)
 
-**Saturday June 18, 2016**
+**Thursday June 23, 2016**
 
 1:54 PM
 
@@ -1253,6 +1253,8 @@ var width = positionInfo.width;
 - Can the render pipline for resizing the pizzas be reduced by using using `transform: Scale(x,y)`?
 - Can refactoring `.offsetwidth` remove the forced layout?
 - Looking closer I see that the 100 ms idle is mostly due to the time between the mouse is pressed down and the mouseup, so no need to coerce layout with will-change.
+
+**Friday June 24, 2016**
 
 
 ### Udacity Reviews
