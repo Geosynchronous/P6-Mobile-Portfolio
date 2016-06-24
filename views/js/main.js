@@ -428,6 +428,7 @@ var resizePizzas = function(size) {
   //FIX 9
   // Refactored putting var elem back into the next two functions
   // Moved 'px' to a more appropriate place
+  // FIX 10 change 'elem' to element in this and the calling function changePizzaSizes
   function determineNewWidth (element, size) {
     var oldWidth = element[0].offsetWidth;  // All pizzas same width, so read first
     var windowWidth = document.querySelector("#randomPizzas").offsetWidth;
