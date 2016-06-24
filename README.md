@@ -1261,6 +1261,23 @@ var width = positionInfo.width;
 - **Resize Pizzas Fix 10: Code**
 - `elem` to `element` where needed in `changePizzaSizes` and `determineNewWidth` functions to avoid prior use of elem for background pizzas
 
+1:04 PM
 
+- ** Resize Pizzas Fix 10: Verified**
+- This removed the timeline jank warning, but forced reflow because of `.offset` is still there: ![IMAGE OF FIX10 TIMELINE](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Fix10_Results.png)
+- And the time to resize pizzas looks good it average around 5 ms or less:
+```
+Time to generate pizzas on load: 36.074999999999996ms
+main.js:482 Time to resize pizzas: 4.434999999999945ms
+main.js:482 Time to resize pizzas: 5.205000000000382ms
+main.js:482 Time to resize pizzas: 3.914999999999054ms
+main.js:482 Time to resize pizzas: 3.800000000000182ms
+main.js:482 Time to resize pizzas: 4.524999999999636ms
+main.js:482 Time to resize pizzas: 3.4249999999992724ms
+main.js:482 Time to resize pizzas: 6.595000000001164ms
+main.js:482 Time to resize pizzas: 6.295000000000073ms
+main.js:482 Time to resize pizzas: 3.2849999999998545ms
+main.js:482 Time to resize pizzas: 4.734999999998763ms
+```
 
 ### Udacity Reviews
