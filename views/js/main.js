@@ -402,6 +402,7 @@ var pizzaElementGenerator = function(i) {
   return pizzaContainer;
 };
 
+
 // resizePizzas(size) is called when the slider in the "Our Pizzas" section of the website moves.
 var resizePizzas = function(size) {
   window.performance.mark("mark_start_resize");   // User Timing API function
@@ -425,52 +426,36 @@ var resizePizzas = function(size) {
 
   changeSliderLabel(size);
 
-  //FIX 9
-  // Refactored putting var elem back into the next two functions
-  // Moved 'px' to a more appropriate place
-  // FIX 10 change 'elem' to element in this and the calling function changePizzaSizes
-  function determineNewWidth (element, size) {
-    var oldWidth = element[0].offsetWidth;  // All pizzas same width, so read first
-    var windowWidth = document.querySelector("#randomPizzas").offsetWidth;
-    var oldSize = oldWidth / (windowWidth);
-
-    // Optional TODO: change to 3 sizes? no more xl?
+  // FIX 11
+  // Major refactor to use style 'transform scale'
+  // Replace style 'width' change
+  // Adjusted percentages in 'sizeSwithcer'
+  function determineNewScale (size) {
     // Changes the slider value to a percent width
     function sizeSwitcher (size) {
       switch(size) {
         case "1":
-          return 0.25;
-        case "2":
-          return 0.3333;
-        case "3":
           return 0.5;
+        case "2":
+          return 0.6666;
+        case "3":
+          return 1.0;
         default:
           console.log("bug in sizeSwitcher");
       }
     }
-
-    var newSize = sizeSwitcher(size);
-    var dx = (newSize - oldSize) * windowWidth;
-    // updateWidth added to simplify code that follows
-    var updateWidth = oldWidth + dx;
-    // dx no longer returned, instead updateWidth is
-    return updateWidth;
+    return sizeSwitcher(size);
   }
 
-  // Iterates through pizza elements on the page and changes their widths
-  // READ and WRITE Styles seperate tasks to avoid FSL
+  // READ and WRITE seperate tasks to avoid FSL
   function changePizzaSizes(size) {
-
-    var element = document.querySelectorAll(".randomPizzaContainer");
-
-    // READ newWidth
-    // Itereations eliminated because of the refactoring
-    var newWidth = determineNewWidth(element, size);
-
-    // WRITES changes to all widths
-    // Simplified because fo refactoring
-    for (var i = 0; i < document.querySelectorAll(".randomPizzaContainer").length; i++) {
-      element[i].style.width = newWidth + 'px';
+    // READ - Load all pizza image elements
+    var element = document.querySelectorAll(".img-responsive");
+    // Sets value of newScale
+    var newScale = determineNewScale(size);
+    // WRITE - New transforms for pizza size updated here
+    for (var i = 0; i < element.length; i++) {
+      element[i].style.transform = "scale(" + newScale + ")";
     }
   }
 
