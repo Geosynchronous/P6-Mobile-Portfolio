@@ -1359,10 +1359,29 @@ main.js:468 Time to resize pizzas: 1.2549999999973807ms
 
 **Saturday June 25, 2016**
 
+9:45 AM
+
 - **FIX 12: GRID BOX not Wrapping**
 - Grid Box would not wrap all the 100`randomPizzaContainer` elements
 - Changed style from 33.33% to `width = 375px;`, in index.html file and main,js File
 - This allowed the wrapping response to work from bootstrap-grid.js
 - For even more control over the Grid Wrap see [Cool Bootstrap Grid Examples](http://www.minimit.com/articles/solutions-tutorials/bootstrap-3-responsive-centered-columns)
+
+10:47 AM
+- **Final Steps before Review Submission**
+- Changed pizzeria.jpg to [open source file](https://upload.wikimedia.org/wikipedia/commons/4/43/Pizza_al_taglio.jpg)
+- TODO: Stiil an error in init of slider, MEDIUM Label, but Large Pizza Image and slider position, and updates to proper settings after first use of slider
+- [jsbeautifier](http://jsbeautifier.org/) on main.js
+- [jshint](http://jshint.com/) on main.js
+- [csslint](http://csslint.net/) no errors no warnings on style.css
+- [css beautify & minify](http://codebeautify.org/css-beautify-minify) on style.css and created style.min.css
+- [js minify](https://javascript-minifier.com/) on main.js to main.min.js
+- [html beautify](http://www.cleancss.com/html-beautify/) on pizza.html
+- [css beautify & minify](http://codebeautify.org/css-beautify-minify) on bootstrap.grid.css to bootstrap.grid.min.css
+- [csslint](http://csslint.net/) showed warnings in above file, made two changes, ignored the rest
+- updated pizza.html to reference minified files
+- OK... so I am PAST DUE for using a task runner like Grunt or Gulp for this
+
+
 
 ### Udacity Reviews
