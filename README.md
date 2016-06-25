@@ -1356,7 +1356,6 @@ main.js:468 Time to resize pizzas: 1.2549999999973807ms
 - Then I will jsHint, jsBeautify and minify files,
 - Will create new gh-pages in repository, so that this can be run direcctly from the repo
 - Then I will turn this prohect in for review.
-- 
 
 **Saturday June 25, 2016**
 
