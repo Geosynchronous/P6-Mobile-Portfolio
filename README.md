@@ -1395,6 +1395,13 @@ Ended @     Mobile User Exerience 77 (yellow) & Speed 83 (green) and User Experi
 ```
 -  All the ratings increased, though again page loading optimization is still needed to make this page really sweet
 
+2:49 PM
+
+- **BROWSER & DEVICE Results**
+- On mobile safari and chrome, on iphone 5s & iPad2, the page only renders to the first two pizza and the slider does not function...
+- On my i5 Macbook Pro, Safari acts just like on the mobile devices, and then everthing seems to work on Chrome, Canary, Firefox and Opera.
+- These results do not worry me as the intent of the project was Performance Optimization, not Browser Optimization
+
 
 
 
