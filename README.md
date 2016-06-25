@@ -1364,5 +1364,6 @@ main.js:468 Time to resize pizzas: 1.2549999999973807ms
 - Grid Box would not wrap all the 100`randomPizzaContainer` elements
 - Changed style from 33.33% to `width = 375px;`, in index.html file and main,js File
 - This allowed the wrapping response to work from bootstrap-grid.js
+- For even more control over the Grid Wrap see [Cool Bootstrap Grid Examples](http://www.minimit.com/articles/solutions-tutorials/bootstrap-3-responsive-centered-columns)
 
 ### Udacity Reviews
