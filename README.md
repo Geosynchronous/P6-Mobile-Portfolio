@@ -1354,6 +1354,7 @@ main.js:468 Time to resize pizzas: 1.2549999999973807ms
 - The slide starts off in the middle position, indicating "medium" pizzas,  but "Large" is written on the screen, and Large pIzzas are shown, the slider button really needs to be on the far right position for Large.
 - I think next I will take one last look at the comments in the source files, and make improvements as needed,
 - Then I will jsHint, jsBeautify and minify files,
+- Will create new gh-pages in repository, so that this can be run direcctly from the repo
 - Then I will turn this prohect in for review.
 - 
 
