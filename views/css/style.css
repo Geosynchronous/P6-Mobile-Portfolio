@@ -54,6 +54,10 @@ form {
   clear:both;
 }
 
+.img-responsive {
+  padding: 10px;
+}
+
 /* Changed color from Red to Green */
 /* Better Contrast */
 /* Red, White & Green colors of Italian Flag */
