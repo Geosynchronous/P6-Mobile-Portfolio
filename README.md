@@ -1382,6 +1382,14 @@ main.js:468 Time to resize pizzas: 1.2549999999973807ms
 - updated pizza.html to reference minified files
 - OK... so I am PAST DUE for using a task runner like Grunt or Gulp for this
 
+1:43 PM
+
+- **Github gh-pages recreated**
+- [See pizza.html in action](http://geosynchronous.github.io/P6-Mobile-Portfolio/views/pizza.html)
+- The scrolling & sliding performance works well as before, though the loading of the page could use some work, but it is not part of this project on pizza.html: ![Timeline Loading](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Timeline_Loading.png)
+- (index.html in the first part of this project, had requirements to fix loading)
+
+
 
 
 ### Udacity Reviews
