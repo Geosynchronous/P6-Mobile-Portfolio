@@ -1402,7 +1402,9 @@ Ended @     Mobile User Exerience 77 (yellow) & Speed 83 (green) and User Experi
 - On my i5 Macbook Pro, Safari acts just like on the mobile devices, and then everthing seems to work on Chrome, Canary, Firefox and Opera.
 - These results do not worry me as the intent of the project was Performance Optimization, not Browser Optimization
 
-
+2:56 PM
+- **PRESENT CONCLUSION**
+- I really learned a lot about how to use Chrome Dev Tools, and am beginning to understand Performance Optimizations.  What I learned most so far is that Front End Web Development is a humbling BLACK HOLE for developer time...
 
 
 ### Udacity Reviews
