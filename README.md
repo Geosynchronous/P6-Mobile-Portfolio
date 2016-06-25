@@ -1324,5 +1324,28 @@ main.js:482 Time to resize pizzas: 4.734999999998763ms
 
 ```
 
+9:31 PM
+-**Resize Pizzas FIX11: Verification**
+- The resize pizzas time have improved about 5x with this change, and are now around 1 ms (5 ms or less rubric target)
+```
+Time to generate pizzas on load: 28.470000000000006ms
+main.js:468 Time to resize pizzas: 1.7849999999998545ms
+main.js:468 Time to resize pizzas: 1.9200000000005275ms
+main.js:468 Time to resize pizzas: 1.2150000000001455ms
+main.js:468 Time to resize pizzas: 1.2050000000008367ms
+main.js:468 Time to resize pizzas: 1.055000000000291ms
+main.js:468 Time to resize pizzas: 1.609999999998763ms
+main.js:468 Time to resize pizzas: 1.1050000000013824ms
+main.js:468 Time to resize pizzas: 1.0799999999999272ms
+main.js:468 Time to resize pizzas: 1.1200000000008004ms
+main.js:468 Time to resize pizzas: 1.3249999999989086ms
+main.js:468 Time to resize pizzas: 0.8950000000004366ms
+main.js:468 Time to resize pizzas: 1.25ms
+main.js:468 Time to resize pizzas: 1.2549999999973807ms
+```
+- The forced synchronous layouts from `.offset` are now gone, and the render times have improved: ![Image of FIX11 TIMELINE](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Fix11_Results.png)
+- Zooming in we can see how much quicker things are now and again without the FSL: ![](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Fix11_Results_Zoom.png)
+
+
 
 ### Udacity Reviews
