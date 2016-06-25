@@ -425,7 +425,7 @@ var pizzaElementGenerator = function(i) {
 
 
 // resizePizzas(size) is called when the slider in the "Our Pizzas" section of the website moves.
-
+// TODO --- On load, the MEDIUM label does not coincide with LARGE button postion and image
 var resizePizzas = function(size) {
     window.performance.mark("mark_start_resize"); // User Timing API function
 
