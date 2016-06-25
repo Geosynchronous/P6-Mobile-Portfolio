@@ -1346,6 +1346,16 @@ main.js:468 Time to resize pizzas: 1.2549999999973807ms
 - The forced synchronous layouts from `.offset` are now gone, and the render times have improved: ![Image of FIX11 TIMELINE](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Fix11_Results.png)
 - Zooming in we can see how much quicker things are now and again without the FSL: ![](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Fix11_Results_Zoom.png)
 
+10:05 PM
+
+- ## What's Next**
+- The performance rubric taget times have been met and/or exceeded for scrolling and slider actions.
+- Some media queries could be built in to better scale the page for various pagewidths, minimally 400 px and maybe 800 px or so could be added in
+- The slide starts off in the middle position, indicating "medium" pizzas,  but "Large" is written on the screen, and Large pIzzas are shown, the slider button really needs to be on the far right position for Large.
+- I think next I will take one last look at the comments in the source files, and make improvements as needed,
+- Then I will jsHint, jsBeautify and minify files,
+- Then I will turn this prohect in for review.
+- 
 
 
 ### Udacity Reviews
