@@ -1280,4 +1280,49 @@ main.js:482 Time to resize pizzas: 3.2849999999998545ms
 main.js:482 Time to resize pizzas: 4.734999999998763ms
 ```
 
+9:21 PM
+
+- **Resize Pizzas FIX11: Code**
+- Implemented a major refactor of the code to use `transform: scale` to speed up rendering
+- This allowed me to get rid of the `.offset` which forced synchronous layout
+- This change suprersedes a some of the previous fixes
+- This also simplified the code greatly
+- LESS is MORE
+```
+// FIX 11
+  // Major refactor to use style 'transform scale'
+  // Replace style 'width' change
+  // Adjusted percentages in 'sizeSwithcer'
+  function determineNewScale (size) {
+    // Changes the slider value to a percent width
+    function sizeSwitcher (size) {
+      switch(size) {
+        case "1":
+          return 0.5;
+        case "2":
+          return 0.6666;
+        case "3":
+          return 1.0;
+        default:
+          console.log("bug in sizeSwitcher");
+      }
+    }
+    return sizeSwitcher(size);
+  }
+
+  // READ and WRITE seperate tasks to avoid FSL
+  function changePizzaSizes(size) {
+    // READ - Load all pizza image elements
+    var element = document.querySelectorAll(".img-responsive");
+    // Sets value of newScale
+    var newScale = determineNewScale(size);
+    // WRITE - New transforms for pizza size updated here
+    for (var i = 0; i < element.length; i++) {
+      element[i].style.transform = "scale(" + newScale + ")";
+    }
+  }
+
+```
+
+
 ### Udacity Reviews
