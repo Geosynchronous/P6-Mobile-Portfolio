@@ -1651,6 +1651,38 @@ main.js:534 Time to resize pizzas: 123.54999999998836ms
 main.js:534 Time to resize pizzas: 126.72000000000116ms
 ```
 
+5:21 PM
+
+- **FIX26-28 Remove FSL and JANK on Load**
+- THe problem with document.body.scrollTop causing FSL on load is gone
+- THe problem with JANK on Load seems to be gone
+- FIX26 - Added `defer` to script for main.js in pizza.html
+- FIX27 - removed an uneeded occurance of updatePositions;
+- FIX28 - Moved eventListener for Scroll to bottom of main.js
+- The timeline looks a lot cleaner on load, with no warnings: ![Image of FIX26-28 Timeline](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Fix26-28.png)
+- THis really has not effected the scrolling and sliding TIming API stats much:
+```
+main.js:550 Time to generate pizzas on load: 31.825000000000003ms
+main.js:563 Average time to generate last 10 frames: 0.6735000000000426ms
+main.js:563 Average time to generate last 10 frames: 0.800000000000091ms
+main.js:563 Average time to generate last 10 frames: 0.6645000000000436ms
+main.js:563 Average time to generate last 10 frames: 0.6230000000001382ms
+main.js:563 Average time to generate last 10 frames: 0.5985000000000582ms
+main.js:563 Average time to generate last 10 frames: 0.4780000000002474ms
+main.js:563 Average time to generate last 10 frames: 0.5354999999999563ms
+main.js:563 Average time to generate last 10 frames: 0.47050000000053843ms
+main.js:563 Average time to generate last 10 frames: 0.5090000000001964ms
+main.js:563 Average time to generate last 10 frames: 0.5780000000002474ms
+main.js:563 Average time to generate last 10 frames: 0.5365000000001601ms
+main.js:563 Average time to generate last 10 frames: 0.5654999999998835ms
+main.js:563 Average time to generate last 10 frames: 0.5035000000001674ms
+main.js:563 Average time to generate last 10 frames: 0.5780000000000655ms
+main.js:534 Time to resize pizzas: 86.46000000000095ms
+main.js:534 Time to resize pizzas: 101.68000000000029ms
+main.js:534 Time to resize pizzas: 111.71000000000095ms
+main.js:534 Time to resize pizzas: 131.5899999999965ms
+```
+
 
 
 
