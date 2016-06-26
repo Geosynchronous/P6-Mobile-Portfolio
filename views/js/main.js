@@ -622,15 +622,20 @@ document.addEventListener('DOMContentLoaded', function() {
     // Better than guessing, and/or setting value too high, as previous code did
     var rows = Math.trunc(window.screen.height / s);
     var maxPizzasNeeded = rows * cols;
+    // FIX24
+    // Declared var elem outside loop
+    // Declared Pizza ID outside loop and used getElementById
+    var elem;
+    var movingPizzaId = document.getElementById("movingPizzas1");
     for (var i = 0; i < maxPizzasNeeded; i++) {
-        var elem = document.createElement('img');
+        elem = document.createElement('img');
         elem.className = 'mover';
         elem.src = "images/pizza.png";
         elem.style.height = "100px";
         elem.style.width = "73.333px";
         elem.basicLeft = (i % cols) * s;
         elem.style.top = (Math.floor(i / cols) * s) + 'px';
-        document.querySelector("#movingPizzas1").appendChild(elem);
+        movingPizzaId.appendChild(elem);
     }
     updatePositions();
 });
