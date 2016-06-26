@@ -1605,7 +1605,50 @@ main.js:534 Time to resize pizzas: 106.55500000000029ms
 - line 585 is causing a recalulate style and layout, both with forced reflow warnings: `var cachedScrollTop = document.body.scrollTop;`
 - notice a maybe slight possible increase `Time to generate pizzas on load: 33.41500000000001ms`, but not sure
 
+1:47 PM
 
+- **TODO**
+- Is there a replacement for `document.body.scrollTop` that doesn't FSL???
+- It is causing FSL as indicated in the previous entry
+- I could not find one after a bit of searching and playing around with code
+
+1:50 PM
+
+- **FIX25 Moved var out of loop**
+```
+    //FIX 25 var array declared outside loop
+    var cachedBasicLeft;
+
+    for (var i = 0; i < len; i++) {
+        phase = Math.sin((cachedScrollTop / 1250) + (i % 5));
+
+        // READ Style
+        cachedBasicLeft = items[i].basicLeft;
+        // WRITE Style
+        items[i].style.left = cachedBasicLeft + 100 * phase + 'px';
+    }
+```
+- The pipeline for loading looks a little tighter: ![Image of FIX25 Timeline](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/FIX25_Timeline.png)
+- The Timing Stats look like this:
+```
+Time to generate pizzas on load: 33.965ms
+main.js:563 Average time to generate last 10 frames: 4.663000000000018ms
+main.js:563 Average time to generate last 10 frames: 0.6040000000000191ms
+main.js:563 Average time to generate last 10 frames: 0.5050000000000182ms
+main.js:563 Average time to generate last 10 frames: 0.4690000000000964ms
+main.js:563 Average time to generate last 10 frames: 0.4579999999998563ms
+main.js:563 Average time to generate last 10 frames: 0.4075000000000273ms
+main.js:563 Average time to generate last 10 frames: 0.4115000000001146ms
+main.js:563 Average time to generate last 10 frames: 0.5010000000000673ms
+main.js:563 Average time to generate last 10 frames: 0.41249999999990905ms
+main.js:563 Average time to generate last 10 frames: 0.43700000000008005ms
+main.js:534 Time to resize pizzas: 95.95999999999913ms
+main.js:534 Time to resize pizzas: 112.21499999999651ms
+main.js:534 Time to resize pizzas: 113.55999999999767ms
+main.js:534 Time to resize pizzas: 127.52999999999884ms
+main.js:534 Time to resize pizzas: 123.54999999998836ms
+main.js:534 Time to resize pizzas: 126.72000000000116ms
+```
 
 
 
