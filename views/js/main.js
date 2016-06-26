@@ -612,8 +612,7 @@ function updatePositions() {
 
 }
 
-// runs updatePositions on scroll
-window.addEventListener('scroll', updatePositions);
+
 
 // Generates the sliding pizzas when the page loads.
 document.addEventListener('DOMContentLoaded', function() {
@@ -639,5 +638,11 @@ document.addEventListener('DOMContentLoaded', function() {
         elem.style.top = (Math.floor(i / cols) * s) + 'px';
         movingPizzaId.appendChild(elem);
     }
-    updatePositions();
+    // FIX27
+    //This is not needed here, removing got rid of FSL on load
+    // updatePositions();
 });
+
+    //FIX28 moved to bottom
+    // runs updatePositions on scroll
+    window.addEventListener('scroll', updatePositions);
