@@ -1532,6 +1532,7 @@ for (var i = 2; i < 100; i++) {
 
 - **FIX23: Moving maxPizzasNeeded Code**
 - Eighth suggested review change, in main.js
+
 ```
 // Generates the sliding pizzas when the page loads.
 document.addEventListener('DOMContentLoaded', function() {
@@ -1555,7 +1556,8 @@ document.addEventListener('DOMContentLoaded', function() {
 ```
 - works well
 - for continued reference, TIMING API logs:
----
+
+```
 Average time to generate last 10 frames: 0.40300000002025627ms
 main.js:563 Average time to generate last 10 frames: 0.5059999999997672ms
 main.js:563 Average time to generate last 10 frames: 0.3680000000167638ms
@@ -1563,8 +1565,7 @@ main.js:563 Average time to generate last 10 frames: 0.34999999999417925ms
 main.js:563 Average time to generate last 10 frames: 0.39099999999743884ms
 main.js:563 Average time to generate last 10 frames: 0.3695000000006985ms
 main.js:563 Average time to generate last 10 frames: 0.3724999999976717ms
-```
-```
+
 Time to generate pizzas on load: 35.97999999999999ms
 main.js:534 Time to resize pizzas: 128.70499999999993ms
 main.js:534 Time to resize pizzas: 129.73499999999967ms
@@ -1578,6 +1579,8 @@ main.js:534 Time to resize pizzas: 106.55500000000029ms
 11:06 AM
 
 - **FIX24: More efficient Moving Pizza Load**
+-  Moved some vars out of loop etc...
+
 ```
     // FIX24
     // Declared var elem outside loop
@@ -1595,12 +1598,15 @@ main.js:534 Time to resize pizzas: 106.55500000000029ms
         movingPizzaId.appendChild(elem);
     }
 ```
+
 - Seems to work, no noticable Timing API changes
 - May effect initial load: ![Iamge of FIX24 Load TImeline](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/FIX24_Timeline.png)
 - compare previous results to present, some render pipeline times have improved the perf some, and resturctured the events, notice how more HTML parsing is occuring earlier in the pipeline
--line 585 is causing a recalulate style and layout, both with forced reflow warnings:
-`var cachedScrollTop = document.body.scrollTop;`
+- line 585 is causing a recalulate style and layout, both with forced reflow warnings: `var cachedScrollTop = document.body.scrollTop;`
 - notice a maybe slight possible increase `Time to generate pizzas on load: 33.41500000000001ms`, but not sure
+
+
+
 
 
 
