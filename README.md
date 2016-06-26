@@ -1414,3 +1414,17 @@ Ended @     Mobile User Exerience 77 (yellow) & Speed 83 (green) and User Experi
 3:04 PM
 
 - **Project Submitted and Received by UDACITY**
+
+6:10 PM
+
+- **Project Reviewed**
+- Returned within a half hour
+- [First Project Review Here](https://review.udacity.com/#!/reviews/171397)
+- One required change before resubmitting
+- Twelve others suggested
+- Will work on all 13 changes one at a time
+
+### Coursework Activity Log (continued)
+
+6:26 PM
+
