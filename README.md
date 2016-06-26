@@ -1426,5 +1426,9 @@ Ended @     Mobile User Exerience 77 (yellow) & Speed 83 (green) and User Experi
 
 ### Coursework Activity Log (continued)
 
-6:26 PM
+8:18 PM
 
+- ** Working Backwards**
+- THe one change I need to make change the original UI/UX
+- I need to restore that look and feel
+- FIX 13 revert back to 33.33% from 375 px
