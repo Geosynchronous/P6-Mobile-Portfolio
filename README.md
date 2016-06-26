@@ -1483,10 +1483,21 @@ Ended @     Mobile User Exerience 77 (yellow) & Speed 83 (green) and User Experi
 
 11:14 PM
 
-_ **Skipping 4th Main.js Change for Now that is required**
+- **Skipping 4th Main.js Change for Now that is required**
 - it was previously set back to the original as requested in Fixes 13-16
 - it will require a bit of refactoring
 - besides I want to see what perf boost will come from the other suggested changes
 
+11:25 PM
 
+- **FIX20: JS Web API Out of Loop**
+```
+ // FIX20 declared var outside loop, only call JS WEB API once
+var pizzasDiv = document.getElementById("randomPizzas");
+for (var i = 2; i < 100; i++) {
+    pizzasDiv.appendChild(pizzaElementGenerator(i));
+}
+```
+- seems to work, maybe 10 ms perf boost
+- pizzas resize 125-100 ms now
 
