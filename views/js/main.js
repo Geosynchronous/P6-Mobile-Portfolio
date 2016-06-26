@@ -626,10 +626,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Calculating Reference Area for each Pizza (using screen pixel areas)
     // Using a working example of my laptop
     // portionedPizzaArea   = 64000
-    //                      = 1024000/16
-    //                      = (screenArea for my laptop)/(Pizzas per my laotop)
+    //                      = 1024000/21
+    //                      = (screenArea my laptop)/(Pizzas on & off horizontal screen)
     var screenArea = window.screen.height * window.screen.width;
-    var portionedPizzaArea = 64000;
+    var portionedPizzaArea = 48762;
     var maxPizzasNeeded = screenArea/portionedPizzaArea;
 
     for (var i = 0; i < maxPizzasNeeded; i++) {
