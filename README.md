@@ -1432,7 +1432,8 @@ Ended @     Mobile User Exerience 77 (yellow) & Speed 83 (green) and User Experi
 - THe one change I need to make change the original UI/UX
 - I need to restore that look and feel
 - FIX 13 revert back to original 33.33% from 375 px in pizza.html and main.js
-- FIX 14 BRAND NEW UPDATE FROM UDACITY REPO: replaced col-md-6 with 33 and 35% in two main.js locations to fix incorrect PIZZA SIZE PROBLEM!
+- FIX 14 BRAND NEW UPDATE FROM UDACITY REPO: replaced col-md-6 with 33 and 35% in two main.js locations and four html locations to fix incorrect PIZZA SIZE
+-PROBLEM!
 
 9:12 PM
 
