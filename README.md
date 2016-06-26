@@ -1471,6 +1471,7 @@ Ended @     Mobile User Exerience 77 (yellow) & Speed 83 (green) and User Experi
 - it may have helped speed up resize data, 25 ms  (should have done better sampling)
 
 11:04 PM
+
 - **FIX19: JS Web API Out of Loop**
 - THird suggested change to main.js
 - In `changePizzaSizes` stored value of JS WEB API in var len
@@ -1479,4 +1480,13 @@ Ended @     Mobile User Exerience 77 (yellow) & Speed 83 (green) and User Experi
     for (var i = 0; i < len; i++) {
 ```
 ` seems to work, may have improve resize data by 10 ms
+
+11:14 PM
+
+_ **Skipping 4th Main.js Change for Now that is required**
+- it was previously set back to the original as requested in Fixes 13-16
+- it will require a bit of refactoring
+- besides I want to see what perf boost will come from the other suggested changes
+
+
 
