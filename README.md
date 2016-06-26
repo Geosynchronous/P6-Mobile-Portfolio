@@ -1491,6 +1491,7 @@ Ended @     Mobile User Exerience 77 (yellow) & Speed 83 (green) and User Experi
 11:25 PM
 
 - **FIX20: JS Web API Out of Loop**
+- Fifth suggested review change, in main.js
 ```
  // FIX20 declared var outside loop, only call JS WEB API once
 var pizzasDiv = document.getElementById("randomPizzas");
