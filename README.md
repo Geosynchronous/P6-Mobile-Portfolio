@@ -1431,4 +1431,18 @@ Ended @     Mobile User Exerience 77 (yellow) & Speed 83 (green) and User Experi
 - ** Working Backwards**
 - THe one change I need to make change the original UI/UX
 - I need to restore that look and feel
-- FIX 13 revert back to 33.33% from 375 px
+- FIX 13 revert back to original 33.33% from 375 px in pizza.html and main.js
+- FIX 14 BRAND NEW UPDATE FROM UDACITY REPO: replaced col-md-6 with 33 and 35% in two main.js locations to fix incorrect PIZZA SIZE PROBLEM!
+
+9:12 PM
+
+- FIX15 removed .ing-responsive from style.css to return to orignal settings
+- FIX16 restored `determineDX` and `changePizzaSizes` back to original Udacity Repo Code
+- Also edited html text to keep pizza desciptor word lenght within original limits
+- **UI/UX RESTORED** by FIXES 13-16
+- **This was the only change that was a required fix**
+- So now I will need to reoptimize this and tend to the other 12 suggested changes
+- **MORE THAN EVER, I REALLY WANT TO KNOW HOW TO USE GITHUB BETTER**
+- Reverting commits or forking would probably have been a lot easier, plus I had to install a recent UDACITY FIX with cut and paste, being able to PULL(?) the change woud be awesome... lot to learn here...
+
+
