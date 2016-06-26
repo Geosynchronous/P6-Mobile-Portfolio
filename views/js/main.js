@@ -625,12 +625,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // Determing an efficient upper limit for number of pizzas to render
     // Calculating Reference Area for each Pizza (using screen pixel areas)
     // Using a working example of my laptop
-    // portionedPizzaArea   = 64000
-    //                      = 1024000/21
+    // portionedPizzaArea   = 31030.3
+    //                      = 1024000/33
     //                      = (screenArea my laptop)/(Pizzas on & off horizontal screen)
     var screenArea = window.screen.height * window.screen.width;
-    var portionedPizzaArea = 48762;
-    var maxPizzasNeeded = screenArea/portionedPizzaArea;
+    var portionedPizzaArea = 31030.3;
+    var maxPizzasNeeded = Math.trunc(screenArea/portionedPizzaArea);
+    console.log(maxPizzasNeeded);
 
     for (var i = 0; i < maxPizzasNeeded; i++) {
         var elem = document.createElement('img');
