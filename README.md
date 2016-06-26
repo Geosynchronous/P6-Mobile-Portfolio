@@ -1579,7 +1579,8 @@ main.js:534 Time to resize pizzas: 106.55500000000029ms
 11:06 AM
 
 - **FIX24: More efficient Moving Pizza Load**
--  Moved some vars out of loop etc...
+- Eighth suggested review change, in main.js
+- Moved some vars out of loop etc...
 
 ```
     // FIX24
