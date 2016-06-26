@@ -1518,7 +1518,7 @@ for (var i = 2; i < 100; i++) {
 
 11:50 PM
 - **FIX22: JS Web API Out of Loop**
-- Sixth suggested review change, in main.js
+- Seventh suggested review change, in main.js
 ```
     // FIX22 var declared outside loop
     var phase;
