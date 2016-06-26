@@ -620,7 +620,19 @@ document.addEventListener('DOMContentLoaded', function() {
     // Scrolling FIX5
     // Reduced loop from 300 inc to 33
     // Plenty of moving pizzas to cover large screen lengths
-    for (var i = 0; i < 33; i++) {
+
+    // FIX 23
+    // Determing an efficient upper limit for number of pizzas to render
+    // Calculating Reference Area for each Pizza (using screen pixel areas)
+    // Using a working example of my laptop
+    // portionedPizzaArea   = 64000
+    //                      = 1024000/16
+    //                      = (screenArea for my laptop)/(Pizzas per my laotop)
+    var screenArea = window.screen.height * window.screen.width;
+    var portionedPizzaArea = 64000;
+    var maxPizzasNeeded = screenArea/portionedPizzaArea;
+
+    for (var i = 0; i < maxPizzasNeeded; i++) {
         var elem = document.createElement('img');
         elem.className = 'mover';
         elem.src = "images/pizza.png";
