@@ -1516,3 +1516,15 @@ for (var i = 2; i < 100; i++) {
 ```
 - seems to work, scrolling perf is 0.5 ms or less
 
+11:50 PM
+- **FIX22: JS Web API Out of Loop**
+- Sixth suggested review change, in main.js
+```
+    // FIX22 var declared outside loop
+    var phase;
+
+    for (var i = 0; i < len; i++) {
+        phase = Math.sin((cachedScrollTop / 1250) + (i % 5));
+```
+
+
