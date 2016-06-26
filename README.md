@@ -1575,6 +1575,34 @@ main.js:534 Time to resize pizzas: 120.67500000000018ms
 main.js:534 Time to resize pizzas: 106.55500000000029ms
 ```
 
+11:06 AM
+
+- **FIX24: More efficient Moving Pizza Load**
+```
+    // FIX24
+    // Declared var elem outside loop
+    // Declared Pizza ID outside loop and used getElementById
+    var elem;
+    var movingPizzaId = document.getElementById("movingPizzas1");
+    for (var i = 0; i < maxPizzasNeeded; i++) {
+        elem = document.createElement('img');
+        elem.className = 'mover';
+        elem.src = "images/pizza.png";
+        elem.style.height = "100px";
+        elem.style.width = "73.333px";
+        elem.basicLeft = (i % cols) * s;
+        elem.style.top = (Math.floor(i / cols) * s) + 'px';
+        movingPizzaId.appendChild(elem);
+    }
+```
+- Seems to work, no noticable Timing API changes
+- May effect initial load: ![Iamge of FIX24 Load TImeline](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/FIX24_Timeline.png)
+- compare previous results to present, some render pipeline times have improved the perf some, and resturctured the events, notice how more HTML parsing is occuring earlier in the pipeline
+-line 585 is causing a recalulate style and layout, both with forced reflow warnings:
+`var cachedScrollTop = document.body.scrollTop;`
+- notice a maybe slight possible increase `Time to generate pizzas on load: 33.41500000000001ms`, but not sure
+
+
 
 
 
