@@ -583,8 +583,10 @@ function updatePositions() {
 
     var items = document.querySelectorAll('.mover');
     var cachedScrollTop = document.body.scrollTop;
+    //FIX21 read length outside loop
+    var len = items.length;
 
-    for (var i = 0; i < items.length; i++) {
+    for (var i = 0; i < len; i++) {
         var phase = Math.sin((cachedScrollTop / 1250) + (i % 5));
 
         // READ Style
