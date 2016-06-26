@@ -1448,7 +1448,7 @@ Ended @     Mobile User Exerience 77 (yellow) & Speed 83 (green) and User Experi
 
 10:05 PM
 
-- ^^Timing API STATS**
+- **Timing API STATS**
 - The scolling stats are still intack, less than 1 ms, no surprise, didn't rehash that code
 - The sliding stats to resize the pizzas are back up around 150 ms... right back where we started as the original code for that functtionality has been restated.
 - Too tired right now to redo the resize pizza code, but there are plenty of the 12 simple suggested changes that I can make right now...
