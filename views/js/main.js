@@ -587,12 +587,14 @@ function updatePositions() {
     var len = items.length;
     // FIX22 var declared outside loop
     var phase;
+    //FIX 25 var array declared outside loop
+    var cachedBasicLeft;
 
     for (var i = 0; i < len; i++) {
         phase = Math.sin((cachedScrollTop / 1250) + (i % 5));
 
         // READ Style
-        var cachedBasicLeft = items[i].basicLeft;
+        cachedBasicLeft = items[i].basicLeft;
         // WRITE Style
         items[i].style.left = cachedBasicLeft + 100 * phase + 'px';
     }
