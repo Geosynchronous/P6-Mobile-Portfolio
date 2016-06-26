@@ -1454,4 +1454,12 @@ Ended @     Mobile User Exerience 77 (yellow) & Speed 83 (green) and User Experi
 - Too tired right now to redo the resize pizza code, but there are plenty of the 12 simple suggested changes that I can make right now...
 - BTW the TIMELINE GRAPHS for resize pizzas are just as ugly as they were when I first started this project
 
+10:28 PM
+
+- **Replaced Web API**
+- First suggested change to main.js
+- replaced 3 occurances of`querySelecto()` r with `getElementById()` in the `changeSizeLabel()`
+- didn't break it, the labels still appear when the slider is changed
+- it may have helped speed up resize data, 25 ms  (should have done better sampling)
+
 
