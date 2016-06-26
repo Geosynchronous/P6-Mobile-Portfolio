@@ -1465,7 +1465,7 @@ Ended @     Mobile User Exerience 77 (yellow) & Speed 83 (green) and User Experi
 10:44 PM
 
 - **FIX18: Replaced Web API**
-- First suggested change to main.js
+- Secondd suggested change to main.js
 - replaced 3 occurances of`querySelector()` with `getElementByClassName()` in the `changePizzaSizes()`
 - didn't break it, the pizzas still resize
 - it may have helped speed up resize data, 25 ms  (should have done better sampling)
