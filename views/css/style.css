@@ -57,9 +57,11 @@ form {
   clear:both;
 }
 
-.img-responsive {
+/*
+  FIX15 removed so as to restore to original settings
+  .img-responsive {
   padding: 10px;
-}
+}*/
 
 /* Changed color from Red to Green */
 /* Better Contrast */
