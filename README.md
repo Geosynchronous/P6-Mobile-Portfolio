@@ -1526,5 +1526,55 @@ for (var i = 2; i < 100; i++) {
     for (var i = 0; i < len; i++) {
         phase = Math.sin((cachedScrollTop / 1250) + (i % 5));
 ```
+**Sunday June 26, 2016**
+
+10:31 PM
+
+- **FIX23: Moving maxPizzasNeeded Code**
+- Eighth suggested review change, in main.js
+```
+// Generates the sliding pizzas when the page loads.
+document.addEventListener('DOMContentLoaded', function() {
+    var cols = 8;
+    var s = 256;
+    // FIX 23
+    // Determing an efficient upper limit for number of pizzas to render
+    // Better than guessing, and/or setting value too high, as previous code did
+    var rows = Math.trunc(window.screen.height / s);
+    var maxPizzasNeeded = rows * cols;
+    for (var i = 0; i < maxPizzasNeeded; i++) {
+        var elem = document.createElement('img');
+        elem.className = 'mover';
+        elem.src = "images/pizza.png";
+        elem.style.height = "100px";
+        elem.style.width = "73.333px";
+        elem.basicLeft = (i % cols) * s;
+        elem.style.top = (Math.floor(i / cols) * s) + 'px';
+        document.querySelector("#movingPizzas1").appendChild(elem);
+    }
+```
+- works well
+- for continued reference, TIMING API logs:
+---
+Average time to generate last 10 frames: 0.40300000002025627ms
+main.js:563 Average time to generate last 10 frames: 0.5059999999997672ms
+main.js:563 Average time to generate last 10 frames: 0.3680000000167638ms
+main.js:563 Average time to generate last 10 frames: 0.34999999999417925ms
+main.js:563 Average time to generate last 10 frames: 0.39099999999743884ms
+main.js:563 Average time to generate last 10 frames: 0.3695000000006985ms
+main.js:563 Average time to generate last 10 frames: 0.3724999999976717ms
+```
+```
+Time to generate pizzas on load: 35.97999999999999ms
+main.js:534 Time to resize pizzas: 128.70499999999993ms
+main.js:534 Time to resize pizzas: 129.73499999999967ms
+main.js:534 Time to resize pizzas: 122.10500000000047ms
+main.js:534 Time to resize pizzas: 112.95000000000073ms
+main.js:534 Time to resize pizzas: 136.71000000000004ms
+main.js:534 Time to resize pizzas: 120.67500000000018ms
+main.js:534 Time to resize pizzas: 106.55500000000029ms
+```
+
+
 
 
