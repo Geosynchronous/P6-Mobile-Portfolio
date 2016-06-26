@@ -1465,7 +1465,18 @@ Ended @     Mobile User Exerience 77 (yellow) & Speed 83 (green) and User Experi
 10:44 PM
 
 - **FIX18: Replaced Web API**
-- Secondd suggested change to main.js
+- Second suggested change to main.js
 - replaced 3 occurances of`querySelector()` with `getElementByClassName()` in the `changePizzaSizes()`
 - didn't break it, the pizzas still resize
 - it may have helped speed up resize data, 25 ms  (should have done better sampling)
+
+11:04 PM
+- **FIX19: JS Web API Out of Loop**
+- THird suggested change to main.js
+- In `changePizzaSizes` stored value of JS WEB API in var len
+```
+    var len = document.getElementsByClassName("randomPizzaContainer").length;
+    for (var i = 0; i < len; i++) {
+```
+` seems to work, may have improve resize data by 10 ms
+
