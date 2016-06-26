@@ -1499,6 +1499,20 @@ for (var i = 2; i < 100; i++) {
     pizzasDiv.appendChild(pizzaElementGenerator(i));
 }
 ```
-- seems to work, maybe 10 ms perf boost
-- pizzas resize 125-100 ms now
+- seems to work
+
+
+11:42 PM
+- **FIX21: JS Web API Out of Loop**
+- Sixth suggested review change, in main.js
+```
+    var items = document.querySelectorAll('.mover');
+    var cachedScrollTop = document.body.scrollTop;
+    //FIX21 read length outside loop
+    var len = items.length;
+
+    for (var i = 0; i < len; i++) {
+        var phase = Math.sin((cachedScrollTop / 1250) + (i % 5));
+```
+- seems to work, scrolling perf is 0.5 ms or less
 
