@@ -487,8 +487,8 @@ var resizePizzas = function(size) {
     //FIX16 revert to original from FIX11
      // Returns the size difference to change a pizza element from one size to another. Called by changePizzaSlices(size).
   function determineDx (elem, size) {
-    var oldWidth = elem[0].offsetWidth;
-    var windowWidth = document.querySelector("#randomPizzas").offsetWidth;
+    var oldWidth = elem[0].offsetWidth;         // FIX29 elem[0] refactor
+    var windowWidth = document.getElementById("randomPizzas").offsetWidth;  //FIX30 change to getElem...
     var oldSize = oldWidth / windowWidth;
 
     // Changes the slider value to a percent width
@@ -504,10 +504,8 @@ var resizePizzas = function(size) {
           console.log("bug in sizeSwitcher");
       }
     }
-
     var newSize = sizeSwitcher(size);
     var dx = (newSize - oldSize) * windowWidth;
-
     return dx;
   }
 
@@ -519,8 +517,10 @@ var resizePizzas = function(size) {
     var len = document.getElementsByClassName("randomPizzaContainer").length;
     // FIX29
     // Moved dx and newWidth out of the loop
-    // All values are the same, so first array element is all that is needed
-    // Refactored with var elem
+    // All values are the same, so elem[0] is all that is needed
+    // Refactored with the array var elem
+    // READ outside of loop
+    // WRITE inside of loop
     var elem = document.querySelectorAll(".randomPizzaContainer");
     var dx = determineDx(elem, size);
     var newWidth = (elem[0].offsetWidth + dx) + 'px';
