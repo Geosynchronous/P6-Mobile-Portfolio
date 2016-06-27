@@ -1731,9 +1731,10 @@ main.js:534 Time to resize pizzas: 131.5899999999965ms
   }
   ```
   - This refactor greatly improved the resize pizzas performance now the results are 2 ms or less for the Timing API results: ![Image of FIX29 Timeline](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/FIX29.png)
-  - In determineDx the `.offsetWidth is triggering an FSL
+  - In determineDx the `var oldWidth = elem[0].offsetWidth;` is triggering an FSL
+  - The rendering pipeline is looking good
   - The 5 ms or less requirement is now again met and exceeded
-  - 
+
   
 
 
