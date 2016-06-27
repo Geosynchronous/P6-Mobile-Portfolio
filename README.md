@@ -1683,6 +1683,59 @@ main.js:534 Time to resize pizzas: 111.71000000000095ms
 main.js:534 Time to resize pizzas: 131.5899999999965ms
 ```
 
+9:32 PM
+- **FIX29 Refactor changePizzaSize & determineDx**
+```
+  function determineDx (elem, size) {
+    var oldWidth = elem[0].offsetWidth;         // FIX29 elem[0] refactor
+    var windowWidth = document.querySelector("#randomPizzas").offsetWidth;
+    var oldSize = oldWidth / windowWidth;
+
+    // Changes the slider value to a percent width
+    function sizeSwitcher (size) {
+      switch(size) {
+        case "1":
+          return 0.25;
+        case "2":
+          return 0.3333;
+        case "3":
+          return 0.5;
+        default:
+          console.log("bug in sizeSwitcher");
+      }
+    }
+    var newSize = sizeSwitcher(size);
+    var dx = (newSize - oldSize) * windowWidth;
+    return dx;
+  }
+
+  // Iterates through pizza elements on the page and changes their widths
+  // FIX18 Replace all querySelectors() with getElementsByClassName()
+  function changePizzaSizes(size) {
+    // FIX 19 stored length as var len and took out of for loop
+    // *.length only called once now
+    var len = document.getElementsByClassName("randomPizzaContainer").length;
+    // FIX29
+    // Moved dx and newWidth out of the loop
+    // All values are the same, so elem[0] is all that is needed
+    // Refactored with the array var elem
+    // READ outside of loop
+    // WRITE inside of loop
+    var elem = document.querySelectorAll(".randomPizzaContainer");
+    var dx = determineDx(elem, size);
+    var newWidth = (elem[0].offsetWidth + dx) + 'px';
+
+    for (var i = 0; i < len; i++) {
+      elem[i].style.width = newWidth;
+    }
+  }
+  ```
+  - This refactor greatly improved the resize pizzas performance now the results are 2 ms or less for the Timing API results: ![Image of FIX29 Timeline](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/FIX29.png)
+  - In determineDx the `.offsetWidth is triggering an FSL
+  - The 5 ms or less requirement is now again met and exceeded
+  - 
+  
+
 
 
 
