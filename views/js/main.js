@@ -554,10 +554,15 @@ function updatePositions() {
     frame++;
     window.performance.mark("mark_start_frame");
 
-    var items = document.querySelectorAll('.mover');
+    //FX32
+    // NO LONGER NEEDED: var items = document.querySelectorAll('.mover');
+    // Occurance of var "items" replaced with "mover"
+    // Create only once mover[] after DomContentLoaded
+    // (See DOMContentLoaded below for more changes)
+
     var cachedScrollTop = document.body.scrollTop;
     // FIX21 read length outside loop
-    var len = items.length;
+    var len = mover.length;
     // FIX22 var declared outside loop
     var phase;
     //FIX 25 var array declared outside loop
@@ -567,9 +572,9 @@ function updatePositions() {
         phase = Math.sin((cachedScrollTop / 1250) + (i % 5));
 
         // READ Style
-        cachedBasicLeft = items[i].basicLeft;
+        cachedBasicLeft = mover[i].basicLeft;
         // WRITE Style
-        items[i].style.left = cachedBasicLeft + 100 * phase + 'px';
+        mover[i].style.left = cachedBasicLeft + 100 * phase + 'px';
     }
 
     // User Timing API to the rescue again. Seriously, it's worth learning.
@@ -585,8 +590,8 @@ function updatePositions() {
 
 }
 
-
-
+// FIX32 (continued)
+var mover =[];
 // Generates the sliding pizzas when the page loads.
 document.addEventListener('DOMContentLoaded', function() {
     var cols = 8;
@@ -611,6 +616,9 @@ document.addEventListener('DOMContentLoaded', function() {
         elem.style.top = (Math.floor(i / cols) * s) + 'px';
         movingPizzaId.appendChild(elem);
     }
+    // FIX32 (continued)
+    mover = document.querySelectorAll('.mover');
+
     // FIX27
     //This is not needed here, removing got rid of FSL on load
     // updatePositions();
