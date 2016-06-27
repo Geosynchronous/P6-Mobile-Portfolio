@@ -487,7 +487,7 @@ var resizePizzas = function(size) {
     //FIX16 revert to original from FIX11
      // Returns the size difference to change a pizza element from one size to another. Called by changePizzaSlices(size).
   function determineDx (elem, size) {
-    var oldWidth = elem.offsetWidth;
+    var oldWidth = elem[0].offsetWidth;
     var windowWidth = document.querySelector("#randomPizzas").offsetWidth;
     var oldSize = oldWidth / windowWidth;
 
@@ -517,10 +517,16 @@ var resizePizzas = function(size) {
     // FIX 19 stored length as var len and took out of for loop
     // *.length only called once now
     var len = document.getElementsByClassName("randomPizzaContainer").length;
+    // FIX29
+    // Moved dx and newWidth out of the loop
+    // All values are the same, so first array element is all that is needed
+    // Refactored with var elem
+    var elem = document.querySelectorAll(".randomPizzaContainer");
+    var dx = determineDx(elem, size);
+    var newWidth = (elem[0].offsetWidth + dx) + 'px';
+
     for (var i = 0; i < len; i++) {
-      var dx = determineDx(document.getElementsByClassName("randomPizzaContainer")[i], size);
-      var newwidth = (document.getElementsByClassName("randomPizzaContainer")[i].offsetWidth + dx) + 'px';
-      document.getElementsByClassName("randomPizzaContainer")[i].style.width = newwidth;
+      elem[i].style.width = newWidth;
     }
   }
 
@@ -571,12 +577,12 @@ function logAverageFrame(times) { // times is the array of User Timing measureme
 // Supersedes origingal Fiz 2
 // Uses "reqyestID" to Start and Stop rAF
 // (See README notes in Repo)
-var requestID;
+
 
 function updatePositions() {
 
     // Fix 2 (NEW continued):
-    requestID = requestAnimationFrame(updatePositions);
+    var requestID = requestAnimationFrame(updatePositions);
 
     frame++;
     window.performance.mark("mark_start_frame");
