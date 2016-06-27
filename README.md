@@ -1735,7 +1735,15 @@ main.js:534 Time to resize pizzas: 131.5899999999965ms
   - The rendering pipeline is looking good
   - The 5 ms or less requirement is now again met and exceeded
 
+  11:03 PM
   
+  - **FIX30 Change to getElementById**
+` var windowWidth = document.getElementById("randomPizzas").offsetWidth;  //FIX30 change to getElem...`
+- Timing results are about the same in FIX30 above
+- THe `offsetWidth` is causing FSL
+- TODO find a work around fot .offsetWidth
+
+
 
 
 
