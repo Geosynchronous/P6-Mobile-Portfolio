@@ -1837,7 +1837,25 @@ document.addEventListener('DOMContentLoaded', function() {
 - The TIMIMG API shows improved results, and the render pipeline looks good: ![IMAGE OF FIX32 Timeline](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Fix32.png)
 - The following [UDACITY FEND LINK](https://github.com/udacity/fend-office-hours/tree/master/Web%20Optimization/Effective%20Optimizations%20for%2060%20FPS) that was just provided in the review feedback helped enormously in locating this fix.
 
+4:14 PM
 
+- **FIX33 Refactor elem[]**
+
+```
+   // FIX33
+    // replaced querySelectorAll with getElementsByClassName
+    // refactored var len from above and put below
+    var elem = document.getElementsByClassName("randomPizzaContainer");
+    var len = elem.length;
+    var dx = determineDx(elem, size);
+    var newWidth = (elem[0].offsetWidth + dx) + 'px';
+
+    for (var i = 0; i < len; i++) {
+      elem[i].style.width = newWidth;
+    }
+  }
+  ```
+  
 
 
 
