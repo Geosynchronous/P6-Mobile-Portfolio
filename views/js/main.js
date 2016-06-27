@@ -479,16 +479,23 @@ var resizePizzas = function(size) {
   // Iterates through pizza elements on the page and changes their widths
   // FIX18 Replace all querySelectors() with getElementsByClassName()
   function changePizzaSizes(size) {
+
     // FIX 19 stored length as var len and took out of for loop
     // *.length only called once now
-    var len = document.getElementsByClassName("randomPizzaContainer").length;
+    // var len = document.getElementsByClassName("randomPizzaContainer").length;
+
     // FIX29
     // Moved dx and newWidth out of the loop
     // All values are the same, so elem[0] is all that is needed
     // Refactored with the array var elem
     // READ outside of loop
     // WRITE inside of loop
-    var elem = document.querySelectorAll(".randomPizzaContainer");
+
+    // FIX33
+    // replaced querySelectorAll with getElementsByClassName
+    // refactored var len from above and put below
+    var elem = document.getElementsByClassName("randomPizzaContainer");
+    var len = elem.length;
     var dx = determineDx(elem, size);
     var newWidth = (elem[0].offsetWidth + dx) + 'px';
 
@@ -617,13 +624,16 @@ document.addEventListener('DOMContentLoaded', function() {
         movingPizzaId.appendChild(elem);
     }
     // FIX32 (continued)
-    mover = document.querySelectorAll('.mover');
+    mover = document.getElementsByClassName('mover');
 
     // FIX27
     //This is not needed here, removing got rid of FSL on load
     // updatePositions();
 });
 
-    //FIX28 moved to bottom
-    // runs updatePositions on scroll
-    window.addEventListener('scroll', updatePositions);
+//FIX28 moved to bottom
+// runs updatePositions on scroll
+window.addEventListener('scroll', updatePositions);
+
+
+
