@@ -1859,11 +1859,11 @@ document.addEventListener('DOMContentLoaded', function() {
 5:34 PM
   
 - **FUTURE PERFORMANCE TODO BEYOND SCOPE OF THE PROJECT RUBRIC**
-- The algorithm to resize pizzas in not at responsive to screen size, resizing the screen, especially shows how ugly things can get, as too many randomPizzaContainers DIVs get scrunched together.
+- The algorithm to resize pizzas in not at all responsive to screen size, resizing the screen especially shows how ugly things can get, as too many randomPizzaContainers DIVs get scrunched together.
 - the way things are set up, really do not take make good use of `box-size` ,`display:flex` and bootstrap-grid.css
 - It would be better to seperate the actual size of the pizza change and the size of the randomPizzaContainer from each other
 - Keeping the current ratio of splitting the 35% width pizza DIV from the 65% text DIV is a good thing
-- Anytime the slider selects a new pizza size, the size should be updated to the new percentage, using transform: scale here is perfect, which will really cut down on render pipeline times, and allow trick stuff to happen with the back-visibilty css transform, where one could take a bit out of the pizzas during the change, or make them steam, when the transform occurs... cool
+- Anytime the slider selects a new pizza size, the actual image size should be updated to the new percentage, using transform: scale here is perfect, which will really cut down on render pipeline times, and allow trick stuff to happen with the back-visibilty css transform, where one could take a bit out of the pizzas during the change, or make them steam, when the transform occurs... cool
 - Anytime the window is resized, the width of the randomPizza containers could be resized to a percentage of the the container DIV, presently these DIVS start out at 33%, so I would probably just use CSS media queries to take care of the size change, for instance screen sizes at or less than 1200px at 33%, 900px @ 50%, 500px @ 100%,
 - THis would also have the effect of tossing most if not all of the old algorithms, and replace them with much faster and more concise code, where the offsetWidth would not need to be read, which still is causing FSL in my code, even though things are running fast enough already
 
