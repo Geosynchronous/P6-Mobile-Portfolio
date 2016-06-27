@@ -451,39 +451,6 @@ var resizePizzas = function(size) {
 
     changeSliderLabel(size);
 
-    // // FIX 11
-    // // Major refactor to use style 'transform scale'
-    // // Replace style 'width' change
-    // // Adjusted percentages in 'sizeSwithcer'
-    // function determineNewScale(size) {
-    //     // Changes the slider value to a percent width
-    //     function sizeSwitcher(size) {
-    //         switch (size) {
-    //             case "1":
-    //                 return 0.5;
-    //             case "2":
-    //                 return 0.6666;
-    //             case "3":
-    //                 return 1.0;
-    //             default:
-    //                 console.log("bug in sizeSwitcher");
-    //         }
-    //     }
-    //     return sizeSwitcher(size);
-    // }
-
-    // // READ and WRITE seperate tasks to avoid FSL
-    // function changePizzaSizes(size) {
-    //     // READ - Load all pizza image elements
-    //     var element = document.querySelectorAll(".img-responsive");
-    //     // Sets value of newScale
-    //     var newScale = determineNewScale(size);
-    //     // WRITE - New transforms for pizza size updated here
-    //     for (var i = 0; i < element.length; i++) {
-    //         element[i].style.transform = "scale(" + newScale + ")";
-    //     }
-    // }
-
     //FIX16 revert to original from FIX11
      // Returns the size difference to change a pizza element from one size to another. Called by changePizzaSlices(size).
   function determineDx (elem, size) {

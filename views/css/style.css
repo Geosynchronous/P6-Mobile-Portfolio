@@ -29,6 +29,10 @@ form {
   text-align: center;
 }
 
+.img-pad {
+  padding: 20px;
+}
+
 #pizzaSize {
   font-weight: 800;
 }
@@ -40,7 +44,8 @@ form {
   /*  SEE Repo README */
   will-change: transform;
   transform: transform Z(0);
-
+  /*FIX31 added vendor prefix*/
+  -webkit-transform: transform Z(0);
   position: fixed;
   width: 256px;
   z-index: -1;
@@ -48,6 +53,9 @@ form {
 
 .randomPizzaContainer {
   float: left;
+  /*FIX31 added vendor prefix*/
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
