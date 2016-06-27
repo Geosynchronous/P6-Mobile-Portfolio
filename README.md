@@ -1656,7 +1656,7 @@ main.js:534 Time to resize pizzas: 126.72000000000116ms
 - **FIX26-28 Remove FSL and JANK on Load**
 - THe problem with document.body.scrollTop causing FSL on load is gone
 - THe problem with JANK on Load seems to be gone
-- FIX26 - Added `defer` to script for main.js in pizza.html
+- FIX26 - Added `defer` to script for main.js in pizza.html, this makes the CRP better, though the main.js could probably use some refactoring andf maybe Web Workers to make it load faster, all 100 pizzas don't need to be delivered in the first stage of loading to the DOM, they could be split up
 - FIX27 - removed an uneeded occurance of updatePositions;
 - FIX28 - Moved eventListener for Scroll to bottom of main.js
 - The timeline looks a lot cleaner on load, with no warnings: ![Image of FIX26-28 Timeline](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Fix26-28.png)
