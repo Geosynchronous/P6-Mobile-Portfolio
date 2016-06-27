@@ -1743,6 +1743,12 @@ main.js:534 Time to resize pizzas: 131.5899999999965ms
 - THe `offsetWidth` is causing FSL
 - TODO find a work around fot .offsetWidth
 
+11:49 PM
+
+- **FIX31 CSS and Comment Changes**
+- added padding around pizzeria.jpg
+- added vendor prefixes
+
 
 
 
