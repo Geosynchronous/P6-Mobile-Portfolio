@@ -1749,7 +1749,93 @@ main.js:534 Time to resize pizzas: 131.5899999999965ms
 - added padding around pizzeria.jpg
 - added vendor prefixes
 
+**Monday June 27, 2016**
 
+3:07 PM
+
+- **FIX32 Refactored items[] to mover[]**
+- `items[]` only needed to be loaded once, renamed refactor to `mover[]`, see code for specific changes:
+```
+function updatePositions() {
+
+    // Fix 2 (NEW continued):
+    var requestID = requestAnimationFrame(updatePositions);
+
+    frame++;
+    window.performance.mark("mark_start_frame");
+
+    //FX32
+    // NO LONGER NEEDED: var items = document.querySelectorAll('.mover');
+    // Occurance of var "items" replaced with "mover"
+    // Create only once mover[] after DomContentLoaded
+    // (See DOMContentLoaded below for more changes)
+
+    var cachedScrollTop = document.body.scrollTop;
+    // FIX21 read length outside loop
+    var len = mover.length;
+    // FIX22 var declared outside loop
+    var phase;
+    //FIX 25 var array declared outside loop
+    var cachedBasicLeft;
+
+    for (var i = 0; i < len; i++) {
+        phase = Math.sin((cachedScrollTop / 1250) + (i % 5));
+
+        // READ Style
+        cachedBasicLeft = mover[i].basicLeft;
+        // WRITE Style
+        mover[i].style.left = cachedBasicLeft + 100 * phase + 'px';
+    }
+
+    // User Timing API to the rescue again. Seriously, it's worth learning.
+    // Super easy to create custom metrics.
+    window.performance.mark("mark_end_frame");
+    window.performance.measure("measure_frame_duration", "mark_start_frame", "mark_end_frame");
+    if (frame % 10 === 0) {
+        var timesToUpdatePosition = window.performance.getEntriesByName("measure_frame_duration");
+        logAverageFrame(timesToUpdatePosition);
+    }
+    // Fix2 (NEW continues):
+    cancelAnimationFrame(requestID);
+
+}
+
+// FIX32 (continued)
+var mover =[];
+// Generates the sliding pizzas when the page loads.
+document.addEventListener('DOMContentLoaded', function() {
+    var cols = 8;
+    var s = 256;
+    // FIX 23
+    // Determing an efficient upper limit for number of pizzas to render
+    // Better than guessing, and/or setting value too high, as previous code did
+    var rows = Math.trunc(window.screen.height / s);
+    var maxPizzasNeeded = rows * cols;
+    // FIX24
+    // Declared var elem outside loop
+    // Declared Pizza ID outside loop and used getElementById
+    var elem;
+    var movingPizzaId = document.getElementById("movingPizzas1");
+    for (var i = 0; i < maxPizzasNeeded; i++) {
+        elem = document.createElement('img');
+        elem.className = 'mover';
+        elem.src = "images/pizza.png";
+        elem.style.height = "100px";
+        elem.style.width = "73.333px";
+        elem.basicLeft = (i % cols) * s;
+        elem.style.top = (Math.floor(i / cols) * s) + 'px';
+        movingPizzaId.appendChild(elem);
+    }
+    // FIX32 (continued)
+    mover = document.querySelectorAll('.mover');
+
+    // FIX27
+    //This is not needed here, removing got rid of FSL on load
+    // updatePositions();
+});
+```
+- The TIMIMG API shows improved results, and the render pipeline looks good: ![IMAGE OF FIX32 Timeline](https://github.com/Geosynchronous/P6-Mobile-Portfolio/blob/master/timelines/Fix32.png)
+- The following [UDACITY FEND LINK](https://github.com/udacity/fend-office-hours/tree/master/Web%20Optimization/Effective%20Optimizations%20for%2060%20FPS) that was just provided in the review feedback helped enormously in locating this fix.
 
 
 
