@@ -1868,6 +1868,10 @@ document.addEventListener('DOMContentLoaded', function() {
 - THis would have the added advantage of keeping the legible font the same size on all screenwidths and maintain a nice spacing, where the lists would not get scrunched up
 - THis would also have the effect of tossing most if not all of the old algorithms, and replace them with much faster and more concise code, where the offsetWidth would not need to be read, which still is causing FSL in my code, even though things are running fast enough already
 
+THursday June 30, 2016
 
+-**Crap!!! All my changes to this file have disappeared from the last three days.**
+- there was a breakin on github Tuesday
+-  Sent a  report to support
 
 
